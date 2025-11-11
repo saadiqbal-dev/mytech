@@ -303,10 +303,6 @@
     /* padding-bottom: 54px; Adjusted to account for reduced padding */
   }
 
-  .services__item-description:hover {
-    padding-bottom: 0px;
-  }
-
   .services__item-title {
     font-size: 18px;
     line-height: 24px;
