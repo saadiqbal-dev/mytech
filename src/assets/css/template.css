@@ -1106,7 +1106,7 @@ a.blog-article-link:hover {
 }
 
 /* Hide Google Maps controls and branding */
-#google-map .gm-style-cc,
+/* #google-map .gm-style-cc,
 #google-map .gm-style-mtc,
 #google-map .gmnoprint,
 #google-map .gm-bundled-control,
@@ -1114,7 +1114,7 @@ a.blog-article-link:hover {
 #google-map .gm-svpc,
 #google-map .gm-style .gm-style-cc {
   display: none !important;
-}
+} */
 
 .contact-heading {
   color: #555353;

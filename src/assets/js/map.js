@@ -188,12 +188,12 @@ function initMap() {
     mapTypeControl: false,
     streetViewControl: false,
     fullscreenControl: false,
-    zoomControl: true,
-    scrollwheel: false,
+    zoomControl: false,
+    scrollwheel: true,
     disableDoubleClickZoom: true,
     draggable: true,
     keyboardShortcuts: false,
-    disableDefaultUI: true,
+    disableDefaultUI: false,
   });
 
   // Create custom SVG icon for marker
