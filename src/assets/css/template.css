@@ -1094,7 +1094,7 @@ a.blog-article-link:hover {
 
 .map-container {
   width: 100vw;
-  height: 70vh;
+  height: 700px;
   min-height: 400px;
   max-height: 730px;
   overflow: hidden;
@@ -1323,7 +1323,7 @@ a.blog-article-link:hover {
 
   .map-container {
     width: 100vw;
-    height: 45vh;
+    height: 650px;
     min-height: 350px;
     max-height: 600px;
   }
