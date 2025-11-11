@@ -172,17 +172,23 @@ const stormIncLocation = {
   lng: 174.741898, // Exact longitude for Storm Inc
 };
 
+// Map center adjusted to show more ocean (east of the marker)
+const mapCenter = {
+  lat: -36.785857, // Same latitude
+  lng: 174.755, // Shifted east to show more ocean
+};
+
 // Initialize map
 function initMap() {
   // Create map
   const map = new google.maps.Map(document.getElementById("google-map"), {
-    zoom: 14, // Zoomed out from 15 to 14
-    center: stormIncLocation,
+    zoom: 13, // Zoomed out to show wider area
+    center: mapCenter,
     styles: mapStyles,
     mapTypeControl: false,
     streetViewControl: false,
     fullscreenControl: false,
-    zoomControl: false,
+    zoomControl: true,
     scrollwheel: false,
     disableDoubleClickZoom: true,
     draggable: true,
