@@ -1,0 +1,1269 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Storm Inc - Next Level Digital Marketing</title>
+    <meta
+      name="description"
+      content="Storm Inc is an Auckland-based full-service digital marketing agency specializing in lead generation and sales performance."
+    />
+
+    <!-- Preload Peachi Fonts for better performance -->
+    <link
+      rel="preload"
+      href="assets/fonts/Peachi-Regular.woff2"
+      as="font"
+      type="font/woff2"
+      crossorigin
+    />
+    <link
+      rel="preload"
+      href="assets/fonts/Peachi-Light.woff2"
+      as="font"
+      type="font/woff2"
+      crossorigin
+    />
+    <link
+      rel="preload"
+      href="assets/fonts/Peachi-Medium.woff2"
+      as="font"
+      type="font/woff2"
+      crossorigin
+    />
+
+    <!-- Bootstrap CSS -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <!-- Custom Fonts -->
+    <link rel="stylesheet" href="assets/css/fonts.css?v=1756835970" />
+    <!-- Modular Styles -->
+    <link rel="stylesheet" href="assets/css/base.css?v=1756835970" />
+    <link rel="stylesheet" href="assets/css/header.css?v=1756835970" />
+    <link rel="stylesheet" href="assets/css/hero.css?v=1756835970" />
+    <link rel="stylesheet" href="assets/css/company.css?v=1756835970" />
+    <link rel="stylesheet" href="assets/css/industry.css?v=1756835970" />
+    <link rel="stylesheet" href="assets/css/services.css?v=1756835970" />
+    <link rel="stylesheet" href="assets/css/partners.css?v=1756835970" />
+    <link rel="stylesheet" href="assets/css/join.css?v=1756835970" />
+    <link rel="stylesheet" href="assets/css/testimonials.css?v=1756835970" />
+    <link rel="stylesheet" href="assets/css/footer.css?v=1756835970" />
+    <link rel="stylesheet" href="assets/css/utilities.css?v=1756835970" />
+    <link
+      rel="stylesheet"
+      href="assets/css/responsive-768.css?v=1756835970"
+    />
+    <link
+      rel="stylesheet"
+      href="assets/css/pages/template.css?v=1756835970"
+    />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Mona+Sans:ital,wght@0,200..900;1,200..900&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <!-- Mobile Header (768px and below only) -->
+    <div class="mobile-header">
+      <div class="mobile-header__logo">
+        <a href="index.html">
+          <img src="assets/img/logo-black.svg" alt="Storm Inc" />
+        </a>
+      </div>
+      <button
+        class="mobile-header__hamburger"
+        id="mobile-menu-toggle"
+        aria-label="Menu Toggle"
+      >
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          width="21"
+          height="16"
+          viewBox="0 0 21 16"
+          fill="none"
+        >
+          <line
+            x1="0.75"
+            y1="1.25"
+            x2="20.25"
+            y2="1.25"
+            stroke="#292929"
+            stroke-width="1.5"
+            stroke-linecap="round"
+          />
+          <line
+            x1="0.75"
+            y1="15.25"
+            x2="20.25"
+            y2="15.25"
+            stroke="#292929"
+            stroke-width="1.5"
+            stroke-linecap="round"
+          />
+          <line
+            x1="0.75"
+            y1="8.25"
+            x2="20.25"
+            y2="8.25"
+            stroke="#292929"
+            stroke-width="1.5"
+            stroke-linecap="round"
+          />
+        </svg>
+      </button>
+    </div>
+
+    <!-- Mobile Menu Overlay (768px and below only) -->
+    <div class="mobile-menu" id="mobile-menu">
+      <div class="mobile-menu__header">
+        <div class="mobile-menu__logo">
+          <img src="assets/img/logo-white.svg" alt="Storm Inc" />
+        </div>
+        <button class="mobile-menu__close" id="mobile-menu-close">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="18"
+            height="18"
+            viewBox="0 0 18 18"
+            fill="none"
+          >
+            <line
+              x1="1"
+              y1="16.5858"
+              x2="16.5858"
+              y2="1"
+              stroke="white"
+              stroke-width="2"
+              stroke-linecap="round"
+            />
+            <line
+              x1="1"
+              y1="-1"
+              x2="23.0416"
+              y2="-1"
+              transform="matrix(-0.707107 -0.707107 -0.707107 0.707107 17 18)"
+              stroke="white"
+              stroke-width="2"
+              stroke-linecap="round"
+            />
+          </svg>
+        </button>
+      </div>
+      <div class="mobile-menu__content">
+        <div class="mobile-menu__nav-container">
+          <nav>
+            <ul class="mobile-menu__nav">
+              <div class="mobile-menu__divider"></div>
+              <li class="mobile-menu__nav-item">
+                <button
+                  class="mobile-menu__nav-link mobile-menu__nav-link--dropdown"
+                  data-dropdown="capabilities-mobile"
+                >
+                  Capabilities
+                  <svg
+                    class="mobile-menu__chevron"
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="14"
+                    height="8"
+                    viewBox="0 0 14 8"
+                    fill="none"
+                  >
+                    <path
+                      fill-rule="evenodd"
+                      clip-rule="evenodd"
+                      d="M12.466 0L6.67583 6.14436L0.8612 0L0 0.914842L6.66361 7.99351L13.3333 0.914842L12.4721 0H12.466Z"
+                      fill="white"
+                    />
+                  </svg>
+                </button>
+                <!-- Mobile Dropdown Content for Capabilities -->
+                <div
+                  class="mobile-menu__dropdown"
+                  id="capabilities-mobile-dropdown"
+                >
+                  <!-- Digital Marketing Section -->
+                  <div class="mobile-menu__dropdown-section">
+                    <div class="mobile-menu__dropdown-category">
+                      <p class="mobile-menu__dropdown-title">
+                        DIGITAL MARKETING
+                      </p>
+                      <div class="mobile-menu__dropdown-links">
+                        <a href="#" class="mobile-menu__dropdown-link"
+                          >Google Ads (SEM)</a
+                        >
+                        <a
+                          href="search-engine-optimization.html"
+                          class="mobile-menu__dropdown-link"
+                          >Search Engine Optimisation (SEO)</a
+                        >
+                        <a href="#" class="mobile-menu__dropdown-link"
+                          >Marketing Automation</a
+                        >
+                        <a href="#" class="mobile-menu__dropdown-link"
+                          >Google My Business</a
+                        >
+                        <a href="#" class="mobile-menu__dropdown-link"
+                          >Digital Strategy & Planning</a
+                        >
+                        <a href="#" class="mobile-menu__dropdown-link"
+                          >Social Media</a
+                        >
+                        <a href="#" class="mobile-menu__dropdown-link"
+                          >Data & Analytics</a
+                        >
+                      </div>
+                    </div>
+                  </div>
+                  <!-- Creative Content Production Section -->
+                  <div class="mobile-menu__dropdown-section">
+                    <div class="mobile-menu__dropdown-category">
+                      <p class="mobile-menu__dropdown-title">
+                        CREATIVE CONTENT PRODUCTION
+                      </p>
+                      <div class="mobile-menu__dropdown-links">
+                        <a href="#" class="mobile-menu__dropdown-link"
+                          >Website Development</a
+                        >
+                        <a href="#" class="mobile-menu__dropdown-link"
+                          >Content Marketing</a
+                        >
+                        <a href="#" class="mobile-menu__dropdown-link"
+                          >Email Marketing</a
+                        >
+                        <a href="#" class="mobile-menu__dropdown-link"
+                          >Video Production</a
+                        >
+                        <a href="#" class="mobile-menu__dropdown-link"
+                          >Landing Page Optimization</a
+                        >
+                        <a href="#" class="mobile-menu__dropdown-link"
+                          >Display Production</a
+                        >
+                      </div>
+                    </div>
+                  </div>
+                  <!-- CTA Sections -->
+                  <div class="mobile-menu__dropdown-section">
+                    <div
+                      class="mobile-menu__dropdown-cta mobile-menu__dropdown-cta--pink"
+                    >
+                      <div class="mobile-menu__dropdown-cta-text">
+                        <p class="mobile-menu__dropdown-cta-title">
+                          Digital Marketing Strategy
+                        </p>
+                        <p class="mobile-menu__dropdown-cta-subtitle">
+                          Join us for a free Session
+                        </p>
+                      </div>
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        width="32"
+                        height="22"
+                        viewBox="0 0 32 22"
+                        fill="none"
+                      >
+                        <path
+                          d="M31.4996 10.1339L21.5021 0.0557482L20.3897 1.1771L29.0542 9.91153L0.778288 9.90889L0.77721 11.4777L29.0532 11.4803L20.3766 20.2269L21.4874 21.3467L31.4989 11.2545C31.8103 10.9405 31.8107 10.4475 31.4996 10.1339Z"
+                          fill="white"
+                        />
+                      </svg>
+                    </div>
+                    <div
+                      class="mobile-menu__dropdown-cta mobile-menu__dropdown-cta--dark"
+                    >
+                      <div class="mobile-menu__dropdown-cta-text">
+                        <p class="mobile-menu__dropdown-cta-title">
+                          Design Studio
+                        </p>
+                        <p class="mobile-menu__dropdown-cta-subtitle">
+                          Elevate your website using our design services
+                        </p>
+                      </div>
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        width="32"
+                        height="22"
+                        viewBox="0 0 32 22"
+                        fill="none"
+                      >
+                        <path
+                          d="M31.4996 10.1339L21.5021 0.0557482L20.3897 1.1771L29.0542 9.91153L0.778288 9.90889L0.77721 11.4777L29.0532 11.4803L20.3766 20.2269L21.4874 21.3467L31.4989 11.2545C31.8103 10.9405 31.8107 10.4475 31.4996 10.1339Z"
+                          fill="white"
+                        />
+                      </svg>
+                    </div>
+                  </div>
+                </div>
+              </li>
+              <div class="mobile-menu__divider"></div>
+              <li class="mobile-menu__nav-item">
+                <button
+                  class="mobile-menu__nav-link mobile-menu__nav-link--dropdown"
+                  data-dropdown="work-mobile"
+                >
+                  Work
+                  <svg
+                    class="mobile-menu__chevron"
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="14"
+                    height="8"
+                    viewBox="0 0 14 8"
+                    fill="none"
+                  >
+                    <path
+                      fill-rule="evenodd"
+                      clip-rule="evenodd"
+                      d="M12.466 0L6.67583 6.14436L0.8612 0L0 0.914842L6.66361 7.99351L13.3333 0.914842L12.4721 0H12.466Z"
+                      fill="white"
+                    />
+                  </svg>
+                </button>
+                <!-- Mobile Dropdown Content for Work -->
+                <div class="mobile-menu__dropdown" id="work-mobile-dropdown">
+                  <!-- Work Section -->
+                  <div class="mobile-menu__dropdown-section">
+                    <div class="mobile-menu__dropdown-category">
+                      <p class="mobile-menu__dropdown-title">WORK</p>
+                      <div class="mobile-menu__dropdown-links">
+                        <a
+                          href="case-studies.html"
+                          class="mobile-menu__dropdown-link"
+                          >Case Studies</a
+                        >
+                        <a
+                          href="work.html"
+                          class="mobile-menu__dropdown-link"
+                          >Portfolio</a
+                        >
+                      </div>
+                    </div>
+                  </div>
+                  <!-- Resources Section -->
+                  <div class="mobile-menu__dropdown-section">
+                    <div class="mobile-menu__dropdown-category">
+                      <p class="mobile-menu__dropdown-title">RESOURCES</p>
+                      <div class="mobile-menu__dropdown-links">
+                        <a href="#" class="mobile-menu__dropdown-link"
+                          >GA4 UTM Link Builder</a
+                        >
+                        <a href="#" class="mobile-menu__dropdown-link"
+                          >SEO Audit Tools</a
+                        >
+                      </div>
+                    </div>
+                  </div>
+                  <!-- CTA Sections -->
+                  <div class="mobile-menu__dropdown-section">
+                    <div
+                      class="mobile-menu__dropdown-cta mobile-menu__dropdown-cta--pink"
+                    >
+                      <div class="mobile-menu__dropdown-cta-text">
+                        <p class="mobile-menu__dropdown-cta-title">
+                          Digital Marketing Strategy
+                        </p>
+                        <p class="mobile-menu__dropdown-cta-subtitle">
+                          Join us for a free Session
+                        </p>
+                      </div>
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        width="32"
+                        height="22"
+                        viewBox="0 0 32 22"
+                        fill="none"
+                      >
+                        <path
+                          d="M31.4996 10.1339L21.5021 0.0557482L20.3897 1.1771L29.0542 9.91153L0.778288 9.90889L0.77721 11.4777L29.0532 11.4803L20.3766 20.2269L21.4874 21.3467L31.4989 11.2545C31.8103 10.9405 31.8107 10.4475 31.4996 10.1339Z"
+                          fill="white"
+                        />
+                      </svg>
+                    </div>
+                    <div
+                      class="mobile-menu__dropdown-cta mobile-menu__dropdown-cta--dark"
+                    >
+                      <div class="mobile-menu__dropdown-cta-text">
+                        <p class="mobile-menu__dropdown-cta-title">
+                          Design Studio
+                        </p>
+                        <p class="mobile-menu__dropdown-cta-subtitle">
+                          Elevate your website using our design services
+                        </p>
+                      </div>
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        width="32"
+                        height="22"
+                        viewBox="0 0 32 22"
+                        fill="none"
+                      >
+                        <path
+                          d="M31.4996 10.1339L21.5021 0.0557482L20.3897 1.1771L29.0542 9.91153L0.778288 9.90889L0.77721 11.4777L29.0532 11.4803L20.3766 20.2269L21.4874 21.3467L31.4989 11.2545C31.8103 10.9405 31.8107 10.4475 31.4996 10.1339Z"
+                          fill="white"
+                        />
+                      </svg>
+                    </div>
+                  </div>
+                </div>
+              </li>
+              <div class="mobile-menu__divider"></div>
+              <li class="mobile-menu__nav-item">
+                <button
+                  class="mobile-menu__nav-link mobile-menu__nav-link--dropdown"
+                  data-dropdown="about-mobile"
+                >
+                  About
+                  <svg
+                    class="mobile-menu__chevron"
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="14"
+                    height="8"
+                    viewBox="0 0 14 8"
+                    fill="none"
+                  >
+                    <path
+                      fill-rule="evenodd"
+                      clip-rule="evenodd"
+                      d="M12.466 0L6.67583 6.14436L0.8612 0L0 0.914842L6.66361 7.99351L13.3333 0.914842L12.4721 0H12.466Z"
+                      fill="white"
+                    />
+                  </svg>
+                </button>
+                <!-- Mobile Dropdown Content for About -->
+                <div class="mobile-menu__dropdown" id="about-mobile-dropdown">
+                  <!-- About Section -->
+                  <div class="mobile-menu__dropdown-section">
+                    <div class="mobile-menu__dropdown-category">
+                      <p class="mobile-menu__dropdown-title">ABOUT</p>
+                      <div class="mobile-menu__dropdown-links">
+                        <a
+                          href="about.html"
+                          class="mobile-menu__dropdown-link"
+                          >About</a
+                        >
+                        <a
+                          href="blogs.html"
+                          class="mobile-menu__dropdown-link"
+                          >News</a
+                        >
+                        <a href="#" class="mobile-menu__dropdown-link">Team</a>
+                        <a
+                          href="capabilities.html"
+                          class="mobile-menu__dropdown-link"
+                          >Capabilities</a
+                        >
+                      </div>
+                    </div>
+                  </div>
+                  <!-- CTA Sections -->
+                  <div class="mobile-menu__dropdown-section">
+                    <div
+                      class="mobile-menu__dropdown-cta mobile-menu__dropdown-cta--pink"
+                    >
+                      <div class="mobile-menu__dropdown-cta-text">
+                        <p class="mobile-menu__dropdown-cta-title">
+                          Digital Marketing Strategy
+                        </p>
+                        <p class="mobile-menu__dropdown-cta-subtitle">
+                          Join us for a free Session
+                        </p>
+                      </div>
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        width="32"
+                        height="22"
+                        viewBox="0 0 32 22"
+                        fill="none"
+                      >
+                        <path
+                          d="M31.4996 10.1339L21.5021 0.0557482L20.3897 1.1771L29.0542 9.91153L0.778288 9.90889L0.77721 11.4777L29.0532 11.4803L20.3766 20.2269L21.4874 21.3467L31.4989 11.2545C31.8103 10.9405 31.8107 10.4475 31.4996 10.1339Z"
+                          fill="white"
+                        />
+                      </svg>
+                    </div>
+                    <div
+                      class="mobile-menu__dropdown-cta mobile-menu__dropdown-cta--dark"
+                    >
+                      <div class="mobile-menu__dropdown-cta-text">
+                        <p class="mobile-menu__dropdown-cta-title">
+                          Design Studio
+                        </p>
+                        <p class="mobile-menu__dropdown-cta-subtitle">
+                          Elevate your website using our design services
+                        </p>
+                      </div>
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        width="32"
+                        height="22"
+                        viewBox="0 0 32 22"
+                        fill="none"
+                      >
+                        <path
+                          d="M31.4996 10.1339L21.5021 0.0557482L20.3897 1.1771L29.0542 9.91153L0.778288 9.90889L0.77721 11.4777L29.0532 11.4803L20.3766 20.2269L21.4874 21.3467L31.4989 11.2545C31.8103 10.9405 31.8107 10.4475 31.4996 10.1339Z"
+                          fill="white"
+                        />
+                      </svg>
+                    </div>
+                  </div>
+                </div>
+              </li>
+              <div class="mobile-menu__divider"></div>
+              <li class="mobile-menu__nav-item">
+                <a href="contact.html" class="mobile-menu__nav-link"
+                  >Contact</a
+                >
+              </li>
+            </ul>
+          </nav>
+        </div>
+        <div class="mobile-menu__contact">
+          <p class="mobile-menu__contact-text">
+            Call
+            <a href="tel:+6492815504" class="mobile-menu__contact-link"
+              >+64 09 281 5504</a
+            ><br />
+            <a
+              href="mailto:hello@stormimc.co.nz"
+              class="mobile-menu__contact-link"
+              >hello@stormimc.co.nz</a
+            >
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <!-- Transparent Header (Desktop only, >768px) -->
+    <header class="header">
+      <div class="header__container">
+        <div class="header__logo">
+          <a href="index.html">
+            <img src="assets/img/logo.svg" alt="Storm Inc" />
+          </a>
+        </div>
+
+        <nav class="header__nav">
+          <ul class="header__menu">
+            <li class="header__menu-item">
+              <a
+                href="#"
+                class="header__menu-link"
+                data-dropdown="compatibilities-dropdown"
+              >
+                <span class="header__menu-text">
+                  <span class="header__menu-text-main">Compatibilities</span>
+                  <span class="header__menu-text-hover">Compatibilities</span>
+                </span>
+                <svg
+                  class="header__dropdown-arrow"
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="14"
+                  height="9"
+                  viewBox="0 0 14 9"
+                  fill="black"
+                >
+                  <g clip-path="url(#clip0_803_1143)">
+                    <path
+                      fill-rule="evenodd"
+                      clip-rule="evenodd"
+                      d="M12.802 0.666588L7.01176 6.81095L1.19714 0.666588L0.335938 1.58143L6.99955 8.6601L13.6693 1.58143L12.8081 0.666588H12.802Z"
+                      fill="white"
+                    />
+                  </g>
+                  <defs>
+                    <clipPath id="clip0_803_1143">
+                      <rect
+                        width="13.3333"
+                        height="8"
+                        fill="white"
+                        transform="translate(0.335938 0.666634)"
+                      />
+                    </clipPath>
+                  </defs>
+                </svg>
+              </a>
+            </li>
+            <li class="header__menu-item">
+              <a
+                href="#"
+                class="header__menu-link"
+                data-dropdown="work-dropdown"
+              >
+                <span class="header__menu-text">
+                  <span class="header__menu-text-main">Work</span>
+                  <span class="header__menu-text-hover">Work</span>
+                </span>
+                <svg
+                  class="header__dropdown-arrow"
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="14"
+                  height="9"
+                  viewBox="0 0 14 9"
+                  fill="none"
+                >
+                  <g clip-path="url(#clip0_803_1143_2)">
+                    <path
+                      fill-rule="evenodd"
+                      clip-rule="evenodd"
+                      d="M12.802 0.666588L7.01176 6.81095L1.19714 0.666588L0.335938 1.58143L6.99955 8.6601L13.6693 1.58143L12.8081 0.666588H12.802Z"
+                      fill="white"
+                    />
+                  </g>
+                  <defs>
+                    <clipPath id="clip0_803_1143_2">
+                      <rect
+                        width="13.3333"
+                        height="8"
+                        fill="white"
+                        transform="translate(0.335938 0.666634)"
+                      />
+                    </clipPath>
+                  </defs>
+                </svg>
+              </a>
+            </li>
+            <li class="header__menu-item">
+              <a
+                href="#"
+                class="header__menu-link"
+                data-dropdown="about-dropdown"
+              >
+                <span class="header__menu-text">
+                  <span class="header__menu-text-main">About</span>
+                  <span class="header__menu-text-hover">About</span>
+                </span>
+                <svg
+                  class="header__dropdown-arrow"
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="14"
+                  height="9"
+                  viewBox="0 0 14 9"
+                  fill="none"
+                >
+                  <g clip-path="url(#clip0_803_1143_3)">
+                    <path
+                      fill-rule="evenodd"
+                      clip-rule="evenodd"
+                      d="M12.802 0.666588L7.01176 6.81095L1.19714 0.666588L0.335938 1.58143L6.99955 8.6601L13.6693 1.58143L12.8081 0.666588H12.802Z"
+                      fill="white"
+                    />
+                  </g>
+                  <defs>
+                    <clipPath id="clip0_803_1143_3">
+                      <rect
+                        width="13.3333"
+                        height="8"
+                        fill="white"
+                        transform="translate(0.335938 0.666634)"
+                      />
+                    </clipPath>
+                  </defs>
+                </svg>
+              </a>
+            </li>
+            <li class="header__menu-item">
+              <a href="contact.html" class="header__menu-link">
+                <span class="header__menu-text">
+                  <span class="header__menu-text-main">Contact</span>
+                  <span class="header__menu-text-hover">Contact</span>
+                </span>
+              </a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+
+      <!-- Dropdown Menus -->
+            <div class="header__dropdown" id="compatibilities-dropdown">
+        <div class="dropdown__header-styles">
+          <!-- Links Section (top) -->
+          <div class="header__dropdown-links-section">
+            <div class="row gx-5">
+              <!-- Digital Marketing Category -->
+              <div class="col-auto">
+                <div class="dropdown-capabilities__category">
+                  <p class="dropdown-capabilities__title">DIGITAL MARKETING</p>
+                  <div class="dropdown-capabilities__links-list">
+                    <!-- Backend can loop through links here -->
+                    <a href="#" class="dropdown-capabilities__link"
+                      >Google Ads (SEM)</a
+                    >
+                    <a
+                      href="search-engine-optimization.html"
+                      class="dropdown-capabilities__link"
+                      >Search Engine Optimisation (SEO)</a
+                    >
+                    <a href="#" class="dropdown-capabilities__link"
+                      >Marketing Automation</a
+                    >
+                    <a href="#" class="dropdown-capabilities__link"
+                      >Google My Business</a
+                    >
+                    <a href="#" class="dropdown-capabilities__link"
+                      >Digital Strategy & Planning</a
+                    >
+                    <a href="#" class="dropdown-capabilities__link"
+                      >Social Media</a
+                    >
+                    <a href="#" class="dropdown-capabilities__link"
+                      >Data & Analytics</a
+                    >
+                  </div>
+                </div>
+              </div>
+
+              <!-- Creative Content Production Category -->
+              <div class="col-auto">
+                <div class="dropdown-capabilities__category">
+                  <p class="dropdown-capabilities__title">
+                    CREATIVE CONTENT PRODUCTION
+                  </p>
+                  <div class="dropdown-capabilities__links-list">
+                    <!-- Backend can loop through links here -->
+                    <a href="#" class="dropdown-capabilities__link"
+                      >Website Development</a
+                    >
+                    <a href="#" class="dropdown-capabilities__link"
+                      >Content Marketing</a
+                    >
+                    <a href="#" class="dropdown-capabilities__link"
+                      >Email Marketing</a
+                    >
+                    <a href="#" class="dropdown-capabilities__link"
+                      >Video Production</a
+                    >
+                    <a href="#" class="dropdown-capabilities__link"
+                      >Landing Page Optimization</a
+                    >
+                    <a href="#" class="dropdown-capabilities__link"
+                      >Display Production</a
+                    >
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- CTA Section (bottom) - Separate for Blade Partial -->
+          <div class="header__dropdown-cta-section">
+            <div class="row gx-4">
+              <div class="col">
+                <div class="dropdown-capabilities__cta dropdown-capabilities__cta--pink">
+                  <div class="dropdown-capabilities__cta-text">
+                    <p class="dropdown-capabilities__cta-title">
+                      Digital Marketing Strategy
+                    </p>
+                    <p class="dropdown-capabilities__cta-subtitle">
+                      Join us for a free Session
+                    </p>
+                  </div>
+                  <div>
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="32"
+                      height="22"
+                      viewBox="0 0 32 22"
+                      fill="none"
+                    >
+                      <path
+                        d="M31.4996 10.1339L21.5021 0.0557482L20.3897 1.1771L29.0542 9.91153L0.778288 9.90889L0.77721 11.4777L29.0532 11.4803L20.3766 20.2269L21.4874 21.3467L31.4989 11.2545C31.8103 10.9405 31.8107 10.4475 31.4996 10.1339Z"
+                        fill="white"
+                      />
+                    </svg>
+                  </div>
+                </div>
+              </div>
+              <div class="col">
+                <div class="dropdown-capabilities__cta dropdown-capabilities__cta--dark">
+                  <div class="dropdown-capabilities__cta-text">
+                    <p class="dropdown-capabilities__cta-title">
+                      Design Studio
+                    </p>
+                    <p class="dropdown-capabilities__cta-subtitle">
+                      Elevate your website using our design services
+                    </p>
+                  </div>
+                  <div>
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="32"
+                      height="22"
+                      viewBox="0 0 32 22"
+                      fill="none"
+                    >
+                      <path
+                        d="M31.4996 10.1339L21.5021 0.0557482L20.3897 1.1771L29.0542 9.91153L0.778288 9.90889L0.77721 11.4777L29.0532 11.4803L20.3766 20.2269L21.4874 21.3467L31.4989 11.2545C31.8103 10.9405 31.8107 10.4475 31.4996 10.1339Z"
+                        fill="white"
+                      />
+                    </svg>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      </div>
+
+            <div class="header__dropdown" id="work-dropdown">
+        <div class="dropdown__header-styles">
+          <!-- Links Section (top) -->
+          <div class="header__dropdown-links-section">
+            <div class="row gx-5">
+              <!-- Work Category -->
+              <div class="col-auto">
+                <div class="dropdown-capabilities__category">
+                  <p class="dropdown-capabilities__title">WORK</p>
+                  <div class="dropdown-capabilities__links-list">
+                    <!-- Backend can loop through links here -->
+                    <a href="case-studies.html" class="dropdown-capabilities__link"
+                      >Case Studies</a
+                    >
+                    <a
+                      href="work.html"
+                      class="dropdown-capabilities__link"
+                      >Portfolio</a
+                    >
+                  </div>
+                </div>
+              </div>
+
+              <!-- Resources Category -->
+              <div class="col-auto">
+                <div class="dropdown-capabilities__category">
+                  <p class="dropdown-capabilities__title">RESOURCES</p>
+                  <div class="dropdown-capabilities__links-list">
+                    <!-- Backend can loop through links here -->
+                    <a href="#" class="dropdown-capabilities__link"
+                      >GA4 UTM Link Builder
+                    </a>
+                    <a href="#" class="dropdown-capabilities__link"
+                      >SEO Audit Tools</a
+                    >
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- CTA Section (bottom) - Separate for Blade Partial -->
+          <div class="header__dropdown-cta-section">
+            <div class="row gx-4">
+              <div class="col">
+                <div class="dropdown-capabilities__cta dropdown-capabilities__cta--pink">
+                  <div class="dropdown-capabilities__cta-text">
+                    <p class="dropdown-capabilities__cta-title">
+                      Digital Marketing Strategy
+                    </p>
+                    <p class="dropdown-capabilities__cta-subtitle">
+                      Join us for a free Session
+                    </p>
+                  </div>
+                  <div>
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="32"
+                      height="22"
+                      viewBox="0 0 32 22"
+                      fill="none"
+                    >
+                      <path
+                        d="M31.4996 10.1339L21.5021 0.0557482L20.3897 1.1771L29.0542 9.91153L0.778288 9.90889L0.77721 11.4777L29.0532 11.4803L20.3766 20.2269L21.4874 21.3467L31.4989 11.2545C31.8103 10.9405 31.8107 10.4475 31.4996 10.1339Z"
+                        fill="white"
+                      />
+                    </svg>
+                  </div>
+                </div>
+              </div>
+              <div class="col">
+                <div class="dropdown-capabilities__cta dropdown-capabilities__cta--dark">
+                  <div class="dropdown-capabilities__cta-text">
+                    <p class="dropdown-capabilities__cta-title">
+                      Design Studio
+                    </p>
+                    <p class="dropdown-capabilities__cta-subtitle">
+                      Elevate your website using our design services
+                    </p>
+                  </div>
+                  <div>
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="32"
+                      height="22"
+                      viewBox="0 0 32 22"
+                      fill="none"
+                    >
+                      <path
+                        d="M31.4996 10.1339L21.5021 0.0557482L20.3897 1.1771L29.0542 9.91153L0.778288 9.90889L0.77721 11.4777L29.0532 11.4803L20.3766 20.2269L21.4874 21.3467L31.4989 11.2545C31.8103 10.9405 31.8107 10.4475 31.4996 10.1339Z"
+                        fill="white"
+                      />
+                    </svg>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      </div>
+
+            <div class="header__dropdown" id="about-dropdown">
+        <div class="dropdown__header-styles__about">
+          <!-- Links Section (top) -->
+          <div class="header__dropdown-links-section">
+            <div class="row gx-5">
+              <!-- About Category -->
+              <div class="col-auto">
+                <div class="dropdown-capabilities__category">
+                  <p class="dropdown-capabilities__title">ABOUT</p>
+                  <div class="dropdown-capabilities__links-list">
+                    <!-- Backend can loop through links here -->
+                    <a href="about.html" class="dropdown-capabilities__link"
+                      >About</a
+                    >
+                    <a href="blogs.html" class="dropdown-capabilities__link"
+                      >News</a
+                    >
+                    <a href="#" class="dropdown-capabilities__link">Team</a>
+                    <a
+                      href="capabilities.html"
+                      class="dropdown-capabilities__link"
+                      >Capabilities</a
+                    >
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- CTA Section (bottom) - Separate for Blade Partial -->
+          <div class="header__dropdown-cta-section">
+            <div class="row gx-4">
+              <div class="col">
+                <div class="dropdown-capabilities__cta dropdown-capabilities__cta--pink">
+                  <div class="dropdown-capabilities__cta-text">
+                    <p class="dropdown-capabilities__cta-title">
+                      Digital Marketing Strategy
+                    </p>
+                    <p class="dropdown-capabilities__cta-subtitle">
+                      Join us for a free Session
+                    </p>
+                  </div>
+                  <div>
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="32"
+                      height="22"
+                      viewBox="0 0 32 22"
+                      fill="none"
+                    >
+                      <path
+                        d="M31.4996 10.1339L21.5021 0.0557482L20.3897 1.1771L29.0542 9.91153L0.778288 9.90889L0.77721 11.4777L29.0532 11.4803L20.3766 20.2269L21.4874 21.3467L31.4989 11.2545C31.8103 10.9405 31.8107 10.4475 31.4996 10.1339Z"
+                        fill="white"
+                      />
+                    </svg>
+                  </div>
+                </div>
+              </div>
+              <div class="col">
+                <div class="dropdown-capabilities__cta dropdown-capabilities__cta--dark">
+                  <div class="dropdown-capabilities__cta-text">
+                    <p class="dropdown-capabilities__cta-title">
+                      Design Studio
+                    </p>
+                    <p class="dropdown-capabilities__cta-subtitle">
+                      Elevate your website using our design services
+                    </p>
+                  </div>
+                  <div>
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="32"
+                      height="22"
+                      viewBox="0 0 32 22"
+                      fill="none"
+                    >
+                      <path
+                        d="M31.4996 10.1339L21.5021 0.0557482L20.3897 1.1771L29.0542 9.91153L0.778288 9.90889L0.77721 11.4777L29.0532 11.4803L20.3766 20.2269L21.4874 21.3467L31.4989 11.2545C31.8103 10.9405 31.8107 10.4475 31.4996 10.1339Z"
+                        fill="white"
+                      />
+                    </svg>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero-template">
+      <img src="assets/img/heroImages/privacy-policy.png" />
+      <h1 class="hero__heading-template">
+        Privacy Policy
+      </h1>
+    </section>
+
+    <!-- Blog Section -->
+
+    <section class="blog-content">
+      <div class="blog-content__container">
+
+        <!-- new content -->
+         <p class="case-studies__container-desc" data-animate="fadeInUp">
+            This Privacy Policy discloses the privacy policy and practices of Storm IMC Limited. Storm IMC Limited is an Internet Consultancy based in Auckland, New Zealand. Storm IMC is a registered New Zealand Limited Company with the company number: 4954199 and NZBN: 9429041093528.
+
+<p class="case-studies__container-desc" data-animate="fadeInUp"><strong>This Privacy Policy Explains The Following Processes:</strong></p>
+<p><strong>What information is being collected from you</strong></p>
+<strong>How we collect this information</strong>
+<strong>Why we collect your information</strong>
+<strong>How we use that information</strong>
+The circumstances in which we may disclose that information to others <br/>
+Your choices in relation to your information and how you can access and correct that informationWe also host and process user content for our clients. Our clients tell us what to do with user content, and we follow their instructions. This Privacy Policy does not describe what we do with user content on our clients’ instructions (i.e., as their processor). If you are an end user of one of our clients’ sites and want to know how our client handles your information, you should check their privacy policy.
+
+<strong>What Personal Information We Collect From You:</strong>Name and contact information including name, email address and telephone number.Company and work related information including job title and work locationComputer or network details (if online).Interactions with us including meetings, email, online chat and telephone correspondence.Billing or purchase information.
+Online behavioural information from Google Analytics e.g. website page views, user-initiated website actions and events, network and device information and information provided to us from contact form or lead generation form submissions on the website.
+Providing us with personal information is not required. If you choose not to supply us with personal information we may not be able to:
+Provide information to you regarding our products or services.Communicate with you about offers and events.Please be aware that if you want to stop Google from tracking your visits to sites which use Google Analytics (and other) products, then you can use the Google Opt-Out Tool.
+
+<strong>How We Collect Your Information:</strong>
+<p>We collect personal information about you in the following ways:</p>
+From internet cookies that are placed on your browser from our online marketing tools.From information provided by you on our contact form or from other lead generation forms that appear on our website.
+From telephone calls via phone numbers shown on our website or elsewhere online, which may result in your call being recorded.
+From emails you send to our domain address e.g. ronan@stormimc.co.nz 
+
+We use a range of internet reporting, analytics and marketing tools that use cookies and other tracking and recording software to track your interactions with our website and online advertising campaigns which include:
+Google Analytics Reporting Tool​ – This software uses cookies and allowing us to analyse your activity and interactions with our website including: how long you were on our website and if you are a new or returning user, what pages and content you viewed e.g. videos you viewed, links you clicked, forms you filled in and items you downloaded.Google AdWords Remarketing and Google Analytics Remarketing Tools​ – These marketing tools enable us to build anonymous lists of website visitors who have been to our website and enable us to serve advertisements to those visitors in search engine results pages and on other websites.
+Google Display Network Impression Reporting​ – This reporting tool enables us to tell if a website visitor has seen one of our Google Display ads and then came back to our website by another means e.g. by coming directly to the website.. This enables us to attribute a website conversion action e.g. a promotional video view or lead generation form submission on our website.
+Google Analytics Demographics and Interest Reporting -​ This reporting tool enables us to analyse demographic information and can allow us to tell your age category, gender, family life stage and interests and what topics and content you have viewed online.
+Call Tracking Metrics – ​This reporting tool enables us to determine which marketing channels you have used to access our website before placing a telephone call to us by displaying different telephone numbers based on your referral channel. This tool also records telephone meta data and records the telephone call.
+Hotjar Website Analytics and Feedback Tool​ – This tool enables us to monitor and record your user sessions and view how you interact with our website. This tool also provides demographic and behavioural reporting that includes what pages you viewed, where you scrolled to and what links you clicked on our website in addition toinformation about your internet connected device and location.
+Website Content Management System –​ Our website stores information that you have submitted to us using our contact form or lead generation forms. This information is stored in our website database which is password protected.Inbound Link Tracking Software and Analytics (UTM) –​ These are inbound links to our website that enable us to determine which marketing channels and campaign advertisements you have clicked on to arrive at our website.
+<strong>Cookies</strong>
+We use cookies.  Cookies are small files that a site or its service provider transfers to your computer’s hard drive through your Web browser (if you allow) that enables the site’s or service provider’s systems to recognize your browser and capture and remember certain information. For instance, we may use cookies to help us remember and process the items in your shopping cart. They are also used to help us understand your preferences based on previous or current site activity, which enables us to provide you with improved services. We also use cookies to help us compile aggregate data about site traffic and site interaction so that we can offer better site experiences and tools in the future.
+
+<strong>We use cookies to:</strong>
+Keep track of advertisements.Compile aggregate data about site traffic and site interactions in order to offer better site experiences and tools in the future. We may also use trusted third-party services that track this information on our behalf.You can choose to have your computer warn you each time a cookie is being sent, or you can choose to turn off all cookies. You do this through your browser settings. Since browser is a little different, look at your browser’s Help Menu to learn the correct way to modify your cookies.
+If you turn cookies off, some of the features that make your site experience more efficient may not function properly.
+<strong>Third-party disclosure</strong>
+We do not sell, trade, or otherwise transfer to outside parties your Personally Identifiable Information unless we provide users with advance notice. This does not include website hosting partners and other parties who assist us in operating our website, conducting our business, or serving our users, so long as those parties agree to keep this information confidential. We may also release information when it’s release is appropriate to comply with the law, enforce our site policies, or protect ours or others’ rights, property or safety. Non-personally identifiable visitor information may be provided to other parties for marketing, advertising, or other uses.
+
+<strong>Third-party links</strong>
+Occasionally, at our discretion, we may include or offer third-party products or services on our website. These third-party sites have separate and independent privacy policies. We therefore have no responsibility or liability for the content and activities of these linked sites. Nonetheless, we seek to protect the integrity of our site and welcome any feedback about these sites.
+
+<strong>Google</strong>
+We, along with third-party vendors such as Google use first-party cookies (such as the Google Analytics cookies) and third-party cookies (such as the DoubleClick cookie) or other third-party identifiers together to compile data regarding user interactions with ad impressions and other ad service functions as they relate to our website.
+
+<strong>Opting out:</strong>
+Users can set preferences for how Google advertises to you using the Google Ad Settings page. Alternatively, you can opt out by visiting the Network Advertising Initiative Opt Out page or by using the Google Analytics Opt Out Browser add on.
+
+Why We Collect Your Information:We collect personal information from you to enable us to:
+Provide you with information, products or services that you have requested.Verify that existing information we hold about you is accurate and complete.Maintain and improve our services and website, train our staff and monitor use of our website and services.Keep you up to date about offers and promotions.Advertise our products and services to you.
+Who We Share Your Information With:Storm IMC will not sell, trade, rent or otherwise share your personal information with third parties where one of the following circumstances does not apply:
+Where we are required to do so by law.With your express consent to do so.
+Where it is requested by your current or former employer and your current or former employer is our customer and your use of our services is in the course of your employment (including login information, communications and other data).With contracted service providers assisting us in the delivery of services e.g. web-development and support partners, website hosting companies, in the process of building and maintaining web applications, affiliated content marketing specialists or other solutions providers.  We may provide such persons with access to personal information needed to perform their functions, based on our instructions and in accordance with appropriate security, privacy and confidentiality measures.
+In the provision of jointly provided services e.g. in some cases we may provide services jointly with other businesses or organisations. For such ‘co-branded’ offerings in which a third party is involved, we may share or jointly collect customer information with that third party. In such cases, we will make it clear at the outset who is collecting or receiving the information and whose privacy statement governs its use.
+Also, in the event that Storm IMC or substantially all of its assets are acquired by a third party, our customer information will be one of the transferred assets. In that case, we will continue to ensure the confidentiality of any personal information.
+
+We may share aggregated, non-personally identifiable information publicly and with our contractors, service providers and other third parties such as marketing, search and research organisations, for example, Google.
+
+Our Data Security:Storm IMC keeps the personal information as you enter it on our website using encryption technology, such as the Secure Socket Layer (SSL) protocol and only allow company employees and contacted service providers to access it in the delivery of our services.
+
+Your Data Choices:You have the right to ask for a copy of any personal information we hold about you, and to ask for it to be corrected if you think it is wrong. If you’d like to ask for a copy of your information, or to have it corrected, please contact us at ronan@stormimc.co.nz, or 0212315600, or 10/6 Omega Street, Albany, Auckland 0632, New Zealand.
+
+Privacy Policy Changes:We may occasionally change our Privacy Policy.   These changes may reflect, among other things, changes in applicable laws or regulations, changes to our data collection practices, and/or changes to our business or services.
+We will post any updated policies on this page and if the changes are significant, we will provide a more prominent notice on our homepage.  You can tell if the privacy policy has been changed by checking the revision date that appears at the top of this policy.
+
+Using our services or website after a notice of the changes has been published on our website shall constitute your consent to the changed terms or practices.  We, therefore, encourage you to review our Privacy Policy periodically for any changes.
+
+Our Privacy Policy link includes the word ‘Privacy’ and can easily be found on the home page of our website www.stormimc.co.nz.
+
+
+
+Last updated: 7 November 2025
+
+         </p>
+      </div>
+    </section>
+
+    <!-- Related Posts Section -->
+    <section class="related-posts">
+      <div class="related-posts__container">
+        <h2 class="related-posts__title" data-animate="fadeInUp">
+          Other posts you might be interested in
+        </h2>
+
+        <!-- Related Posts Grid -->
+        <div
+          class="related-posts__grid"
+          data-animate="fadeInUp"
+          data-animate-delay="200"
+        >
+          <article class="blog-article">
+            <img
+              src="assets/img/blogs/B2.png"
+              alt="Future of AI"
+              class="blog-article__image"
+            />
+            <div class="blog-article__content">
+              <time class="blog-article__date">Jul 08, 2025</time>
+              <h3 class="blog-article__title">
+                Keynote Address on the Future of AI
+              </h3>
+            </div>
+          </article>
+
+          <article class="blog-article">
+            <img
+              src="assets/img/blogs/B3.png"
+              alt="NZ Digital Ad Revenue"
+              class="blog-article__image"
+            />
+            <div class="blog-article__content">
+              <time class="blog-article__date">Jul 07, 2025</time>
+              <h3 class="blog-article__title">
+                NZ Digital Ad Revenue Report for FY 2023 Released
+              </h3>
+            </div>
+          </article>
+
+          <article class="blog-article">
+            <img
+              src="assets/img/blogs/B4.png"
+              alt="ChatGPT Google Analytics"
+              class="blog-article__image"
+            />
+            <div class="blog-article__content">
+              <time class="blog-article__date">Jul 06, 2025</time>
+              <h3 class="blog-article__title">
+                ChatGPT Gets It Wrong 52% Of The Time On Google Analytics 4
+              </h3>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer Spacer - Creates scroll space for curtain reveal effect -->
+    <div class="footer-spacer" id="footer-spacer"></div>
+
+    <section class="footer">
+      <div class="footer__content">
+        <div class="footer__content-logo">
+          <a href="index.html">
+            <img src="assets/img/logo-black.svg" />
+          </a>
+        </div>
+        <div class="footer__content-navigation">
+          <div class="footer__content-navigation__contact">
+            <p class="footer__content-navigation__contact-text">
+              <span class="footer__content-navigation__contact-text__span"
+                >Say hi!</span
+              >
+              <br />
+              <a href="tel:+6492815504" class="footer__contact-link"
+                >+64 9 281 5504</a
+              >
+              <br />
+              <a href="mailto:hello@stormimc.co.nz" class="footer__contact-link"
+                >hello@stormimc.co.nz</a
+              >
+            </p>
+          </div>
+          <div class="footer__content-navigation__address">
+            <p class="footer__content-navigation__contact-text">
+              <span class="footer__content-navigation__contact-text__span"
+                >Where to find us</span
+              >
+              <br />
+              <a
+                href="https://maps.app.goo.gl/cbzWH6k6ANqYBYrM8"
+                target="_blank"
+                class="footer__address-link"
+                >3 Argus Place <br />
+                Auckland</a
+              >
+            </p>
+          </div>
+          <div class="footer__content-navigation__socials">
+            <a href="#" class="footer__content-navigation__social-link"
+              >LinkedIn</a
+            >
+            <a href="#" class="footer__content-navigation__social-link"
+              >Instagram</a
+            >
+            <a href="#" class="footer__content-navigation__social-link"
+              >Facebook</a
+            >
+          </div>
+        </div>
+
+        <!-- Mobile footer content -->
+        <div class="footer__mobile-content">
+          <div class="footer__mobile-contact">
+            Telephone<br />
+            <a href="tel:+6492815504" class="footer__contact-link"
+              >09 281 5504</a
+            ><br />
+            <a href="mailto:hello@stormimc.co.nz" class="footer__contact-link"
+              >hello@stormimc.co.nz</a
+            >
+          </div>
+
+          <div class="footer__mobile-address">
+            Storm IMC Ltd.<br />
+            <a
+              href="https://maps.app.goo.gl/cbzWH6k6ANqYBYrM8"
+              target="_blank"
+              class="footer__address-link"
+              >3 Argus Place<br />
+              Auckland</a
+            >
+          </div>
+
+          <div class="footer__mobile-socials">
+            <a href="#">LinkedIn</a>
+            <a href="#">Instagram</a>
+            <a href="#">Facebook</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="footer__foot">
+        <p>
+          © 2025 Storm IMC Ltd. All rights reserved. Privacy Policy. Terms of
+          Use.
+        </p>
+      </div>
+
+      <!-- Mobile footer bottom -->
+      <div class="footer__mobile-bottom">
+        <p class="footer__mobile-copyright">
+          © 2025 Storm IMC Ltd. <br />
+          All rights reserved.<br />
+          Privacy Policy.
+        </p>
+
+        <div class="footer__mobile-logo">
+          <a href="index.html">
+            <img src="assets/img/logo-black.svg" alt="Storm IMC Logo" />
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- JavaScript Files -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="assets/js/main.js?v=1756835970"></script>
+    <script src="assets/js/header.js?v=1756835970"></script>
+    <script src="assets/js/carousel.js?v=1756835970"></script>
+  </body>
+</html>

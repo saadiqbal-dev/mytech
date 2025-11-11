@@ -63,34 +63,15 @@
   left: 0;
   right: 0;
   bottom: 0;
-  padding: 33px;
+  padding: 36px;
+  padding-bottom: 72px; /* Leave space for plus icon */
   display: flex;
-  flex-direction: column;
   align-items: flex-start;
-  justify-content: space-between;
+  justify-content: flex-start;
   background: inherit;
   transform: translateY(100%);
   transition: transform 0.4s cubic-bezier(0.4, 0, 0.2, 1);
   z-index: 2;
-}
-.capabilities-button {
-  border-radius: 66.667px;
-  border: 1px solid #fff;
-  color: #ffffff;
-  text-align: center;
-  font-family: var(--font-mona-sans);
-  font-size: 16px;
-  font-style: normal;
-  font-weight: 500;
-  line-height: 42.667px; /* 266.667% */
-  text-decoration: none;
-  padding: 0px 25px;
-}
-
-.capabilities-button:hover {
-  background-color: #fff;
-  color: inherit;
-  border: 1px solid #fff;
 }
 
 .services__item-description-text {
@@ -199,6 +180,44 @@
   border: 1px solid #555353;
 }
 
+.services__item-description {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  padding: 33px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: space-between;
+  background: inherit;
+  transform: translateY(100%);
+  transition: transform 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+  z-index: 2;
+}
+.capabilities-button {
+  border-radius: 66.667px;
+  border: 1px solid #fff;
+  color: #ffffff;
+  text-align: center;
+  font-family: var(--font-mona-sans);
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 42.667px; /* 266.667% */
+  text-decoration: none;
+  padding: 0px 25px;
+  display: flex;
+  flex-direction: column;
+}
+
+.capabilities-button:hover {
+  background-color: #fff;
+  color: #555353;
+  border: 1px solid #fff;
+}
+
 /* =============================================================================
    Services Responsive Styles
    ============================================================================= */
@@ -226,9 +245,13 @@
     padding: 24px;
     padding-bottom: 60px; /* Adjusted to account for reduced padding */
   }
+  .services__item-description:hover {
+    padding-bottom: 24px;
+  }
 
   .services__item-title {
     font-size: 18px;
+    line-height: 24px;
     bottom: 18px;
     left: 24px;
     max-width: 250px;
@@ -236,6 +259,7 @@
 
   .services__item-description-text {
     font-size: 16px;
+    line-height: 24px;
   }
 
   .services__icon {
@@ -280,6 +304,10 @@
   .services__item-description {
     padding: 18px;
     padding-bottom: 54px; /* Adjusted to account for reduced padding */
+  }
+
+  .services__item-description:hover {
+    padding-bottom: 0px;
   }
 
   .services__item-title {
