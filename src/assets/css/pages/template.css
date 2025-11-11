@@ -1617,6 +1617,9 @@ a.blog-article-link:hover {
 }
 
 @media (max-width: 768px) {
+  .mt-privacy {
+    margin-top: -50px;
+  }
   .video--full-width {
     height: 220px;
   }
