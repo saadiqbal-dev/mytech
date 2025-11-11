@@ -243,10 +243,7 @@
 
   .services__item-description {
     padding: 24px;
-    padding-bottom: 60px; /* Adjusted to account for reduced padding */
-  }
-  .services__item-description:hover {
-    padding-bottom: 24px;
+    /* padding-bottom: 60px; Adjusted to account for reduced padding */
   }
 
   .services__item-title {
@@ -303,7 +300,7 @@
 
   .services__item-description {
     padding: 18px;
-    padding-bottom: 54px; /* Adjusted to account for reduced padding */
+    /* padding-bottom: 54px; Adjusted to account for reduced padding */
   }
 
   .services__item-description:hover {
@@ -384,7 +381,7 @@
 
   .services__item-description {
     padding: 24px;
-    padding-bottom: 60px;
+    /* padding-bottom: 60px; */
   }
 
   .services__item-title {
