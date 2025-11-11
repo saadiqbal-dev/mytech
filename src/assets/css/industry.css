@@ -141,6 +141,7 @@
   .industry {
     flex-direction: column-reverse;
     width: 100%;
+    padding: 40px 20px;
   }
 
   .industry__main {

@@ -63,15 +63,34 @@
   left: 0;
   right: 0;
   bottom: 0;
-  padding: 36px;
-  padding-bottom: 72px; /* Leave space for plus icon */
+  padding: 33px;
   display: flex;
+  flex-direction: column;
   align-items: flex-start;
-  justify-content: flex-start;
+  justify-content: space-between;
   background: inherit;
   transform: translateY(100%);
   transition: transform 0.4s cubic-bezier(0.4, 0, 0.2, 1);
   z-index: 2;
+}
+.capabilities-button {
+  border-radius: 66.667px;
+  border: 1px solid #fff;
+  color: #ffffff;
+  text-align: center;
+  font-family: var(--font-mona-sans);
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 42.667px; /* 266.667% */
+  text-decoration: none;
+  padding: 0px 25px;
+}
+
+.capabilities-button:hover {
+  background-color: #fff;
+  color: inherit;
+  border: 1px solid #fff;
 }
 
 .services__item-description-text {

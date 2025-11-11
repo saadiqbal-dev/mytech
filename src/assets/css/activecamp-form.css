@@ -4,7 +4,7 @@
 /* Base form styles */
 #_form_3_,
 #_form_3_mobile {
-  font-size: 14px;
+  font-size: 22px;
   line-height: 1.6;
   font-family: arial, helvetica, sans-serif;
   margin: 0;
@@ -71,7 +71,7 @@
   border: 2px solid #979797 !important;
   border-radius: 40px !important;
   color: #000 !important;
-  font-size: 14px;
+  font-size: 22px;
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
   box-sizing: border-box;
@@ -87,7 +87,7 @@
   border: 2px solid #979797 !important;
   border-radius: 40px !important;
   color: #000 !important;
-  font-size: 14px;
+  font-size: 22px;
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
   box-sizing: border-box;
@@ -119,7 +119,7 @@
   -webkit-appearance: none;
   cursor: pointer;
   font-family: arial, sans-serif;
-  font-size: 14px;
+  font-size: 18px;
   text-align: center;
   background: #ff5964 !important;
   border: 0 !important;
@@ -196,7 +196,7 @@
 }
 
 #_form_3_ ._form_element * {
-  font-size: 14px;
+  font-size: 22px;
 }
 
 #_form_3_ ._form_element._clear {
@@ -238,7 +238,7 @@
 #_form_3_ ._error {
   display: block;
   position: absolute;
-  font-size: 14px;
+  font-size: 22px;
   z-index: 10000001;
 }
 
@@ -276,7 +276,7 @@
   background-image: url("data:image/svg+xml,%3Csvg width='16' height='16' viewBox='0 0 16 16' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath fill-rule='evenodd' clip-rule='evenodd' d='M16 8C16 12.4183 12.4183 16 8 16C3.58172 16 0 12.4183 0 8C0 3.58172 3.58172 0 8 0C12.4183 0 16 3.58172 16 8ZM9 3V9H7V3H9ZM9 13V11H7V13H9Z' fill='%23CA0000'/%3E%3C/svg%3E");
   background-repeat: no-repeat;
   background-position: 12px center;
-  font-size: 14px;
+  font-size: 22px;
   font-family: arial, sans-serif;
   font-weight: 600;
   line-height: 16px;
@@ -487,7 +487,7 @@
   float: left;
   text-align: left;
   margin-bottom: 10px;
-  font-size: 14px;
+  font-size: 22px;
   color: #7d8799;
 }
 

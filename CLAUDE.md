@@ -66,10 +66,16 @@ The `vercel.json` is configured with:
 ## File Structure Notes
 
 - **src/index.html**: Main entry point with all sections inline
-- **src/assets/css/**: 17 modular CSS files organized by component
-- **src/assets/js/**: main.js (application logic), carousel.js, google-animation.js
+- **src/*.html**: Multiple pages (about, blogs, capabilities, case-studies, contact, pit-stop, search-engine-optimization, work)
+- **src/assets/css/**: 16 modular CSS files organized by component
+  - activecamp-form.css, base.css, company.css, fonts.css, footer.css, google-animation.css, header.css, hero.css, industry.css, join.css, partners.css, responsive-768.css, services.css, testimonials.css, utilities.css
+  - pages/ subdirectory for page-specific styles
+- **src/assets/js/**: 6 JavaScript files
+  - main.js (core application logic with StormApp namespace)
+  - header.js, carousel.js, google-animation.js, map.js, activecamp-form.js
 - **src/assets/img/**: Images should be in WebP format where possible
 - **src/assets/fonts/**: Custom Peachi font files (woff2)
+- **src/blogs/**: Blog post HTML files
 
 ## Mobile Responsiveness
 
@@ -85,3 +91,14 @@ The `vercel.json` is configured with:
 4. **Forms** include real-time validation and loading states (ready for AJAX)
 5. **Accessibility features** include skip links, ARIA labels, keyboard navigation support
 6. **Cache busting** uses PHP timestamps in development, update-cache.sh for deployment
+7. **ActiveCampaign integration** for form submissions (activecamp-form.js/css)
+8. **Google Maps integration** via map.js
+9. **Separate header.js** handles navigation-specific interactions
+
+## Multi-Page Site Structure
+
+This is a multi-page static site with shared components:
+- Each HTML page loads the same CSS/JS files for consistency
+- Common elements (header, footer) are duplicated across pages
+- When converting to Laravel Blade, these should become partials/components
+- Pages follow consistent naming: lowercase with hyphens (e.g., search-engine-optimization.html)
