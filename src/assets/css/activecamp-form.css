@@ -118,7 +118,6 @@
 ._form_3mobile ._submit {
   -webkit-appearance: none;
   cursor: pointer !important;
-  font-family: arial, sans-serif !important;
   font-size: 18px !important;
   text-align: center !important;
   background: #ff5964 !important;
@@ -127,9 +126,14 @@
   -webkit-border-radius: 40px !important;
   border-radius: 40px !important;
   color: #ffffff !important;
-  padding: 15px 40px !important;
-  width: fit-content !important;
-  height: 60px !important;
+  padding: 11px 25px !important;
+  width: 175px !important;
+  height: 50px !important;
+  flex-shrink: 0;
+  font-family: var(--font-mona-sans) !important;
+  font-style: normal !important;
+  font-weight: 500 !important;
+  line-height: 42.667px !important; /* 237.037% */
 }
 
 ._form_3 ._submit:disabled,
@@ -154,7 +158,8 @@
   left: 50%;
   border: double 3px transparent;
   border-radius: 50%;
-  background-image: linear-gradient(#ff5964, #ff5964), conic-gradient(#ff5964, #ffffff);
+  background-image: linear-gradient(#ff5964, #ff5964),
+    conic-gradient(#ff5964, #ffffff);
   background-origin: border-box;
   background-clip: content-box, border-box;
   animation: 1200ms ease 0s infinite normal none running _spin;
