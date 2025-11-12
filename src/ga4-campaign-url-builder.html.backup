@@ -1,0 +1,1157 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- Google Tag Manager -->
+    <script>
+      (function (w, d, s, l, i) {
+        w[l] = w[l] || [];
+        w[l].push({ "gtm.start": new Date().getTime(), event: "gtm.js" });
+        var f = d.getElementsByTagName(s)[0],
+          j = d.createElement(s),
+          dl = l != "dataLayer" ? "&l=" + l : "";
+        j.async = true;
+        j.src = "https://www.googletagmanager.com/gtm.js?id=GTM-NVXLMK89";
+        f.parentNode.insertBefore(j, f);
+      })(window, document, "script", "dataLayer", "GTM-NVXLMK89");
+    </script>
+    <!-- End Google Tag Manager -->
+
+    <!-- Active Campaign Tracking Script -->
+    <script type="text/javascript">
+      (function (e, t, o, n, p, r, i) {
+        e.visitorGlobalObjectAlias = n;
+        e[e.visitorGlobalObjectAlias] =
+          e[e.visitorGlobalObjectAlias] ||
+          function () {
+            (e[e.visitorGlobalObjectAlias].q =
+              e[e.visitorGlobalObjectAlias].q || []).push(arguments);
+          };
+        e[e.visitorGlobalObjectAlias].l = new Date().getTime();
+        r = t.createElement("script");
+        r.src = o;
+        r.async = true;
+        i = t.getElementsByTagName("script")[0];
+        i.parentNode.insertBefore(r, i);
+      })(
+        window,
+        document,
+        "https://diffuser-cdn.app-us1.com/diffuser/diffuser.js",
+        "vgo"
+      );
+      vgo("setAccount", "254218719");
+      vgo("setTrackByDefault", true);
+
+      vgo("process");
+    </script>
+    <!-- Active Campaign Tracking Script -->
+
+    <!-- Required meta tags -->
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+    <meta
+      name="description"
+      content="Track Your Campaigns and Links With Our Free Google Analytics 4 UTM Link Builder Tool - Add Parameters to URLs And Measure Your Campaigns"
+    />
+    <meta
+      name="csrf-token"
+      content="4FcbJepcAHoz424JFcSkwLKnqnhDYYN1hb4x5V73"
+    />
+
+    <title>GA4 Campaign UTM Link Builder</title>
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600;1,700&family=Quicksand:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+      media="all"
+    />
+
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="/themes/stormimc/img/webp/favicons/apple-touch-icon.webp"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="/themes/stormimc/img/webp/favicons/favicon-32x32.webp"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="/themes/stormimc/img/webp/favicons/favicon-16x16.webp"
+    />
+    <link
+      rel="manifest"
+      href="/themes/stormimc/img/favicons/site.webmanifest"
+    />
+
+    <link
+      rel="stylesheet"
+      media="all"
+      href="/themes/stormimc/css/app.min.css?id=a11285f89ef782aace50"
+    />
+
+    <style>
+      .custom-div-css-removed {
+      }
+      .service-section.service-2 {
+        background: none !important;
+      }
+    </style>
+
+    <link
+      rel="canonical"
+      href="https://www.stormimc.co.nz/ga4-campaign-url-builder"
+    />
+  </head>
+
+  <body class="campaign">
+    <!-- Google Tag Manager (noscript) -->
+    <noscript
+      ><iframe
+        src="https://www.googletagmanager.com/ns.html?id=GTM-NVXLMK89"
+        height="0"
+        width="0"
+        style="display: none; visibility: hidden"
+      ></iframe
+    ></noscript>
+    <!-- End Google Tag Manager (noscript) -->
+
+    <header class="section-1 sticky-header transparent-header">
+      <div class="container-fluid">
+        <nav class="navbar navbar-expand-lg navbar-light px-0">
+          <a class="navbar-brand" href="/">
+            <picture>
+              <source
+                srcset="
+                  /themes/stormimc/img/webp/logo-new-black-logo.webp    1x,
+                  /themes/stormimc/img/webp/logo-new-black-logo-2x.webp 2x
+                "
+              />
+              <img
+                src="/themes/stormimc/img/webp/logo-new-black-logo.webp"
+                alt="Storm"
+                class="logo logo-sticky"
+              />
+            </picture>
+            <picture>
+              <source
+                srcset="
+                  /themes/stormimc/img/webp/logo-new-white-logo.webp    1x,
+                  /themes/stormimc/img/webp/logo-new-white-logo-2x.webp 2x
+                "
+              />
+              <img
+                src="/themes/stormimc/img/webp/logo-new-white-logo.webp"
+                alt="Storm"
+                class="logo"
+              />
+            </picture>
+          </a>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-toggle="collapse"
+            data-target="#navbarMain"
+            aria-controls="navbarMain"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarMain">
+            <ul class="navbar-nav ml-auto">
+              <li class="nav-item active">
+                <a
+                  class="nav-link position-relative"
+                  href="https://www.stormimc.co.nz/about-us"
+                  >ABOUT</a
+                >
+              </li>
+
+              <li class="nav-item dropdown">
+                <a
+                  class="nav-link dropdown-toggle position-relative"
+                  href="https://www.stormimc.co.nz/services"
+                  >CAPABILITIES</a
+                >
+
+                <div class="dropdown-menu mega-dropdown-menu">
+                  <div class="container">
+                    <div class="row">
+                      <div class="col-md-6">
+                        <h4 class="dropdown-title">
+                          <a
+                            href="https://www.stormimc.co.nz/services#digital-marketing-and-media-services"
+                            >DIGITAL MARKETING</a
+                          >
+                        </h4>
+                        <ul class="nav row">
+                          <li class="nav-item col-sm-6">
+                            <a href="https://www.stormimc.co.nz/google-ads"
+                              >Google Ads (SEM)</a
+                            >
+                          </li>
+                          <li class="nav-item col-sm-6">
+                            <a
+                              href="https://www.stormimc.co.nz/digital-strategy-planning"
+                              >Digital Strategy &amp; Planning</a
+                            >
+                          </li>
+                          <li class="nav-item col-sm-6">
+                            <a
+                              href="https://www.stormimc.co.nz/search-engine-optimisation"
+                              >Search Engine Optimisation (SEO)</a
+                            >
+                          </li>
+                          <li class="nav-item col-sm-6">
+                            <a
+                              href="https://www.stormimc.co.nz/social-media-marketing"
+                              >Social Media</a
+                            >
+                          </li>
+                          <li class="nav-item col-sm-6">
+                            <a
+                              href="https://www.stormimc.co.nz/marketing-automation"
+                              >Marketing Automation</a
+                            >
+                          </li>
+                          <li class="nav-item col-sm-6">
+                            <a
+                              href="https://www.stormimc.co.nz/data-and-analytics"
+                              >Data &amp; Analytics</a
+                            >
+                          </li>
+                          <li class="nav-item col-sm-6">
+                            <a
+                              href="https://www.stormimc.co.nz/google-business-profile"
+                              >Google My Business</a
+                            >
+                          </li>
+                        </ul>
+                      </div>
+
+                      <div class="col-md-6">
+                        <h4 class="dropdown-title">
+                          <a
+                            href="https://www.stormimc.co.nz/services#creative-content-production"
+                            >CREATIVE CONTENT PRODUCTION</a
+                          >
+                        </h4>
+                        <ul class="nav row">
+                          <li class="nav-item col-sm-6">
+                            <a
+                              href="https://www.stormimc.co.nz/website-design-and-development"
+                              >Website Development</a
+                            >
+                          </li>
+                          <li class="nav-item col-sm-6">
+                            <a
+                              href="https://www.stormimc.co.nz/video-production"
+                              >Video Production</a
+                            >
+                          </li>
+                          <li class="nav-item col-sm-6">
+                            <a
+                              href="https://www.stormimc.co.nz/content-marketing"
+                              >Content Marketing</a
+                            >
+                          </li>
+                          <li class="nav-item col-sm-6">
+                            <a
+                              href="https://www.stormimc.co.nz/landing-page-development"
+                              >Landing Page Optimisation</a
+                            >
+                          </li>
+                          <li class="nav-item col-sm-6">
+                            <a href="https://www.stormimc.co.nz/email-marketing"
+                              >Email Marketing</a
+                            >
+                          </li>
+                          <li class="nav-item col-sm-6">
+                            <a
+                              href="https://www.stormimc.co.nz/display-production"
+                              >Display Production</a
+                            >
+                          </li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </li>
+
+              <li class="nav-item dropdown position-relative">
+                <a
+                  class="nav-link dropdown-toggle position-relative"
+                  role=""
+                  data-toggle="dropdown"
+                  aria-expanded="false"
+                  href="https://www.stormimc.co.nz/work"
+                  >WORK</a
+                >
+
+                <div class="dropdown-menu simple-dropdown-menu">
+                  <a
+                    class="dropdown-item"
+                    href="https://www.stormimc.co.nz/work"
+                    >Work</a
+                  >
+                  <a
+                    class="dropdown-item"
+                    href="https://www.stormimc.co.nz/casestudies"
+                    >Casestudies</a
+                  >
+                  <a class="dropdown-item" href="https://stormstudio.co.nz/"
+                    >Storm Studio</a
+                  >
+                </div>
+              </li>
+
+              <li class="nav-item dropdown position-relative">
+                <a
+                  class="nav-link dropdown-toggle position-relative"
+                  role=""
+                  data-toggle="dropdown"
+                  aria-expanded="false"
+                  href="https://www.stormimc.co.nz/tools"
+                  >TOOLS</a
+                >
+
+                <div class="dropdown-menu simple-dropdown-menu">
+                  <a
+                    class="dropdown-item"
+                    href="https://www.stormimc.co.nz/ga4-campaign-url-builder"
+                    >GA4 UTM LINK BUILDER</a
+                  >
+                </div>
+              </li>
+
+              <li class="nav-item active">
+                <a
+                  class="nav-link position-relative"
+                  href="https://www.stormimc.co.nz/news"
+                  >BLOG</a
+                >
+              </li>
+
+              <li class="nav-item active">
+                <a
+                  class="nav-link position-relative"
+                  href="https://www.stormimc.co.nz/ga4-campaign-url-builder"
+                  >GA4 LINK BUILDER</a
+                >
+              </li>
+
+              <li class="nav-item active">
+                <a
+                  class="nav-link position-relative"
+                  href="https://www.stormimc.co.nz/contact"
+                  >CONTACT</a
+                >
+              </li>
+            </ul>
+
+            <ul class="list-inline social-links">
+              <li class="list-inline-item">
+                <a
+                  aria-label="Follow us on social media"
+                  class="social-icon rounded-circle d-inline-block px-0"
+                  href="https://www.facebook.com/stormimcnz"
+                  target="_blank"
+                >
+                  <i class="icon-facebook" aria-hidden="true"></i>
+                </a>
+              </li>
+              <li class="list-inline-item">
+                <a
+                  aria-label="Follow us on social media"
+                  class="social-icon rounded-circle d-inline-block px-0"
+                  href="https://www.linkedin.com/company/storm-imc"
+                  target="_blank"
+                >
+                  <i class="icon-linkedin" aria-hidden="true"></i>
+                </a>
+              </li>
+              <li class="list-inline-item">
+                <a
+                  aria-label="Follow us on social media"
+                  class="social-icon rounded-circle d-inline-block px-0"
+                  href="https://www.instagram.com/stormimc/"
+                  target="_blank"
+                >
+                  <i class="icon-instagram" aria-hidden="true"></i>
+                </a>
+              </li>
+            </ul>
+          </div>
+        </nav>
+      </div>
+
+      <div class="mobile-notification d-flex d-sm-none">
+        <div class="col-sm-12 text-center">
+          <a class="phone-link d-block" href="tel:092815504"
+            ><span class="contact-ico phone-icon"></span
+            ><span class="contact-txt">09 281 5504</span></a
+          >
+        </div>
+      </div>
+    </header>
+
+    <main class="service-category">
+      <section animateItem class="services-section services-1 template-header">
+        <div class="container vertical-align position-relative">
+          <h1>Google Analytics 4&nbsp;</h1>
+
+          <h1>UTM&nbsp;Link Builder</h1>
+        </div>
+      </section>
+
+      <section class="service-section service-2 bg-none">
+        <div class="container container-full mobile-ordered">
+          <div class="row align-items-center">
+            <div class="col-sm-6 order-1 order-lg-1 pb-4 pb-sm-0">
+              <h2>
+                This tool allows you to easily add campaign parameters to URLs
+                so you can measure Custom Campaigns in Google Analytics.
+              </h2>
+
+              <p>
+                Fill out the required fields (marked with *) in the form below,
+                and once complete the full campaign URL will be generated for
+                you.
+              </p>
+              <p>
+                <small
+                  >Note: the generated URL is automatically updated as you make
+                  changes.</small
+                >
+              </p>
+            </div>
+
+            <div class="col-sm-6 order-2 order-lg-2">
+              <p class="text-center">
+                <img
+                  class="w-auto"
+                  alt="Laptop Showing Google Analytics Tracking Data"
+                  src="/themes/stormimc/img/webp/device.webp"
+                />
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="service-section service-2 bg-none pt-4 pt-md-5">
+        <div class="container container-full mobile-ordered">
+          <div class="row">
+            <div class="col-lg-5 col-xl-6 order-1 order-lg-1 pr-lg-3 pr-xl-5">
+              <form id="campaign-builder" class="mb-5 mb-lg-0 pb-3 pb-lg-0">
+                <div class="form-group">
+                  <input
+                    id="campaign_url"
+                    type="text"
+                    class="form-control fs-16"
+                    placeholder="Landing Page URL *"
+                  />
+                  <small class="form-text text-muted"
+                    >The full website URL (e.g.
+                    https://www.example.com/landing-page-1)</small
+                  >
+                </div>
+
+                <div class="form-group">
+                  <input
+                    id="utm_medium"
+                    type="text"
+                    placeholder="Campaign Medium *"
+                    class="form-control fs-16"
+                  />
+                  <small class="form-text text-muted"
+                    >Marketing Medium (e.g banner, email, social, affiliate, cpc
+                    etc)</small
+                  >
+                </div>
+
+                <div class="form-group">
+                  <input
+                    id="utm_source"
+                    type="text"
+                    placeholder="Campaign Source *"
+                    class="form-control fs-16"
+                  />
+                  <small class="form-text text-muted"
+                    >The referring source (e.g. facebook, linkedin, instagram,
+                    newsletter, google etc )</small
+                  >
+                </div>
+
+                <div class="form-group">
+                  <input
+                    id="utm_campaign"
+                    type="text"
+                    placeholder="Campaign Name (Optional)"
+                    class="form-control fs-16"
+                  />
+                  <small class="form-text text-muted"
+                    >Product, promo code, or slogan (e.g. spring_sale)</small
+                  >
+                </div>
+
+                <div class="form-group">
+                  <input
+                    id="utm_content"
+                    type="text"
+                    placeholder="Campaign Content (Optional)"
+                    class="form-control fs-16"
+                  />
+                  <small class="form-text text-muted"
+                    >Use to differentiate ads</small
+                  >
+                </div>
+
+                <div class="form-group">
+                  <input
+                    id="utm_term"
+                    placeholder="Campaign Term (Optional)"
+                    type="text"
+                    class="form-control fs-16"
+                  />
+                  <small class="form-text text-muted"
+                    >Identify the paid keywords</small
+                  >
+                </div>
+
+                <div class="form-group">
+                  <input
+                    id="utm_id"
+                    placeholder="Campaign ID (Optional)"
+                    type="text"
+                    class="form-control fs-16"
+                  />
+                  <small class="form-text text-muted"
+                    >The ads campaign id</small
+                  >
+                </div>
+                <div class="text-left">
+                  <h3>Share the generated campaign URL</h3>
+                  <p>
+                    Use this URL in any promotional channels you want to be
+                    associated with this custom campaign.
+                  </p>
+                </div>
+                <div class="form-group campaign-results position-relative">
+                  <label for="campaign-result-url" class="textarea-label"
+                    >Generated URL</label
+                  >
+                  <textarea
+                    id="campaign-result-url"
+                    rows="3"
+                    readonly="readonly"
+                    class="form-control fs-16"
+                  ></textarea>
+                </div>
+
+                <div class="form-group">
+                  <button class="btn btn-red campaign-copy">
+                    <span
+                      ><img
+                        src="/themes/stormimc/img/webp/copy-white.webp"
+                        width="15"
+                        height=""
+                        alt=""
+                      />
+                      <i>COPY URL</i></span
+                    >
+                  </button>
+                  <small
+                    class="form-text text-danger campaign-copy-status"
+                  ></small>
+                </div>
+              </form>
+            </div>
+
+            <div class="col-lg-7 col-xl-6 order-2 order-lg-2 overflow-visible">
+              <div class="position-relative grey-column">
+                <div class="column-label"><span>Need some help?</span></div>
+                <div class="fs-18 text-left">
+                  <p>
+                    <strong
+                      >More information and examples for each parameter</strong
+                    ><br />
+                    The following table gives a detailed explanation and example
+                    of each of the campaign parameters:
+                  </p>
+                </div>
+                <table
+                  id="resp-table"
+                  class="table table-borderless responsive-table fs-14"
+                >
+                  <tr>
+                    <td><strong>Parameter</strong></td>
+                    <td class="text-lg-center"><strong>Required</strong></td>
+                    <td class="text-lg-center"><strong>Example</strong></td>
+                    <td><strong>Description</strong></td>
+                  </tr>
+                  <tr>
+                    <td data-title="Parameter">
+                      <strong>Campaign Medium</strong><br /><span class="label"
+                        >utm_medium</span
+                      >
+                    </td>
+                    <td data-title="Required" class="text-lg-center">
+                      <strong>Yes</strong>
+                    </td>
+                    <td data-title="Example" class="text-lg-center full-label">
+                      <span class="label">social</span>
+                    </td>
+                    <td data-title="Description">
+                      Use <span class="label">utm_medium</span> to identify a
+                      medium such as email or cost-per-click.
+                    </td>
+                  </tr>
+                  <tr>
+                    <td data-title="Parameter">
+                      <strong>Campaign Source</strong><br /><span class="label"
+                        >utm_source</span
+                      >
+                    </td>
+                    <td data-title="Required" class="text-lg-center">
+                      <strong>Yes</strong>
+                    </td>
+                    <td data-title="Example" class="text-lg-center full-label">
+                      <span class="label">facebook</span>
+                    </td>
+                    <td data-title="Description">
+                      Use <span class="label">utm_source</span> to identify a
+                      search engine, newsletter name, or other source.
+                    </td>
+                  </tr>
+                  <tr>
+                    <td data-title="Parameter">
+                      <strong>Campaign Name</strong><br /><span class="label"
+                        >utm_campaign</span
+                      >
+                    </td>
+                    <td data-title="Required" class="text-lg-center">
+                      <strong>No</strong>
+                    </td>
+                    <td data-title="Example" class="text-lg-center full-label">
+                      <span class="label">flash_sale</span>
+                    </td>
+                    <td data-title="Description">
+                      Used for keyword analysis. Use
+                      <span class="label">utm_campaign</span> to identify a
+                      specific product promotion or strategic campaign.
+                    </td>
+                  </tr>
+                  <tr>
+                    <td data-title="Parameter">
+                      <strong>Campaign Term</strong><br /><span class="label"
+                        >utm_term</span
+                      >
+                    </td>
+                    <td data-title="Required" class="text-lg-center">
+                      <strong>No</strong>
+                    </td>
+                    <td data-title="Example" class="text-lg-center full-label">
+                      <span class="label">acme+widget</span>
+                    </td>
+                    <td data-title="Description">
+                      Used for paid search. Use<span>utm_term</span> to note the
+                      keywords for this ad.
+                    </td>
+                  </tr>
+                  <tr>
+                    <td data-title="Parameter">
+                      <strong>Campaign Content</strong><br /><span class="label"
+                        >utm_content</span
+                      >
+                    </td>
+                    <td data-title="Required" class="text-lg-center">
+                      <strong>No</strong>
+                    </td>
+                    <td data-title="Example" class="text-lg-center full-label">
+                      <span class="label">logolink</span>
+                    </td>
+                    <td data-title="Description">
+                      Used for A/B testing and content-targeted ads. Use
+                      <span class="label">utm_content</span> to differentiate
+                      ads or links that point to the same URL.
+                    </td>
+                  </tr>
+                  <tr>
+                    <td data-title="Parameter">
+                      <strong>Campaign ID</strong><br /><span class="label"
+                        >utm_id</span
+                      >
+                    </td>
+                    <td data-title="Required" class="text-lg-center">
+                      <strong>No</strong>
+                    </td>
+                    <td data-title="Example" class="text-lg-center full-label">
+                      <span class="label">xyc.321</span>
+                    </td>
+                    <td data-title="Description">
+                      Used to identify which ads campaign this referral
+                      references. Use <span class="label">utm_id</span> to
+                      identify a specific ads campaign.
+                    </td>
+                  </tr>
+                </table>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section
+        class="service-section service-2 bg-none mb-5 mt-5 mt-sm-0 overflow-visible"
+      >
+        <div
+          class="container container-full mobile-ordered position-relative grey-row"
+        >
+          <div class="row align-items-center">
+            <div class="block-label w-mobile w-50">
+              <div class="w-mobile w-75"><span>Watch & Learn Here</span></div>
+            </div>
+            <div
+              class="col-lg-6 order-1 order-lg-1 justify-content-center d-flex pt-4 pb-5 pt-sm-5 pb-sm-5 pt-lg-0 pb-lg-0"
+            >
+              <div class="w-mobile w-75 text-left block-content">
+                <h2>
+                  Creating Custom GA4 Reports to Measure UTM Link Performance
+                </h2>
+                <p>
+                  Check out this video on how to create and access reports using
+                  Google Analytics 4 to
+                  <strong
+                    >review the performance of your UTM tracking links.</strong
+                  >
+                </p>
+              </div>
+            </div>
+
+            <div class="col-lg-6 order-2 order-lg-2">
+              <iframe
+                width="560"
+                height="315"
+                src="https://www.youtube.com/embed/Fl5OcKM22Ro"
+                title="YouTube video player"
+                frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                allowfullscreen
+              ></iframe>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer animateItem class="section-3">
+      <section
+        class="section-31 position-relative lazy-background"
+        data-src-desktop="/themes/stormimc/img/webp/bg-footer-2.webp"
+        data-src-tablet="/themes/stormimc/img/webp/bg-footer-2.webp"
+        data-src-mobile="/themes/stormimc/img/webp/bg-footer-2.webp"
+      >
+        <div class="container footer-content">
+          <h5 class="title">
+            Join Us For A&nbsp;Free Digital Strategy Session &amp; Fresh Coffee
+          </h5>
+
+          <p>
+            <a
+              class="btn btn-red"
+              href="https://calendly.com/storm-digital/30min"
+              target="_blank"
+              >BOOK NOW</a
+            >
+          </p>
+        </div>
+      </section>
+
+      <section class="section-32 lazy-background">
+        <div class="inner-container newsletter-form">
+          <div class="row">
+            <div class="col-md-6 order-md-2">
+              <h5 class="h5">Sign up for News, Alerts & Updates</h5>
+
+              <form
+                class="newsletter-form"
+                action="/subscribers/1/subscribe"
+                method="POST"
+              >
+                <input
+                  type="hidden"
+                  name="_token"
+                  value="4FcbJepcAHoz424JFcSkwLKnqnhDYYN1hb4x5V73"
+                  autocomplete="off"
+                />
+                <div class="alert d-none" role="alert"></div>
+
+                <input
+                  type="hidden"
+                  class="form-control"
+                  id="name"
+                  name="name"
+                />
+
+                <div class="row">
+                  <div class="col-md-6">
+                    <div class="form-group position-relative">
+                      <input
+                        type="text"
+                        class="form-control"
+                        id="first_name"
+                        name="first_name"
+                        placeholder="First Name"
+                      />
+                      <label
+                        for="first_name"
+                        class="d-lg-none position-absolute"
+                        >First Name</label
+                      >
+                    </div>
+                  </div>
+                  <div class="col-md-6">
+                    <div class="form-group position-relative">
+                      <input
+                        type="text"
+                        class="form-control"
+                        id="last_name"
+                        name="last_name"
+                        placeholder="Last Name"
+                      />
+                      <label for="last_name" class="d-lg-none position-absolute"
+                        >Last Name</label
+                      >
+                    </div>
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="col-md-12">
+                    <div class="form-group position-relative">
+                      <input
+                        type="email"
+                        class="form-control"
+                        id="email"
+                        name="email"
+                        placeholder="E-mail Address*"
+                      />
+                      <label for="email" class="d-lg-none position-absolute"
+                        >E-mail Address</label
+                      >
+                    </div>
+                  </div>
+                </div>
+
+                <div class="row">
+                  <div class="col-md-12">
+                    <button type="submit" class="btn btn-red w-100">
+                      <span>SIGN UP</span>
+                    </button>
+                  </div>
+                </div>
+              </form>
+            </div>
+            <div class="col-md-6 order-md-1">
+              <h5 class="h5">Contact Us</h5>
+              <ul class="contact-info">
+                <li>
+                  <a class="phone-link d-block" href="tel:092815504"
+                    ><span
+                      class="contact-ico phone-icon lazy-background"
+                      data-src-desktop="/themes/stormimc/img/webp/address-icons.webp"
+                      data-src-tablet="/themes/stormimc/img/webp/address-icons.webp"
+                      data-src-mobile="/themes/stormimc/img/webp/address-icons.webp"
+                    ></span
+                    ><span class="contact-txt">09 281 5504</span></a
+                  >
+                </li>
+                <li>
+                  <a
+                    class="email-link d-block"
+                    href="mailto:hello@stormimc.co.nz"
+                    target="_blank"
+                    ><span
+                      class="contact-ico email-icon lazy-background"
+                      data-src-desktop="/themes/stormimc/img/webp/address-icons.webp"
+                      data-src-tablet="/themes/stormimc/img/webp/address-icons.webp"
+                      data-src-mobile="/themes/stormimc/img/webp/address-icons.webp"
+                    ></span
+                    ><span class="contact-txt">hello@stormimc.co.nz</span></a
+                  >
+                </li>
+                <li>
+                  <a
+                    class="location-link d-block"
+                    target="_blank"
+                    href="https://www.google.com/maps/place/Storm+IMC/@-36.7857,174.739392,17z/data=!4m6!3m5!1s0x6d0d38ff05df6e47:0xbea2bcdd49bd8075!8m2!3d-36.7857043!4d174.741586!16s%2Fg%2F11b5wn13bd"
+                    ><span
+                      class="contact-ico pin-icon lazy-background"
+                      data-src-desktop="/themes/stormimc/img/webp/address-icons.webp"
+                      data-src-tablet="/themes/stormimc/img/webp/address-icons.webp"
+                      data-src-mobile="/themes/stormimc/img/webp/address-icons.webp"
+                    ></span
+                    ><span class="contact-txt"
+                      ><p>
+                        <strong>STORM IMC</strong><br />
+                        3 Argus Place, Hillcrest<br />
+                        Auckland, 0627
+                      </p></span
+                    ></a
+                  >
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="section-33">
+        <div class="container">
+          <div class="row">
+            <div class="col-sm-12">
+              <h5 class="h5">Follow Us On Social Media</h5>
+
+              <ul class="list-inline social-links-btm">
+                <li class="list-inline-item">
+                  <a
+                    aria-label="Follow us on social media"
+                    class="social-icon rounded-circle d-inline-block px-0"
+                    href="https://www.facebook.com/stormimcnz"
+                    target="_blank"
+                  >
+                    <i class="icon-facebook" aria-hidden="true"></i>
+                  </a>
+                </li>
+                <li class="list-inline-item">
+                  <a
+                    aria-label="Follow us on social media"
+                    class="social-icon rounded-circle d-inline-block px-0"
+                    href="https://www.linkedin.com/company/storm-imc"
+                    target="_blank"
+                  >
+                    <i class="icon-linkedin" aria-hidden="true"></i>
+                  </a>
+                </li>
+                <li class="list-inline-item">
+                  <a
+                    aria-label="Follow us on social media"
+                    class="social-icon rounded-circle d-inline-block px-0"
+                    href="https://www.instagram.com/stormimc/"
+                    target="_blank"
+                  >
+                    <i class="icon-instagram" aria-hidden="true"></i>
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="section-34">
+        <div class="container">
+          <div class="row">
+            <div class="col-sm-12">
+              <p class="copyright">
+                &copy; 2025 Storm IMC. All Rights Reserved
+              </p>
+
+              <ul class="list-inline menu">
+                <li class="list-inline-item">
+                  <a href="/privacy-policy">Privacy Policy</a>
+                </li>
+                <li class="list-inline-item">
+                  <a href="/privacy-policy">Terms of Use</a>
+                </li>
+              </ul>
+              <p><b>Designed & Developed By Storm IMC</b></p>
+            </div>
+          </div>
+        </div>
+      </section>
+    </footer>
+
+    <script
+      type="text/javascript"
+      src="/themes/stormimc/js/app.min.js?id=cc8bd44b39499969cbfb"
+    ></script>
+
+    <script type="text/javascript">
+      $(document).ready(function () {
+        var resultURL = "";
+        var params = {};
+        var hasValidURL = false;
+        var hasCampaignSource = false;
+
+        var formatUrl = function () {
+          $.each(params, function (key, val) {
+            if (key == "campaign_url") {
+              var validURL =
+                /(ftp|http|https):\/\/(\w+:{0,1}\w*@)?(\S+)(:[0-9]+)?(\/|\/([\w#!:.?+=&%@!\-\/]))?/.test(
+                  val
+                );
+              if (validURL) {
+                hasValidURL = true;
+              } else {
+                hasValidURL = false;
+              }
+
+              console.log(hasValidURL);
+            }
+
+            if (key == "utm_source" && val != "") {
+              hasCampaignSource = true;
+            }
+
+            if (hasValidURL && hasCampaignSource) {
+              resultURL = params["campaign_url"];
+
+              if (resultURL.split("/").length <= 3) {
+                if (resultURL.substr(resultURL.length - 1) != "/") {
+                  resultURL += "/";
+                }
+              }
+
+              if (resultURL.indexOf("?") == -1) {
+                resultURL += "?";
+              }
+
+              if (params["utm_source"].length > 0) {
+                resultURL +=
+                  "utm_source=" + params["utm_source"].replace(/ /g, "+");
+              }
+
+              if (
+                params["utm_medium"] != undefined &&
+                params["utm_medium"].length > 0
+              ) {
+                resultURL +=
+                  "&utm_medium=" + params["utm_medium"].replace(/ /g, "+");
+              }
+
+              if (
+                params["utm_campaign"] != undefined &&
+                params["utm_campaign"].length > 0
+              ) {
+                resultURL +=
+                  "&utm_campaign=" + params["utm_campaign"].replace(/ /g, "+");
+              }
+
+              if (
+                params["utm_term"] != undefined &&
+                params["utm_term"].length > 0
+              ) {
+                resultURL +=
+                  "&utm_term=" + params["utm_term"].replace(/ /g, "+");
+              }
+
+              if (
+                params["utm_id"] != undefined &&
+                params["utm_id"].length > 0
+              ) {
+                resultURL += "&utm_id=" + params["utm_id"].replace(/ /g, "+");
+              }
+
+              if (
+                params["utm_content"] != undefined &&
+                params["utm_content"].length > 0
+              ) {
+                resultURL +=
+                  "&utm_content=" + params["utm_content"].replace(/ /g, "+");
+              }
+
+              // Encode special chars
+              resultURL = encodeURI(resultURL);
+              console.log(resultURL);
+              $("#campaign-result-url").val(resultURL);
+              $(".campaign-copy").show();
+              $(".campaign-copy-status").text("");
+            } else if (!hasValidURL) {
+              $(".campaign-copy-status").text(
+                "Invalid URL, please provide url with protocol. e.g  https://www.example.com/landing-page-1"
+              );
+              $("#campaign-result-url").val("");
+              $(".campaign-copy").hide();
+            }
+          });
+        };
+
+        $("#campaign-builder input, #campaign-builder textarea").each(function (
+          index
+        ) {
+          $(this).keyup(function () {
+            var key = $(this).attr("id");
+            var val = $(this).val();
+
+            params[key] = val;
+
+            formatUrl();
+          });
+
+          var key = $(this).attr("id");
+          var val = $(this).val();
+          params[key] = val;
+
+          formatUrl();
+        });
+
+        $("#campaign-builder").submit(function () {
+          copyText();
+          return false;
+        });
+
+        $("#campaign-result-url").on("click", function () {
+          copyText();
+          return false;
+        });
+
+        function copyText() {
+          var text = $("#campaign-result-url").val();
+          navigator.clipboard.writeText(text).then(
+            function () {
+              $(".campaign-copy-status")
+                .addClass("text-success")
+                .removeClass("text-danger")
+                .text("Copied to clipboard!");
+
+              setTimeout(function () {
+                $(".campaign-copy-status")
+                  .addClass("text-danger")
+                  .removeClass("text-success")
+                  .text("");
+              }, 2000);
+            },
+            function (err) {
+              $(".campaign-copy-status").text(
+                "Cannot copy to clipboard! Please try again."
+              );
+
+              setTimeout(function () {
+                $(".campaign-copy-status").text("");
+              }, 2000);
+            }
+          );
+        }
+
+        function isValidHttpUrl(string) {
+          try {
+            const newUrl = new URL(string);
+            return newUrl.protocol === "http:" || newUrl.protocol === "https:";
+          } catch (err) {
+            return false;
+          }
+        }
+      });
+    </script>
+  </body>
+</html>

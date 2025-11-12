@@ -3,11 +3,17 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Storm Inc - Next Level Digital Marketing</title>
+    <title>GA4 Campaign UTM Link Builder - Storm Inc</title>
     <meta
       name="description"
-      content="Storm Inc is an Auckland-based full-service digital marketing agency specializing in lead generation and sales performance."
+      content="Track Your Campaigns and Links With Our Free Google Analytics 4 UTM Link Builder Tool - Add Parameters to URLs And Measure Your Campaigns"
     />
+
+    <!-- Preconnect to external domains for faster connections -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="preconnect" href="https://cdn.jsdelivr.net" />
+    <link rel="preconnect" href="https://code.jquery.com" />
 
     <!-- Preload Peachi Fonts for better performance -->
     <link
@@ -43,18 +49,18 @@
     <link rel="stylesheet" href="assets/css/base.css?v=1756835970" />
     <link rel="stylesheet" href="assets/css/header.css?v=1756835970" />
     <link rel="stylesheet" href="assets/css/hero.css?v=1756835970" />
-    <link rel="stylesheet" href="assets/css/company.css?v=1756835970" />
-    <link rel="stylesheet" href="assets/css/industry.css?v=1756835970" />
-    <link rel="stylesheet" href="assets/css/services.css?v=1756835970" />
-    <link rel="stylesheet" href="assets/css/partners.css?v=1756835970" />
-    <link rel="stylesheet" href="assets/css/join.css?v=1756835970" />
-    <link rel="stylesheet" href="assets/css/testimonials.css?v=1756835970" />
-    <link rel="stylesheet" href="assets/css/footer.css?v=1756835970" />
+    <link
+      rel="preload"
+      href="assets/css/footer.css?v=1756835970"
+      as="style"
+      onload="this.onload=null;this.rel='stylesheet'"
+    />
+    <noscript
+      ><link rel="stylesheet" href="assets/css/footer.css?v=1756835970"
+    /></noscript>
     <link rel="stylesheet" href="assets/css/utilities.css?v=1756835970" />
-    <link rel="stylesheet" href="assets/css/responsive-768.css?v=1756835970" />
+    <link rel="stylesheet" href="assets/css/builder.css" />
     <link rel="stylesheet" href="assets/css/pages/template.css?v=1756835970" />
-    <!-- ActiveCampaign Form Styles -->
-    <link rel="stylesheet" href="assets/css/activecamp-form.css?v=1756835970" />
 
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -120,7 +126,11 @@
         <div class="mobile-menu__logo">
           <img src="assets/img/logo-white.svg" alt="Storm Inc" />
         </div>
-        <button class="mobile-menu__close" id="mobile-menu-close">
+        <button
+          class="mobile-menu__close"
+          id="mobile-menu-close"
+          aria-label="Close menu"
+        >
           <svg
             xmlns="http://www.w3.org/2000/svg"
             width="18"
@@ -154,7 +164,11 @@
         <div class="mobile-menu__nav-container">
           <nav>
             <ul class="mobile-menu__nav">
-              <div class="mobile-menu__divider"></div>
+              <li
+                class="mobile-menu__divider"
+                role="separator"
+                aria-hidden="true"
+              ></li>
               <li class="mobile-menu__nav-item">
                 <button
                   class="mobile-menu__nav-link mobile-menu__nav-link--dropdown"
@@ -296,7 +310,11 @@
                   </div>
                 </div>
               </li>
-              <div class="mobile-menu__divider"></div>
+              <li
+                class="mobile-menu__divider"
+                role="separator"
+                aria-hidden="true"
+              ></li>
               <li class="mobile-menu__nav-item">
                 <button
                   class="mobile-menu__nav-link mobile-menu__nav-link--dropdown"
@@ -404,7 +422,11 @@
                   </div>
                 </div>
               </li>
-              <div class="mobile-menu__divider"></div>
+              <li
+                class="mobile-menu__divider"
+                role="separator"
+                aria-hidden="true"
+              ></li>
               <li class="mobile-menu__nav-item">
                 <button
                   class="mobile-menu__nav-link mobile-menu__nav-link--dropdown"
@@ -502,7 +524,11 @@
                   </div>
                 </div>
               </li>
-              <div class="mobile-menu__divider"></div>
+              <li
+                class="mobile-menu__divider"
+                role="separator"
+                aria-hidden="true"
+              ></li>
               <li class="mobile-menu__nav-item">
                 <a href="contact.html" class="mobile-menu__nav-link">Contact</a>
               </li>
@@ -666,7 +692,7 @@
       </div>
 
       <!-- Dropdown Menus -->
-            <div class="header__dropdown" id="compatibilities-dropdown">
+      <div class="header__dropdown" id="compatibilities-dropdown">
         <div class="dropdown__header-styles">
           <!-- Links Section (top) -->
           <div class="header__dropdown-links-section">
@@ -740,7 +766,9 @@
           <div class="header__dropdown-cta-section">
             <div class="row gx-4">
               <div class="col">
-                <div class="dropdown-capabilities__cta dropdown-capabilities__cta--pink">
+                <div
+                  class="dropdown-capabilities__cta dropdown-capabilities__cta--pink"
+                >
                   <div class="dropdown-capabilities__cta-text">
                     <p class="dropdown-capabilities__cta-title">
                       Digital Marketing Strategy
@@ -766,7 +794,9 @@
                 </div>
               </div>
               <div class="col">
-                <div class="dropdown-capabilities__cta dropdown-capabilities__cta--dark">
+                <div
+                  class="dropdown-capabilities__cta dropdown-capabilities__cta--dark"
+                >
                   <div class="dropdown-capabilities__cta-text">
                     <p class="dropdown-capabilities__cta-title">
                       Design Studio
@@ -796,9 +826,7 @@
         </div>
       </div>
 
-      </div>
-
-            <div class="header__dropdown" id="work-dropdown">
+      <div class="header__dropdown" id="work-dropdown">
         <div class="dropdown__header-styles">
           <!-- Links Section (top) -->
           <div class="header__dropdown-links-section">
@@ -809,12 +837,12 @@
                   <p class="dropdown-capabilities__title">WORK</p>
                   <div class="dropdown-capabilities__links-list">
                     <!-- Backend can loop through links here -->
-                    <a href="case-studies.html" class="dropdown-capabilities__link"
+                    <a
+                      href="case-studies.html"
+                      class="dropdown-capabilities__link"
                       >Case Studies</a
                     >
-                    <a
-                      href="work.html"
-                      class="dropdown-capabilities__link"
+                    <a href="work.html" class="dropdown-capabilities__link"
                       >Portfolio</a
                     >
                   </div>
@@ -843,7 +871,9 @@
           <div class="header__dropdown-cta-section">
             <div class="row gx-4">
               <div class="col">
-                <div class="dropdown-capabilities__cta dropdown-capabilities__cta--pink">
+                <div
+                  class="dropdown-capabilities__cta dropdown-capabilities__cta--pink"
+                >
                   <div class="dropdown-capabilities__cta-text">
                     <p class="dropdown-capabilities__cta-title">
                       Digital Marketing Strategy
@@ -869,7 +899,9 @@
                 </div>
               </div>
               <div class="col">
-                <div class="dropdown-capabilities__cta dropdown-capabilities__cta--dark">
+                <div
+                  class="dropdown-capabilities__cta dropdown-capabilities__cta--dark"
+                >
                   <div class="dropdown-capabilities__cta-text">
                     <p class="dropdown-capabilities__cta-title">
                       Design Studio
@@ -899,9 +931,7 @@
         </div>
       </div>
 
-      </div>
-
-            <div class="header__dropdown" id="about-dropdown">
+      <div class="header__dropdown" id="about-dropdown">
         <div class="dropdown__header-styles__about">
           <!-- Links Section (top) -->
           <div class="header__dropdown-links-section">
@@ -934,7 +964,9 @@
           <div class="header__dropdown-cta-section">
             <div class="row gx-4">
               <div class="col">
-                <div class="dropdown-capabilities__cta dropdown-capabilities__cta--pink">
+                <div
+                  class="dropdown-capabilities__cta dropdown-capabilities__cta--pink"
+                >
                   <div class="dropdown-capabilities__cta-text">
                     <p class="dropdown-capabilities__cta-title">
                       Digital Marketing Strategy
@@ -960,7 +992,9 @@
                 </div>
               </div>
               <div class="col">
-                <div class="dropdown-capabilities__cta dropdown-capabilities__cta--dark">
+                <div
+                  class="dropdown-capabilities__cta dropdown-capabilities__cta--dark"
+                >
                   <div class="dropdown-capabilities__cta-text">
                     <p class="dropdown-capabilities__cta-title">
                       Design Studio
@@ -989,317 +1023,347 @@
           </div>
         </div>
       </div>
-    </div>
     </header>
 
     <!-- Hero Section -->
     <section class="hero-template">
-      <img src="./assets/img/heroImages/contact.png" />
-      <h1 class="hero__heading-template">Get in Contact with us today</h1>
+      <img
+        src="assets/img/heroImages/link-builder.png"
+        alt="GA4 Link Builder"
+      />
+      <h1 class="hero__heading-template">
+        Google Analytics 4 <br />
+        UTM Link Builder
+      </h1>
     </section>
-    <section class="content__template__left p-t-100">
-      <div class="content__template-content">
-        <div class="content__template-content__text">
-          <h2 class="contact-heading">Big Things Have Small Beginnings</h2>
-          <div class="contact-container">
-            <h2 class="contact-heading">
-              If you've got a digital marketing or development project that you
-              are working on we'd love to hear from you.
-            </h2>
-            <p class="content__template-content__text__desc">
-              We offer an initial obligation free consultation so if you are
-              musing over a new website build, a search engine optimisation or
-              video campaign, contact us and we'll arrange a time to discuss
-              your needs
-            </p>
-            <button class="case-studies__cta-button">See More</button>
+    <section class="service-section service-2">
+      <div class="grid-container">
+        <div class="content-container">
+          <h2>
+            This tool allows you to easily add campaign parameters to URLs so
+            you can measure Custom Campaigns in Google Analytics.
+          </h2>
+          <p>
+            Fill out the required fields (marked with *) in the form below, and
+            once complete the full campaign URL will be generated for you.
+          </p>
+          <p>
+            Note: the generated URL is automatically updated as you make
+            changes.
+          </p>
+        </div>
+        <div class="image-container">
+          <img
+            class="w-auto"
+            alt="Laptop Showing Google Analytics Tracking Data"
+            src="assets/img/heroImages/laptop.svg"
+          />
+        </div>
+        <div class="form-container">
+          <form
+            class="form-content"
+            id="campaign-builder"
+            class="mb-5 mb-lg-0 pb-3 pb-lg-0"
+          >
+            <div class="link-form">
+              <div class="form-group">
+                <input
+                  id="campaign_url"
+                  type="text"
+                  class="form-control fs-16"
+                  placeholder="Landing Page URL *"
+                />
+                <small class=""
+                  >The full website URL (e.g.
+                  https://www.example.com/landing-page-1)</small
+                >
+              </div>
+
+              <div class="form-group">
+                <input
+                  id="utm_medium"
+                  type="text"
+                  placeholder="Campaign Medium *"
+                  class="form-control fs-16"
+                />
+                <small class="form-text text-muted"
+                  >Marketing Medium (e.g banner, email, social, affiliate, cpc
+                  etc)</small
+                >
+              </div>
+
+              <div class="form-group">
+                <input
+                  id="utm_source"
+                  type="text"
+                  placeholder="Campaign Source *"
+                  class="form-control fs-16"
+                />
+                <small class="form-text text-muted"
+                  >The referring source (e.g. facebook, linkedin, instagram,
+                  newsletter, google etc )</small
+                >
+              </div>
+
+              <div class="form-group">
+                <input
+                  id="utm_campaign"
+                  type="text"
+                  placeholder="Campaign Name (Optional)"
+                  class="form-control fs-16"
+                />
+                <small class="form-text text-muted"
+                  >Product, promo code, or slogan (e.g. spring_sale)</small
+                >
+              </div>
+
+              <div class="form-group">
+                <input
+                  id="utm_content"
+                  type="text"
+                  placeholder="Campaign Content (Optional)"
+                  class="form-control fs-16"
+                />
+                <small class="form-text text-muted"
+                  >Use to differentiate ads</small
+                >
+              </div>
+
+              <div class="form-group">
+                <input
+                  id="utm_term"
+                  placeholder="Campaign Term (Optional)"
+                  type="text"
+                  class="form-control fs-16"
+                />
+                <small class="form-text text-muted"
+                  >Identify the paid keywords</small
+                >
+              </div>
+
+              <div class="form-group">
+                <input
+                  id="utm_id"
+                  placeholder="Campaign ID (Optional)"
+                  type="text"
+                  class="form-control fs-16"
+                />
+                <small class="form-text text-muted">The ads campaign id</small>
+              </div>
+            </div>
+            <div class="output-container">
+              <div class="text-left text-container">
+                <h3>Share the generated campaign URL</h3>
+                <p>
+                  Use this URL in any promotional channels you want to be
+                  associated with this custom campaign.
+                </p>
+              </div>
+              <div class="button-container">
+                <button class="">General URL</button>
+                <div class="form-group campaign-results position-relative">
+                  <textarea
+                    id="campaign-result-url"
+                    rows="3"
+                    readonly="readonly"
+                    class="form-control fs-16"
+                  ></textarea>
+                </div>
+
+                <!-- <div class="form-group">
+                  <button class="btn btn-red campaign-copy">
+                    <span
+                      ><img
+                        src="/themes/stormimc/img/webp/copy-white.webp"
+                        width="15"
+                        height=""
+                        alt=""
+                      />
+                      <i>COPY URL</i></span
+                    >
+                  </button>
+                  <small
+                    class="form-text text-danger campaign-copy-status"
+                  ></small>
+                </div> -->
+              </div>
+            </div>
+          </form>
+        </div>
+        <div class="table-container">
+          <div class="position-relative grey-column">
+            <div class="column-label"><span>Need some help?</span></div>
+            <div class="fs-18 text-left">
+              <p>
+                <strong>More information and examples for each parameter</strong
+                ><br />
+                The following table gives a detailed explanation and example of
+                each of the campaign parameters:
+              </p>
+            </div>
+            <div class="table-content">
+              <table
+                id="resp-table"
+                class="table table-content table-borderless responsive-table fs-14"
+              >
+                <tr>
+                  <td><strong>Parameter</strong></td>
+                  <td class="text-lg-center"><strong>Required</strong></td>
+                  <td class="text-lg-center"><strong>Example</strong></td>
+                  <td><strong>Description</strong></td>
+                </tr>
+                <tr>
+                  <td data-title="Parameter">
+                    <strong>Campaign Medium</strong><br /><span class="label"
+                      >utm_medium</span
+                    >
+                  </td>
+                  <td data-title="Required" class="text-lg-center">
+                    <strong>Yes</strong>
+                  </td>
+                  <td data-title="Example" class="text-lg-center full-label">
+                    <span class="label">social</span>
+                  </td>
+                  <td data-title="Description">
+                    Use <span class="label">utm_medium</span> to identify a
+                    medium such as email or cost-per-click.
+                  </td>
+                </tr>
+                <tr>
+                  <td data-title="Parameter">
+                    <strong>Campaign Source</strong><br /><span class="label"
+                      >utm_source</span
+                    >
+                  </td>
+                  <td data-title="Required" class="text-lg-center">
+                    <strong>Yes</strong>
+                  </td>
+                  <td data-title="Example" class="text-lg-center full-label">
+                    <span class="label">facebook</span>
+                  </td>
+                  <td data-title="Description">
+                    Use <span class="label">utm_source</span> to identify a
+                    search engine, newsletter name, or other source.
+                  </td>
+                </tr>
+                <tr>
+                  <td data-title="Parameter">
+                    <strong>Campaign Name</strong><br /><span class="label"
+                      >utm_campaign</span
+                    >
+                  </td>
+                  <td data-title="Required" class="text-lg-center">
+                    <strong>No</strong>
+                  </td>
+                  <td data-title="Example" class="text-lg-center full-label">
+                    <span class="label">flash_sale</span>
+                  </td>
+                  <td data-title="Description">
+                    Used for keyword analysis. Use
+                    <span class="label">utm_campaign</span> to identify a
+                    specific product promotion or strategic campaign.
+                  </td>
+                </tr>
+                <tr>
+                  <td data-title="Parameter">
+                    <strong>Campaign Term</strong><br /><span class="label"
+                      >utm_term</span
+                    >
+                  </td>
+                  <td data-title="Required" class="text-lg-center">
+                    <strong>No</strong>
+                  </td>
+                  <td data-title="Example" class="text-lg-center full-label">
+                    <span class="label">acme+widget</span>
+                  </td>
+                  <td data-title="Description">
+                    Used for paid search. Use<span>utm_term</span> to note the
+                    keywords for this ad.
+                  </td>
+                </tr>
+                <tr>
+                  <td data-title="Parameter">
+                    <strong>Campaign Content</strong><br /><span class="label"
+                      >utm_content</span
+                    >
+                  </td>
+                  <td data-title="Required" class="text-lg-center">
+                    <strong>No</strong>
+                  </td>
+                  <td data-title="Example" class="text-lg-center full-label">
+                    <span class="label">logolink</span>
+                  </td>
+                  <td data-title="Description">
+                    Used for A/B testing and content-targeted ads. Use
+                    <span class="label">utm_content</span> to differentiate ads
+                    or links that point to the same URL.
+                  </td>
+                </tr>
+                <tr>
+                  <td data-title="Parameter">
+                    <strong>Campaign ID</strong><br /><span class="label"
+                      >utm_id</span
+                    >
+                  </td>
+                  <td data-title="Required" class="text-lg-center">
+                    <strong>No</strong>
+                  </td>
+                  <td data-title="Example" class="text-lg-center full-label">
+                    <span class="label">xyc.321</span>
+                  </td>
+                  <td data-title="Description">
+                    Used to identify which ads campaign this referral
+                    references. Use <span class="label">utm_id</span> to
+                    identify a specific ads campaign.
+                  </td>
+                </tr>
+              </table>
+            </div>
           </div>
-          <div class="contact-info">
-            <div>
-              <p class="contact-title">Email</p>
-              <p class="contact-description">hello@stormimc.co.nz</p>
-            </div>
-            <div>
-              <p class="contact-title">Phone</p>
-              <p class="contact-description">+64 (09) 281 5504</p>
-            </div>
-            <div>
-              <p class="contact-title">Address</p>
-              <p class="contact-description">
-                3 Argus Place, Hillcrest, Auckland 0627
+        </div>
+      </div>
+    </section>
+    <section
+      class="service-section service-2 bg-none mb-5 mt-5 mt-sm-0 overflow-visible"
+    >
+      <div
+        class="container container-full mobile-ordered position-relative grey-row"
+      >
+        <div class="row align-items-center">
+          <div class="block-label w-mobile w-50">
+            <div class="w-mobile w-75"><span>Watch & Learn Here</span></div>
+          </div>
+          <div
+            class="col-lg-6 order-1 order-lg-1 justify-content-center d-flex pt-4 pb-5 pt-sm-5 pb-sm-5 pt-lg-0 pb-lg-0"
+          >
+            <div class="w-mobile w-75 text-left block-content">
+              <h2>
+                Creating Custom GA4 Reports to Measure UTM Link Performance
+              </h2>
+              <p>
+                Check out this video on how to create and access reports using
+                Google Analytics 4 to
+                <strong
+                  >review the performance of your UTM tracking links.</strong
+                >
               </p>
             </div>
           </div>
-        </div>
-        <div class="content__template-content__image desktop-form">
-          <form
-            method="POST"
-            action="https://stormimc.activehosted.com/proc.php"
-            id="_form_3_"
-            class="_form _form_3 _inline-form _dark"
-            novalidate
-            data-styles-version="5"
-          >
-            <input type="hidden" name="u" value="3" />
-            <input type="hidden" name="f" value="3" />
-            <input type="hidden" name="s" />
-            <input type="hidden" name="c" value="0" />
-            <input type="hidden" name="m" value="0" />
-            <input type="hidden" name="act" value="sub" />
-            <input type="hidden" name="v" value="2" />
-            <input
-              type="hidden"
-              name="or"
-              value="5720c6cf4c66bf28d81b98043493b435"
-            />
-            <div class="_form-content">
-              <div class="_form_element _x98444477 _full_width">
-                <!-- <label for="firstname" class="_form-label"></label> -->
-                <div class="_field-wrapper">
-                  <input
-                    type="text"
-                    id="firstname"
-                    name="firstname"
-                    placeholder="First Name"
-                    required
-                  />
-                </div>
-              </div>
-              <div class="_form_element _x33619682 _full_width">
-                <!-- <label for="lastname" class="_form-label"></label> -->
-                <div class="_field-wrapper">
-                  <input
-                    type="text"
-                    id="lastname"
-                    name="lastname"
-                    placeholder="Last Name"
-                    required
-                  />
-                </div>
-              </div>
-              <div class="_form_element _x94421635 _full_width">
-                <!-- <label for="phone" class="_form-label"></label> -->
-                <div class="_field-wrapper">
-                  <input
-                    type="text"
-                    id="phone"
-                    name="phone"
-                    placeholder="Phone"
-                    required
-                  />
-                </div>
-              </div>
-              <div class="_form_element _x13323662 _full_width">
-                <!-- <label for="email" class="_form-label"></label> -->
-                <div class="_field-wrapper">
-                  <input
-                    type="text"
-                    id="email"
-                    name="email"
-                    placeholder="Email"
-                    required
-                  />
-                </div>
-              </div>
-              <div class="_form_element _x17966319 _full_width">
-                <!-- <label for="field[8]" class="_form-label">
-                  Website URL<span class="field-required">*</span>
-                </label> -->
-                <div class="_field-wrapper">
-                  <input
-                    type="text"
-                    id="field[8]"
-                    name="field[8]"
-                    value=""
-                    placeholder="Enter Your Website URL"
-                    required
-                  />
-                </div>
-              </div>
-              <div class="_form_element _x27190722 _full_width">
-                <!-- <label for="field[7]" class="_form-label">
-                  Enquiry Details<span class="field-required">*</span>
-                </label> -->
-                <div class="_field-wrapper">
-                  <textarea
-                    id="field[7]"
-                    name="field[7]"
-                    placeholder="Tell Us How We Can Help"
-                    style="height: 148px"
-                    required
-                  ></textarea>
-                </div>
-              </div>
-              <div class="_form_element _x30488529 _full_width">
-                <!-- <label for="ls" class="_form-label">
-                  Please verify your request<span class="field-required"
-                    >*</span
-                  >
-                </label> -->
-                <div
-                  class="g-recaptcha"
-                  data-sitekey="6LcwIw8TAAAAACP1ysM08EhCgzd6q5JAOUR1a0Go"
-                ></div>
-              </div>
-              <div class="_button-wrapper _full_width">
-                <button id="_form_3_submit" class="_submit" type="submit">
-                  Submit
-                </button>
-              </div>
-              <div class="_clear-element"></div>
-            </div>
-            <div class="_form-thank-you" style="display: none"></div>
-          </form>
-        </div>
-      </div>
-    </section>
 
-    <!-- Map Section -->
-    <section class="map-section">
-      <div class="map-container">
-        <div id="google-map"></div>
-      </div>
-    </section>
-
-    <!-- Mobile Form Section (hidden on desktop) -->
-    <section class="mobile-form-section">
-      <div class="mobile-form-container">
-        <form
-          method="POST"
-          action="https://stormimc.activehosted.com/proc.php"
-          id="_form_3_mobile"
-          class="_form _form_3 _inline-form _dark"
-          novalidate
-          data-styles-version="5"
-        >
-          <input type="hidden" name="u" value="3" />
-          <input type="hidden" name="f" value="3" />
-          <input type="hidden" name="s" />
-          <input type="hidden" name="c" value="0" />
-          <input type="hidden" name="m" value="0" />
-          <input type="hidden" name="act" value="sub" />
-          <input type="hidden" name="v" value="2" />
-          <input
-            type="hidden"
-            name="or"
-            value="5720c6cf4c66bf28d81b98043493b435"
-          />
-          <div class="_form-content">
-            <div class="_form_element _x98444477 _full_width">
-              <label for="firstname_mobile" class="_form-label"></label>
-              <div class="_field-wrapper">
-                <input
-                  type="text"
-                  id="firstname_mobile"
-                  name="firstname"
-                  placeholder="First Name"
-                  required
-                />
-              </div>
-            </div>
-            <div class="_form_element _x33619682 _full_width">
-              <label for="lastname_mobile" class="_form-label"></label>
-              <div class="_field-wrapper">
-                <input
-                  type="text"
-                  id="lastname_mobile"
-                  name="lastname"
-                  placeholder="Last Name"
-                  required
-                />
-              </div>
-            </div>
-            <div class="_form_element _x94421635 _full_width">
-              <label for="phone_mobile" class="_form-label"></label>
-              <div class="_field-wrapper">
-                <input
-                  type="text"
-                  id="phone_mobile"
-                  name="phone"
-                  placeholder="Phone"
-                  required
-                />
-              </div>
-            </div>
-            <div class="_form_element _x13323662 _full_width">
-              <label for="email_mobile" class="_form-label"></label>
-              <div class="_field-wrapper">
-                <input
-                  type="text"
-                  id="email_mobile"
-                  name="email"
-                  placeholder="Email"
-                  required
-                />
-              </div>
-            </div>
-            <div class="_form_element _x17966319 _full_width">
-              <!-- <label for="field_8_mobile" class="_form-label">
-                Website URL<span class="field-required">*</span>
-              </label> -->
-              <div class="_field-wrapper">
-                <input
-                  type="text"
-                  id="field_8_mobile"
-                  name="field[8]"
-                  value=""
-                  placeholder="Enter Your Website URL"
-                  required
-                />
-              </div>
-            </div>
-            <div class="_form_element _x27190722 _full_width">
-              <!-- <label for="field_7_mobile" class="_form-label">
-                Enquiry Details<span class="field-required">*</span>
-              </label> -->
-              <div class="_field-wrapper">
-                <textarea
-                  id="field_7_mobile"
-                  name="field[7]"
-                  placeholder="Tell Us How We Can Help"
-                  style="height: 148px"
-                  required
-                ></textarea>
-              </div>
-            </div>
-            <div class="_form_element _x30488529 _full_width">
-              <!-- <label for="ls_mobile" class="_form-label">
-                Please verify your request<span class="field-required">*</span>
-              </label> -->
-              <div
-                class="g-recaptcha"
-                data-sitekey="6LcwIw8TAAAAACP1ysM08EhCgzd6q5JAOUR1a0Go"
-              ></div>
-            </div>
-            <div class="_button-wrapper _full_width">
-              <button id="_form_3_mobile_submit" class="_submit" type="submit">
-                SUBMIT
-              </button>
-            </div>
-            <div class="_clear-element"></div>
+          <div class="col-lg-6 order-2 order-lg-2">
+            <iframe
+              width="560"
+              height="315"
+              src="https://www.youtube.com/embed/Fl5OcKM22Ro"
+              title="YouTube video player"
+              frameborder="0"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+              allowfullscreen
+            ></iframe>
           </div>
-          <div class="_form-thank-you" style="display: none"></div>
-        </form>
-      </div>
-    </section>
-
-    <section class="join">
-      <div class="join__left">
-        <div class="join__content">
-          <h2 class="join__left-heading">
-            Join us for a Free Digital Strategy Session
-          </h2>
-          <button class="join__cta-button">Book Now</button>
         </div>
       </div>
-      <div class="join__right">
-        <img
-          class="joing__right-img"
-          src="./assets/img/studio-time-lapse.webp"
-        />
-      </div>
     </section>
-
     <!-- Footer Spacer - Creates scroll space for curtain reveal effect -->
     <div class="footer-spacer" id="footer-spacer"></div>
 
@@ -1407,20 +1471,177 @@
         </div>
       </div>
     </section>
+    <script type="text/javascript">
+      $(document).ready(function () {
+        var resultURL = "";
+        var params = {};
+        var hasValidURL = false;
+        var hasCampaignSource = false;
+
+        var formatUrl = function () {
+          $.each(params, function (key, val) {
+            if (key == "campaign_url") {
+              var validURL =
+                /(ftp|http|https):\/\/(\w+:{0,1}\w*@)?(\S+)(:[0-9]+)?(\/|\/([\w#!:.?+=&%@!\-\/]))?/.test(
+                  val
+                );
+              if (validURL) {
+                hasValidURL = true;
+              } else {
+                hasValidURL = false;
+              }
+
+              console.log(hasValidURL);
+            }
+
+            if (key == "utm_source" && val != "") {
+              hasCampaignSource = true;
+            }
+
+            if (hasValidURL && hasCampaignSource) {
+              resultURL = params["campaign_url"];
+
+              if (resultURL.split("/").length <= 3) {
+                if (resultURL.substr(resultURL.length - 1) != "/") {
+                  resultURL += "/";
+                }
+              }
+
+              if (resultURL.indexOf("?") == -1) {
+                resultURL += "?";
+              }
+
+              if (params["utm_source"].length > 0) {
+                resultURL +=
+                  "utm_source=" + params["utm_source"].replace(/ /g, "+");
+              }
+
+              if (
+                params["utm_medium"] != undefined &&
+                params["utm_medium"].length > 0
+              ) {
+                resultURL +=
+                  "&utm_medium=" + params["utm_medium"].replace(/ /g, "+");
+              }
+
+              if (
+                params["utm_campaign"] != undefined &&
+                params["utm_campaign"].length > 0
+              ) {
+                resultURL +=
+                  "&utm_campaign=" + params["utm_campaign"].replace(/ /g, "+");
+              }
+
+              if (
+                params["utm_term"] != undefined &&
+                params["utm_term"].length > 0
+              ) {
+                resultURL +=
+                  "&utm_term=" + params["utm_term"].replace(/ /g, "+");
+              }
+
+              if (
+                params["utm_id"] != undefined &&
+                params["utm_id"].length > 0
+              ) {
+                resultURL += "&utm_id=" + params["utm_id"].replace(/ /g, "+");
+              }
+
+              if (
+                params["utm_content"] != undefined &&
+                params["utm_content"].length > 0
+              ) {
+                resultURL +=
+                  "&utm_content=" + params["utm_content"].replace(/ /g, "+");
+              }
+
+              // Encode special chars
+              resultURL = encodeURI(resultURL);
+              console.log(resultURL);
+              $("#campaign-result-url").val(resultURL);
+              $(".campaign-copy").show();
+              $(".campaign-copy-status").text("");
+            } else if (!hasValidURL) {
+              $(".campaign-copy-status").text(
+                "Invalid URL, please provide url with protocol. e.g  https://www.example.com/landing-page-1"
+              );
+              $("#campaign-result-url").val("");
+              $(".campaign-copy").hide();
+            }
+          });
+        };
+
+        $("#campaign-builder input, #campaign-builder textarea").each(function (
+          index
+        ) {
+          $(this).keyup(function () {
+            var key = $(this).attr("id");
+            var val = $(this).val();
+
+            params[key] = val;
+
+            formatUrl();
+          });
+
+          var key = $(this).attr("id");
+          var val = $(this).val();
+          params[key] = val;
+
+          formatUrl();
+        });
+
+        $("#campaign-builder").submit(function () {
+          copyText();
+          return false;
+        });
+
+        $("#campaign-result-url").on("click", function () {
+          copyText();
+          return false;
+        });
+
+        function copyText() {
+          var text = $("#campaign-result-url").val();
+          navigator.clipboard.writeText(text).then(
+            function () {
+              $(".campaign-copy-status")
+                .addClass("text-success")
+                .removeClass("text-danger")
+                .text("Copied to clipboard!");
+
+              setTimeout(function () {
+                $(".campaign-copy-status")
+                  .addClass("text-danger")
+                  .removeClass("text-success")
+                  .text("");
+              }, 2000);
+            },
+            function (err) {
+              $(".campaign-copy-status").text(
+                "Cannot copy to clipboard! Please try again."
+              );
+
+              setTimeout(function () {
+                $(".campaign-copy-status").text("");
+              }, 2000);
+            }
+          );
+        }
+
+        function isValidHttpUrl(string) {
+          try {
+            const newUrl = new URL(string);
+            return newUrl.protocol === "http:" || newUrl.protocol === "https:";
+          } catch (err) {
+            return false;
+          }
+        }
+      });
+    </script>
 
     <!-- JavaScript Files -->
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-    <!-- Google Maps API - Replace YOUR_API_KEY with actual Google Maps API key -->
-    <script
-      async
-      defer
-      src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBG8BjFwOMXNYu-xwJQc4JxK2njsyxcbM8&callback=initMap"
-    ></script>
     <script src="assets/js/main.js?v=1756835970"></script>
     <script src="assets/js/header.js?v=1756835970"></script>
-    <script src="assets/js/carousel.js?v=1756835970"></script>
-    <script src="assets/js/map.js?v=1756835970"></script>
-    <!-- ActiveCampaign Form Scripts -->
-    <script src="assets/js/activecamp-form.js?v=1756835970"></script>
   </body>
 </html>
