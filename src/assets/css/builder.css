@@ -227,6 +227,8 @@
 .table-content {
   padding: 35px 45px;
   background: rgba(217, 217, 217, 0.2);
+  overflow-x: auto;
+  max-width: 100vw;
 }
 .max-w-530 {
   max-width: 530px;
@@ -555,5 +557,12 @@
   .form-control,
   .form-select {
     max-width: 100%;
+  }
+
+  .link-button {
+    overflow: visible;
+    width: 100%;
+    max-width: fit-content;
+    padding: 0 90px;
   }
 }
