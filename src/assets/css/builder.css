@@ -563,6 +563,10 @@
     overflow: visible;
     width: 100%;
     max-width: fit-content;
-    padding: 0 90px;
+    padding: 0 70px;
+  }
+
+  .learn-wrapper {
+    padding: 60px 20px;
   }
 }
