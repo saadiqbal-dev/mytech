@@ -26,6 +26,8 @@
   display: flex;
   flex-direction: column;
   gap: 78px;
+  align-items: center;
+  justify-content: start;
 }
 
 .info-text {
@@ -50,6 +52,21 @@
 .form-container,
 .table-container {
   width: 100%;
+
+  .table {
+    --bs-table-bg: rgba(217, 217, 217, 0);
+    margin-bottom: 0;
+  }
+  .table td {
+    font-size: 14px;
+    font-family: var(--font-mona-sans);
+    padding: 13px 0;
+  }
+  .table tr {
+    border-bottom: 1px solid #292929;
+
+    height: 100%;
+  }
 }
 
 .content-container {
@@ -111,6 +128,10 @@
   background: #fff;
   border-radius: 8px;
   overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  max-width: 688px;
 }
 
 .learn-section {
