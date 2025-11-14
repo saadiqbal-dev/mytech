@@ -396,6 +396,9 @@
     max-width: 100%;
     max-height: none;
   }
+  .video-learn {
+    max-width: 650px;
+  }
 }
 
 @media (max-width: 1280px) {
