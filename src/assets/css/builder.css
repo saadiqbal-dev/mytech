@@ -56,6 +56,7 @@
   .table {
     --bs-table-bg: rgba(217, 217, 217, 0);
     margin-bottom: 0;
+    --bs-table-color: #555353;
   }
 
   .table td {
