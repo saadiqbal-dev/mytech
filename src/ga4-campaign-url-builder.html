@@ -1038,286 +1038,279 @@
     </section>
     <section class="service-section service-2">
       <div class="grid-container">
-        <div class="content-container">
-          <h2>
-            This tool allows you to easily add campaign parameters to URLs so
-            you can measure Custom Campaigns in Google Analytics.
-          </h2>
-          <p>
-            Fill out the required fields (marked with *) in the form below, and
-            once complete the full campaign URL will be generated for you.
-          </p>
-          <p>
-            Note: the generated URL is automatically updated as you make
-            changes.
-          </p>
-        </div>
-        <div class="image-container">
-          <img
-            class="w-auto"
-            alt="Laptop Showing Google Analytics Tracking Data"
-            src="assets/img/heroImages/laptop.svg"
-          />
-        </div>
-        <div class="form-container">
-          <form
-            class="form-content"
-            id="campaign-builder"
-            class="mb-5 mb-lg-0 pb-3 pb-lg-0"
-          >
-            <div class="link-form">
-              <div class="form-group">
-                <input
-                  id="campaign_url"
-                  type="text"
-                  class="form-control fs-16"
-                  placeholder="Landing Page URL *"
-                />
-                <small class=""
-                  >The full website URL (e.g.
-                  https://www.example.com/landing-page-1)</small
-                >
-              </div>
-
-              <div class="form-group">
-                <input
-                  id="utm_medium"
-                  type="text"
-                  placeholder="Campaign Medium *"
-                  class="form-control fs-16"
-                />
-                <small class="form-text text-muted"
-                  >Marketing Medium (e.g banner, email, social, affiliate, cpc
-                  etc)</small
-                >
-              </div>
-
-              <div class="form-group">
-                <input
-                  id="utm_source"
-                  type="text"
-                  placeholder="Campaign Source *"
-                  class="form-control fs-16"
-                />
-                <small class="form-text text-muted"
-                  >The referring source (e.g. facebook, linkedin, instagram,
-                  newsletter, google etc )</small
-                >
-              </div>
-
-              <div class="form-group">
-                <input
-                  id="utm_campaign"
-                  type="text"
-                  placeholder="Campaign Name (Optional)"
-                  class="form-control fs-16"
-                />
-                <small class="form-text text-muted"
-                  >Product, promo code, or slogan (e.g. spring_sale)</small
-                >
-              </div>
-
-              <div class="form-group">
-                <input
-                  id="utm_content"
-                  type="text"
-                  placeholder="Campaign Content (Optional)"
-                  class="form-control fs-16"
-                />
-                <small class="form-text text-muted"
-                  >Use to differentiate ads</small
-                >
-              </div>
-
-              <div class="form-group">
-                <input
-                  id="utm_term"
-                  placeholder="Campaign Term (Optional)"
-                  type="text"
-                  class="form-control fs-16"
-                />
-                <small class="form-text text-muted"
-                  >Identify the paid keywords</small
-                >
-              </div>
-
-              <div class="form-group">
-                <input
-                  id="utm_id"
-                  placeholder="Campaign ID (Optional)"
-                  type="text"
-                  class="form-control fs-16"
-                />
-                <small class="form-text text-muted">The ads campaign id</small>
-              </div>
-            </div>
-            <div class="output-container">
-              <div class="text-left text-container">
-                <h3>Share the generated campaign URL</h3>
-                <p>
-                  Use this URL in any promotional channels you want to be
-                  associated with this custom campaign.
-                </p>
-              </div>
-              <div class="button-container">
-                <button class="">General URL</button>
-                <div class="form-group campaign-results position-relative">
-                  <textarea
-                    id="campaign-result-url"
-                    rows="3"
-                    readonly="readonly"
+        <div class="left-column">
+          <div class="content-container">
+            <h2>
+              This tool allows you to easily add campaign parameters to URLs so
+              you can measure Custom Campaigns in Google Analytics.
+            </h2>
+            <p>
+              Fill out the required fields (marked with *) in the form below,
+              and once complete the full campaign URL will be generated for you.
+            </p>
+            <p>
+              Note: the generated URL is automatically updated as you make
+              changes.
+            </p>
+          </div>
+          <div class="form-container">
+            <form
+              class="form-content"
+              id="campaign-builder"
+              class="mb-5 mb-lg-0 pb-3 pb-lg-0"
+            >
+              <div class="link-form">
+                <div class="form-group">
+                  <input
+                    id="campaign_url"
+                    type="text"
                     class="form-control fs-16"
-                  ></textarea>
+                    placeholder="Landing Page URL *"
+                  />
+                  <small class=""
+                    >The full website URL (e.g.
+                    https://www.example.com/landing-page-1)</small
+                  >
                 </div>
 
-                <!-- <div class="form-group">
-                  <button class="btn btn-red campaign-copy">
-                    <span
-                      ><img
-                        src="/themes/stormimc/img/webp/copy-white.webp"
-                        width="15"
-                        height=""
-                        alt=""
-                      />
-                      <i>COPY URL</i></span
-                    >
-                  </button>
-                  <small
-                    class="form-text text-danger campaign-copy-status"
-                  ></small>
-                </div> -->
+                <div class="form-group">
+                  <input
+                    id="utm_medium"
+                    type="text"
+                    placeholder="Campaign Medium *"
+                    class="form-control fs-16"
+                  />
+                  <small class="form-text text-muted"
+                    >Marketing Medium (e.g banner, email, social, affiliate, cpc
+                    etc)</small
+                  >
+                </div>
+
+                <div class="form-group">
+                  <input
+                    id="utm_source"
+                    type="text"
+                    placeholder="Campaign Source *"
+                    class="form-control fs-16"
+                  />
+                  <small class="form-text text-muted"
+                    >The referring source (e.g. facebook, linkedin, instagram,
+                    newsletter, google etc )</small
+                  >
+                </div>
+
+                <div class="form-group">
+                  <input
+                    id="utm_campaign"
+                    type="text"
+                    placeholder="Campaign Name (Optional)"
+                    class="form-control fs-16"
+                  />
+                  <small class="form-text text-muted"
+                    >Product, promo code, or slogan (e.g. spring_sale)</small
+                  >
+                </div>
+
+                <div class="form-group">
+                  <input
+                    id="utm_content"
+                    type="text"
+                    placeholder="Campaign Content (Optional)"
+                    class="form-control fs-16"
+                  />
+                  <small class="form-text text-muted"
+                    >Use to differentiate ads</small
+                  >
+                </div>
+
+                <div class="form-group">
+                  <input
+                    id="utm_term"
+                    placeholder="Campaign Term (Optional)"
+                    type="text"
+                    class="form-control fs-16"
+                  />
+                  <small class="form-text text-muted"
+                    >Identify the paid keywords</small
+                  >
+                </div>
+
+                <div class="form-group">
+                  <input
+                    id="utm_id"
+                    placeholder="Campaign ID (Optional)"
+                    type="text"
+                    class="form-control fs-16"
+                  />
+                  <small class="form-text text-muted"
+                    >The ads campaign id</small
+                  >
+                </div>
               </div>
-            </div>
-          </form>
+              <div class="output-container">
+                <div class="text-left text-container">
+                  <h3>Share the generated campaign URL</h3>
+                  <p>
+                    Use this URL in any promotional channels you want to be
+                    associated with this custom campaign.
+                  </p>
+                </div>
+                <div class="button-container">
+                  <button class="">General URL</button>
+                  <div class="form-group campaign-results position-relative">
+                    <textarea
+                      id="campaign-result-url"
+                      rows="3"
+                      readonly="readonly"
+                      class="form-control fs-16"
+                    ></textarea>
+                  </div>
+                </div>
+              </div>
+            </form>
+          </div>
         </div>
-        <div class="table-container">
-          <div class="position-relative grey-column">
-            <div class="column-label"><span>Need some help?</span></div>
-            <div class="fs-18 text-left">
-              <p>
-                <strong>More information and examples for each parameter</strong
-                ><br />
-                The following table gives a detailed explanation and example of
-                each of the campaign parameters:
-              </p>
-            </div>
-            <div class="table-content">
-              <table
-                id="resp-table"
-                class="table table-content table-borderless responsive-table fs-14"
-              >
-                <tr>
-                  <td><strong>Parameter</strong></td>
-                  <td class="text-lg-center"><strong>Required</strong></td>
-                  <td class="text-lg-center"><strong>Example</strong></td>
-                  <td><strong>Description</strong></td>
-                </tr>
-                <tr>
-                  <td data-title="Parameter">
-                    <strong>Campaign Medium</strong><br /><span class="label"
-                      >utm_medium</span
-                    >
-                  </td>
-                  <td data-title="Required" class="text-lg-center">
-                    <strong>Yes</strong>
-                  </td>
-                  <td data-title="Example" class="text-lg-center full-label">
-                    <span class="label">social</span>
-                  </td>
-                  <td data-title="Description">
-                    Use <span class="label">utm_medium</span> to identify a
-                    medium such as email or cost-per-click.
-                  </td>
-                </tr>
-                <tr>
-                  <td data-title="Parameter">
-                    <strong>Campaign Source</strong><br /><span class="label"
-                      >utm_source</span
-                    >
-                  </td>
-                  <td data-title="Required" class="text-lg-center">
-                    <strong>Yes</strong>
-                  </td>
-                  <td data-title="Example" class="text-lg-center full-label">
-                    <span class="label">facebook</span>
-                  </td>
-                  <td data-title="Description">
-                    Use <span class="label">utm_source</span> to identify a
-                    search engine, newsletter name, or other source.
-                  </td>
-                </tr>
-                <tr>
-                  <td data-title="Parameter">
-                    <strong>Campaign Name</strong><br /><span class="label"
-                      >utm_campaign</span
-                    >
-                  </td>
-                  <td data-title="Required" class="text-lg-center">
-                    <strong>No</strong>
-                  </td>
-                  <td data-title="Example" class="text-lg-center full-label">
-                    <span class="label">flash_sale</span>
-                  </td>
-                  <td data-title="Description">
-                    Used for keyword analysis. Use
-                    <span class="label">utm_campaign</span> to identify a
-                    specific product promotion or strategic campaign.
-                  </td>
-                </tr>
-                <tr>
-                  <td data-title="Parameter">
-                    <strong>Campaign Term</strong><br /><span class="label"
-                      >utm_term</span
-                    >
-                  </td>
-                  <td data-title="Required" class="text-lg-center">
-                    <strong>No</strong>
-                  </td>
-                  <td data-title="Example" class="text-lg-center full-label">
-                    <span class="label">acme+widget</span>
-                  </td>
-                  <td data-title="Description">
-                    Used for paid search. Use<span>utm_term</span> to note the
-                    keywords for this ad.
-                  </td>
-                </tr>
-                <tr>
-                  <td data-title="Parameter">
-                    <strong>Campaign Content</strong><br /><span class="label"
-                      >utm_content</span
-                    >
-                  </td>
-                  <td data-title="Required" class="text-lg-center">
-                    <strong>No</strong>
-                  </td>
-                  <td data-title="Example" class="text-lg-center full-label">
-                    <span class="label">logolink</span>
-                  </td>
-                  <td data-title="Description">
-                    Used for A/B testing and content-targeted ads. Use
-                    <span class="label">utm_content</span> to differentiate ads
-                    or links that point to the same URL.
-                  </td>
-                </tr>
-                <tr>
-                  <td data-title="Parameter">
-                    <strong>Campaign ID</strong><br /><span class="label"
-                      >utm_id</span
-                    >
-                  </td>
-                  <td data-title="Required" class="text-lg-center">
-                    <strong>No</strong>
-                  </td>
-                  <td data-title="Example" class="text-lg-center full-label">
-                    <span class="label">xyc.321</span>
-                  </td>
-                  <td data-title="Description">
-                    Used to identify which ads campaign this referral
-                    references. Use <span class="label">utm_id</span> to
-                    identify a specific ads campaign.
-                  </td>
-                </tr>
-              </table>
+        <div class="right-column">
+          <div class="image-container">
+            <img
+              class="w-auto"
+              alt="Laptop Showing Google Analytics Tracking Data"
+              src="assets/img/heroImages/laptop.svg"
+            />
+          </div>
+          <div class="table-container">
+            <div
+              class="d-flex flex-column align-items-center justify-content-center"
+            >
+              <!-- <div class="column-label"><span>Need some help?</span></div> -->
+              <a href="#" class="link-button">Need some help?</a>
+              <div class="text-left info-text">
+                <p>
+                  <strong
+                    >More information and examples for each parameter</strong
+                  ><br />
+                  The following table gives a detailed explanation and example
+                  of each of the campaign parameters:
+                </p>
+              </div>
+              <div class="table-content margin-top-55">
+                <table
+                  id="resp-table"
+                  class="table table-content table-borderless responsive-table fs-14"
+                >
+                  <tr>
+                    <td><strong>Parameter</strong></td>
+                    <td class="text-lg-center"><strong>Required</strong></td>
+                    <td class="text-lg-center"><strong>Example</strong></td>
+                    <td><strong>Description</strong></td>
+                  </tr>
+                  <tr>
+                    <td data-title="Parameter">
+                      <strong>Campaign Medium</strong><br /><span class="label"
+                        >utm_medium</span
+                      >
+                    </td>
+                    <td data-title="Required" class="text-lg-center">
+                      <strong>Yes</strong>
+                    </td>
+                    <td data-title="Example" class="text-lg-center full-label">
+                      <span class="label">social</span>
+                    </td>
+                    <td data-title="Description">
+                      Use <span class="label">utm_medium</span> to identify a
+                      medium such as email or cost-per-click.
+                    </td>
+                  </tr>
+                  <tr>
+                    <td data-title="Parameter">
+                      <strong>Campaign Source</strong><br /><span class="label"
+                        >utm_source</span
+                      >
+                    </td>
+                    <td data-title="Required" class="text-lg-center">
+                      <strong>Yes</strong>
+                    </td>
+                    <td data-title="Example" class="text-lg-center full-label">
+                      <span class="label">facebook</span>
+                    </td>
+                    <td data-title="Description">
+                      Use <span class="label">utm_source</span> to identify a
+                      search engine, newsletter name, or other source.
+                    </td>
+                  </tr>
+                  <tr>
+                    <td data-title="Parameter">
+                      <strong>Campaign Name</strong><br /><span class="label"
+                        >utm_campaign</span
+                      >
+                    </td>
+                    <td data-title="Required" class="text-lg-center">
+                      <strong>No</strong>
+                    </td>
+                    <td data-title="Example" class="text-lg-center full-label">
+                      <span class="label">flash_sale</span>
+                    </td>
+                    <td data-title="Description">
+                      Used for keyword analysis. Use
+                      <span class="label">utm_campaign</span> to identify a
+                      specific product promotion or strategic campaign.
+                    </td>
+                  </tr>
+                  <tr>
+                    <td data-title="Parameter">
+                      <strong>Campaign Term</strong><br /><span class="label"
+                        >utm_term</span
+                      >
+                    </td>
+                    <td data-title="Required" class="text-lg-center">
+                      <strong>No</strong>
+                    </td>
+                    <td data-title="Example" class="text-lg-center full-label">
+                      <span class="label">acme+widget</span>
+                    </td>
+                    <td data-title="Description">
+                      Used for paid search. Use<span>utm_term</span> to note the
+                      keywords for this ad.
+                    </td>
+                  </tr>
+                  <tr>
+                    <td data-title="Parameter">
+                      <strong>Campaign Content</strong><br /><span class="label"
+                        >utm_content</span
+                      >
+                    </td>
+                    <td data-title="Required" class="text-lg-center">
+                      <strong>No</strong>
+                    </td>
+                    <td data-title="Example" class="text-lg-center full-label">
+                      <span class="label">logolink</span>
+                    </td>
+                    <td data-title="Description">
+                      Used for A/B testing and content-targeted ads. Use
+                      <span class="label">utm_content</span> to differentiate
+                      ads or links that point to the same URL.
+                    </td>
+                  </tr>
+                  <tr>
+                    <td data-title="Parameter">
+                      <strong>Campaign ID</strong><br /><span class="label"
+                        >utm_id</span
+                      >
+                    </td>
+                    <td data-title="Required" class="text-lg-center">
+                      <strong>No</strong>
+                    </td>
+                    <td data-title="Example" class="text-lg-center full-label">
+                      <span class="label">xyc.321</span>
+                    </td>
+                    <td data-title="Description">
+                      Used to identify which ads campaign this referral
+                      references. Use <span class="label">utm_id</span> to
+                      identify a specific ads campaign.
+                    </td>
+                  </tr>
+                </table>
+              </div>
             </div>
           </div>
         </div>
