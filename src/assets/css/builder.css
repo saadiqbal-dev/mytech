@@ -418,6 +418,9 @@
   .url-section {
     padding: 100px 110px;
   }
+  .table-container {
+    max-width: 100%;
+  }
 }
 /* Tablet Layout: content & image in row, then form full width, then table full width */
 @media (max-width: 1024px) {
