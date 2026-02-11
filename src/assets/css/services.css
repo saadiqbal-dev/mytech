@@ -223,7 +223,7 @@
    ============================================================================= */
 
 /* 1480px Breakpoint */
-@media (max-width: 1480px) {
+@media (max-width: 1680px) {
   .services {
     padding: 60px 120px;
   }
