@@ -862,18 +862,24 @@
   flex-direction: column;
   background: #ffffff;
   cursor: pointer;
-  overflow: hidden;
   border-radius: 3px;
 }
 
-.blog-article__image {
+.blog-image-wrapper {
   width: 500px;
   height: 305px;
-  flex-shrink: 0;
+  overflow: hidden;
   border-radius: 3px;
+  flex-shrink: 0;
+}
+
+.blog-article__image {
+  width: 100%;
+  height: 100%;
   object-fit: cover;
   transition: transform 0.6s cubic-bezier(0.4, 0, 0.2, 1);
   transform: scale(1);
+  display: block;
 }
 
 .blog-article:hover .blog-article__image {
@@ -1237,6 +1243,25 @@ a.blog-article-link:hover {
     gap: 36px;
     max-width: 1188px;
   }
+
+  .work-portfolio__grid {
+    grid-template-rows: repeat(5, 280px);
+  }
+
+  .blog-image-wrapper {
+    width: 360px;
+    height: 219px;
+  }
+
+  .blog-article__title {
+    font-size: 26px;
+    line-height: 35px;
+  }
+
+  .blog-article__date {
+    font-size: 16px;
+    line-height: 28px;
+  }
 }
 
 @media (max-width: 1480px) {
@@ -1393,33 +1418,6 @@ a.blog-article-link:hover {
     line-height: 38px;
   }
 
-  .work-portfolio__grid {
-    grid-template-columns: repeat(3, 360px);
-    grid-template-rows: repeat(5, 280px);
-    gap: 36px;
-    max-width: 1188px;
-  }
-
-  .blog-posts {
-    grid-template-columns: repeat(3, 360px);
-    gap: 36px;
-    max-width: 1188px;
-  }
-
-  .blog-article__image {
-    width: 360px;
-    height: 219px;
-  }
-
-  .blog-article__title {
-    font-size: 26px;
-    line-height: 35px;
-  }
-
-  .blog-article__date {
-    font-size: 16px;
-    line-height: 28px;
-  }
 }
 
 @media (max-width: 1280px) {
@@ -1517,7 +1515,7 @@ a.blog-article-link:hover {
     max-width: 956px;
   }
 
-  .blog-article__image {
+  .blog-image-wrapper {
     width: 300px;
     height: 183px;
   }
@@ -1638,7 +1636,7 @@ a.blog-article-link:hover {
     gap: 24px;
   }
 
-  .blog-article__image {
+  .blog-image-wrapper {
     width: 388px;
     height: 236px;
   }
@@ -1952,7 +1950,7 @@ a.blog-article-link:hover {
     margin: 0;
   }
 
-  .blog-article__image {
+  .blog-image-wrapper {
     width: 100%;
     height: 244px;
     max-width: 400px;

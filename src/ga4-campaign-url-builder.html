@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
@@ -44,7 +44,10 @@
       rel="preload"
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
       as="style"
-      onload="this.onload=null;this.rel='stylesheet'"
+      onload="
+        this.onload = null;
+        this.rel = 'stylesheet';
+      "
     />
     <noscript>
       <link
@@ -62,14 +65,17 @@
       rel="preload"
       href="assets/css/footer.css?v=1756835970"
       as="style"
-      onload="this.onload=null;this.rel='stylesheet'"
+      onload="
+        this.onload = null;
+        this.rel = 'stylesheet';
+      "
     />
     <noscript
       ><link rel="stylesheet" href="assets/css/footer.css?v=1756835970"
     /></noscript>
     <link rel="stylesheet" href="assets/css/utilities.css?v=1756835970" />
     <link rel="stylesheet" href="assets/css/builder.css" />
-    <link rel="stylesheet" href="assets/css/pages/template.css?v=1756835970" />
+    <link rel="stylesheet" href="assets/css/template.css?v=1756835970" />
 
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -1390,7 +1396,15 @@
             src="https://www.youtube.com/embed/Fl5OcKM22Ro?si=kBfyL2-KetBUvsFE"
             title="YouTube video player"
             frameborder="0"
-            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+            allow="
+              accelerometer;
+              autoplay;
+              clipboard-write;
+              encrypted-media;
+              gyroscope;
+              picture-in-picture;
+              web-share;
+            "
             referrerpolicy="strict-origin-when-cross-origin"
             allowfullscreen
           ></iframe>
@@ -1516,7 +1530,7 @@
             if (key == "campaign_url") {
               var validURL =
                 /(ftp|http|https):\/\/(\w+:{0,1}\w*@)?(\S+)(:[0-9]+)?(\/|\/([\w#!:.?+=&%@!\-\/]))?/.test(
-                  val
+                  val,
                 );
               if (validURL) {
                 hasValidURL = true;
@@ -1596,7 +1610,7 @@
               $(".campaign-copy-status").text("");
             } else if (!hasValidURL) {
               $(".campaign-copy-status").text(
-                "Invalid URL, please provide url with protocol. e.g  https://www.example.com/landing-page-1"
+                "Invalid URL, please provide url with protocol. e.g  https://www.example.com/landing-page-1",
               );
               $("#campaign-result-url").val("");
               $(".campaign-copy").hide();
@@ -1604,24 +1618,24 @@
           });
         };
 
-        $("#campaign-builder input, #campaign-builder textarea").each(function (
-          index
-        ) {
-          $(this).keyup(function () {
+        $("#campaign-builder input, #campaign-builder textarea").each(
+          function (index) {
+            $(this).keyup(function () {
+              var key = $(this).attr("id");
+              var val = $(this).val();
+
+              params[key] = val;
+
+              formatUrl();
+            });
+
             var key = $(this).attr("id");
             var val = $(this).val();
-
             params[key] = val;
 
             formatUrl();
-          });
-
-          var key = $(this).attr("id");
-          var val = $(this).val();
-          params[key] = val;
-
-          formatUrl();
-        });
+          },
+        );
 
         $("#campaign-builder").submit(function () {
           copyText();
@@ -1651,13 +1665,13 @@
             },
             function (err) {
               $(".campaign-copy-status").text(
-                "Cannot copy to clipboard! Please try again."
+                "Cannot copy to clipboard! Please try again.",
               );
 
               setTimeout(function () {
                 $(".campaign-copy-status").text("");
               }, 2000);
-            }
+            },
           );
         }
 
