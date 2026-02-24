@@ -72,7 +72,11 @@ a {
   text-decoration-skip-ink: none;
   text-decoration-thickness: 1px !important;
 }
-
+a:not([class]) {
+  color: inherit !important;
+  text-decoration: underline !important;
+  text-decoration-thickness: 1px !important;
+}
 /* =============================================================================
    Focus States for Accessibility
    ============================================================================= */

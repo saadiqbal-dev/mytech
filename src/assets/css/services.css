@@ -221,8 +221,6 @@
 /* =============================================================================
    Services Responsive Styles
    ============================================================================= */
-
-/* 1480px Breakpoint */
 @media (max-width: 1680px) {
   .services {
     padding: 60px 120px;
@@ -233,6 +231,10 @@
     gap: 36px;
     max-width: 1188px;
   }
+}
+
+/* 1480px Breakpoint */
+@media (max-width: 1480px) {
   .services__title {
     font-size: 32px;
   }

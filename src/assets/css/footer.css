@@ -126,6 +126,16 @@
   margin: 0;
 }
 
+.footer__foot a {
+  color: inherit !important;
+  text-decoration: none !important;
+}
+
+.footer__foot a:hover {
+  color: #ff5964 !important;
+  text-decoration: underline !important;
+  text-decoration-thickness: 1px !important;
+}
 /* =============================================================================
    Footer Responsive Styles
    ============================================================================= */
