@@ -13,7 +13,7 @@ PARTNERS - Figma
   display: flex;
   flex-direction: column;
   padding: 150px 0;
-  background-color: #f1f4fa;
+  background-color: #fff;
   gap: 150px;
   position: relative;
   z-index: 5;
@@ -36,7 +36,7 @@ PARTNERS - Figma
 .partners__title {
   color: #555353;
   text-align: center;
-  font-family: var(--font-peachi);
+  font-family: var(--font-poppins);
   font-size: 40px;
   font-style: normal;
   font-weight: 400;

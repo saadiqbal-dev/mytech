@@ -961,9 +961,12 @@ class TestimonialsCarousel {
 
 // Initialize carousel components when DOM is loaded
 document.addEventListener("DOMContentLoaded", () => {
+  // Check if hero carousel elements exist (for pages that still use carousel)
+  const hasCarousel = document.querySelector(".hero__carousel-track");
+
   // Store references for potential cleanup
   window.StormCarousels = {
-    hero: new HeroCarousel(),
+    hero: hasCarousel ? new HeroCarousel() : null,
     testimonials: new TestimonialsCarousel(),
   };
 
