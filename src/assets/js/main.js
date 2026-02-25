@@ -467,8 +467,8 @@
       },
 
       setupMobileClickToReveal: function () {
-        // Only apply on mobile devices (≤768px)
-        if (StormApp.utils.getViewportWidth() <= 768) {
+        // Only apply on mobile devices (≤968px)
+        if (StormApp.utils.getViewportWidth() <= 968) {
           // Add click event to expandable service items
           $(".services__item--expandable").on("click", function (e) {
             e.preventDefault();
@@ -502,7 +502,7 @@
             $(document).off("click.servicesOutside");
 
             // Re-apply based on viewport width
-            if (StormApp.utils.getViewportWidth() <= 768) {
+            if (StormApp.utils.getViewportWidth() <= 968) {
               $(".services__item--expandable").on("click", function (e) {
                 e.preventDefault();
                 e.stopPropagation();

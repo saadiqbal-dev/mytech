@@ -41,7 +41,7 @@
 }
 
 .header__logo img {
-  max-height: 36px;
+  max-height: 60px;
   width: auto;
   transition: filter 0.6s cubic-bezier(0.4, 0, 0.2, 1);
 }
@@ -343,7 +343,7 @@
    ============================================================================= */
 
 /* 1480px Breakpoint */
-@media (max-width: 1480px) {
+@media (max-width: 1680px) {
   .header__container {
     padding-left: 120px; /* Reduced by 50px from 160px */
     padding-right: 120px;
@@ -387,11 +387,6 @@
     padding-bottom: 25px; /* Reduced from 50px */
   }
 
-  .header__logo img {
-    transform: scale(0.9); /* 0.9x the original size */
-    max-height: 45px; /* Adjusted for scaled size */
-  }
-
   .header__menu-text-main,
   .header__menu-text-hover {
     font-size: 16px; /* Reduced from 24px */
@@ -433,7 +428,7 @@
   }
 
   .header__logo {
-    scale: 0.6;
+    scale: 1;
     max-height: 35px;
   }
 
@@ -495,7 +490,7 @@
   }
 
   .mobile-header__logo img {
-    height: 57px;
+    height: 37px;
     width: auto;
   }
 

@@ -13,7 +13,7 @@
   z-index: 5;
   background: #ffffff;
   width: 100%;
-  height: 70vh;
+  height: 100%;
   max-height: 693.33px;
   /* max-width: 1920px; */
   margin-left: auto;
@@ -136,17 +136,16 @@
 /* 1480px Breakpoint */
 @media (max-width: 1480px) {
   .join {
-    height: 40vh;
-  }
-  .join__left-heading {
-    font-size: 32px;
-    line-height: 40px;
+    height: 90vh;
   }
 
   .join__cta-button {
     font-size: 18px;
     padding: 0px 18px;
     height: auto;
+  }
+  .join__content {
+    padding-left: 120px;
   }
 
   .join__cta-button:hover {
@@ -157,8 +156,8 @@
 /* 1280px Breakpoint */
 @media (max-width: 1280px) {
   .join__left-heading {
-    font-size: 32px;
-    line-height: 40px;
+    font-size: 24px;
+    line-height: 28px;
   }
 
   .join__cta-button {
@@ -178,9 +177,12 @@
     right: 0;
     z-index: -1;
   }
+  .join__content {
+    padding-left: 40px;
+  }
 
   .join {
-    max-height: 70vh;
+    max-height: 50vh;
   }
 }
 
@@ -214,7 +216,7 @@
     /* height: 400px; */
     min-height: 300px;
     height: fit-content;
-    background-image: url("../img/join-image.webp");
+    background-image: url("../img/studio-time-lapse.png");
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -230,8 +232,11 @@
   }
 
   .join__left-heading {
-    font-size: 28px;
-    line-height: 36px;
+    font-size: 24px;
+    line-height: 32px;
     max-width: 100%;
+  }
+  .join__content {
+    padding-left: 0px;
   }
 }

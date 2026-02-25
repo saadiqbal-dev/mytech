@@ -206,6 +206,7 @@
   padding: 0px 25px;
   display: flex;
   flex-direction: column;
+  transition: all 0.3s ease;
 }
 
 .capabilities-button:hover {
@@ -222,10 +223,14 @@
     padding: 60px 120px;
   }
   .services__grid {
-    grid-template-columns: repeat(3, 360px);
-    grid-template-rows: repeat(3, 280px);
+    grid-template-columns: repeat(3, 431px);
+    grid-template-rows: repeat(1, 280px);
     gap: 36px;
     max-width: 1188px;
+  }
+  .services__item-description-text {
+    font-size: 16px;
+    line-height: 24px;
   }
 }
 
@@ -234,7 +239,12 @@
   .services__title {
     font-size: 32px;
   }
-
+  .services__grid {
+    grid-template-columns: repeat(3, 390px);
+    grid-template-rows: repeat(1, 280px);
+    gap: 36px;
+    max-width: 1188px;
+  }
   .services__item {
     padding: 24px;
   }
@@ -286,8 +296,8 @@
 /* 1280px Breakpoint */
 @media (max-width: 1280px) {
   .services__grid {
-    grid-template-columns: repeat(3, 300px);
-    grid-template-rows: repeat(3, 240px);
+    grid-template-columns: repeat(3, 330px);
+    grid-template-rows: repeat(1, 240px);
     gap: 28px;
     max-width: 956px;
   }
@@ -310,7 +320,67 @@
   }
 
   .services__item-description-text {
-    font-size: 16px;
+    font-size: 14px;
+    line-height: normal;
+  }
+
+  .services__icon {
+    transform: translate(-50%, -50%) scale(0.8);
+  }
+
+  .services__plus {
+    bottom: 18px;
+    right: 18px;
+    transform: scale(0.7);
+  }
+
+  /* Maintain scale on hover while rotating */
+  .services__item--expandable:hover .services__plus {
+    transform: scale(0.7) rotate(45deg);
+  }
+
+  .services__cta-button {
+    font-size: 14px;
+    line-height: 14px;
+    padding: 10px 20px;
+    height: auto;
+    margin: 0;
+  }
+
+  .services__cta-button:hover {
+    transform: translateY(-2px);
+  }
+}
+@media (max-width: 1180px) {
+  .services {
+    padding: 60px 40px;
+  }
+  .services__grid {
+    grid-template-columns: repeat(3, 300px);
+    grid-template-rows: repeat(1, 240px);
+    gap: 28px;
+    max-width: 956px;
+  }
+
+  .services__item {
+    padding: 18px;
+  }
+
+  .services__item-description {
+    padding: 18px;
+    /* padding-bottom: 54px; Adjusted to account for reduced padding */
+  }
+
+  .services__item-title {
+    font-size: 18px;
+    line-height: 24px;
+    bottom: 16px;
+    left: 18px;
+    max-width: 210px;
+  }
+
+  .services__item-description-text {
+    font-size: 14px;
     line-height: normal;
   }
 
@@ -342,7 +412,7 @@
   }
 }
 
-@media (max-width: 768px) {
+@media (max-width: 968px) {
   .services {
     padding: 60px 20px;
     gap: 40px;
