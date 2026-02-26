@@ -535,116 +535,63 @@
       },
     },
 
-    // Partners infinite scroll
+    // Partners marquee
     partners: {
-      scrollPosition: 0,
-      scrollSpeed: 1.3, // Pixels per frame
-      animationId: null,
-
       init: function () {
-        this.setupInfiniteScroll();
+        this.initializeMarquee();
       },
 
-      setupInfiniteScroll: function () {
-        const $track = $(".partners__slide-track");
-        if (!$track.length) return;
+      /**
+       * Initialize marquee for seamless infinite scrolling
+       */
+      initializeMarquee: function () {
+        var $marqueeTrack = $(".marquee-track");
 
-        // Get original unique logos (supports both class names for compatibility)
-        const $originalLogos = $track.find(
-          ".partners__images-img, .partners__images-img__template"
-        );
+        if (!$marqueeTrack.length) return;
 
-        if (!$originalLogos.length) return;
+        var $marqueeItems = $marqueeTrack.find(".marquee-item");
 
-        // Store original logos before clearing
-        const originalLogosArray = $originalLogos.toArray().map(el => $(el).clone());
-        const uniqueLogoCount = originalLogosArray.length;
-
-        // Calculate how many clones we need based on viewport width
-        // We want enough logos to fill at least 2x the viewport width for seamless infinite scroll
-        const viewportWidth = $(window).width();
-
-        // Estimate average logo width (will be more accurate once rendered)
-        // Typical logo width is around 150-200px with margins
-        const estimatedLogoWidth = 180;
-        const estimatedTotalWidth = uniqueLogoCount * estimatedLogoWidth;
-
-        // Calculate minimum sets needed to fill 2x viewport (for seamless loop)
-        const minSetsNeeded = Math.ceil((viewportWidth * 2) / estimatedTotalWidth);
-
-        // Use at least 3 sets to ensure smooth animation even with few images
-        const setsToCreate = Math.max(3, minSetsNeeded);
-
-        // Clear the track and rebuild with calculated number of sets
-        $track.empty();
-
-        // Add the calculated number of sets
-        for (let j = 0; j < setsToCreate; j++) {
-          for (let i = 0; i < uniqueLogoCount; i++) {
-            $track.append(originalLogosArray[i].clone());
-          }
+        if (!$marqueeItems.length) {
+          console.warn("No marquee items found to clone");
+          return;
         }
 
-        // Start the animation
-        this.animateScroll($track);
+        if ($marqueeTrack.data("marquee-initialized")) return;
 
-        // Pause on hover
-        $track.on("mouseenter", () => {
-          this.pauseScroll();
+        // Clone items for seamless infinite scrolling
+        var cloneCount = 10;
+        var originalItems = $marqueeItems.clone();
+
+        for (var i = 0; i < cloneCount; i++) {
+          originalItems.clone().appendTo($marqueeTrack);
+        }
+
+        $marqueeTrack.data("marquee-initialized", true);
+
+        // Force reflow and start animation
+        $marqueeTrack[0].offsetHeight;
+        $marqueeTrack.addClass("marquee-active");
+
+        // Pause animation when page is hidden
+        $(document).on("visibilitychange", function () {
+          if (document.hidden) {
+            $marqueeTrack.css("animation-play-state", "paused");
+          } else {
+            $marqueeTrack.css("animation-play-state", "running");
+          }
         });
 
-        $track.on("mouseleave", () => {
-          this.resumeScroll($track);
+        // Re-initialize on window resize
+        var resizeTimer;
+        $(window).on("resize", function () {
+          clearTimeout(resizeTimer);
+          resizeTimer = setTimeout(function () {
+            var $marqueeTrack = $(".marquee-track");
+            if ($marqueeTrack.length && !$marqueeTrack.data("marquee-initialized")) {
+              StormApp.partners.initializeMarquee();
+            }
+          }, 250);
         });
-      },
-
-      animateScroll: function ($track) {
-        const animate = () => {
-          this.scrollPosition += this.scrollSpeed;
-
-          // Get the first logo (supports both class names for compatibility)
-          const $firstLogo = $track
-            .find(".partners__images-img, .partners__images-img__template")
-            .first();
-          const logoWidth = $firstLogo.outerWidth(true);
-
-          // When the first logo is completely scrolled out of view, move it to the end
-          if (this.scrollPosition >= logoWidth) {
-            // Move the first logo to the end
-            $track.append($firstLogo);
-
-            // Adjust the scroll position by subtracting the width of the moved logo
-            this.scrollPosition -= logoWidth;
-
-            // Immediately update the transform to prevent jump
-            $track.css({
-              transform: `translate3d(-${this.scrollPosition}px, 0, 0)`,
-            });
-          }
-
-          // Apply smooth transform
-          $track.css({
-            transform: `translate3d(-${this.scrollPosition}px, 0, 0)`,
-          });
-
-          // Continue animation
-          this.animationId = requestAnimationFrame(animate);
-        };
-
-        this.animationId = requestAnimationFrame(animate);
-      },
-
-      pauseScroll: function () {
-        if (this.animationId) {
-          cancelAnimationFrame(this.animationId);
-          this.animationId = null;
-        }
-      },
-
-      resumeScroll: function ($track) {
-        if (!this.animationId) {
-          this.animateScroll($track);
-        }
       },
     },
 
