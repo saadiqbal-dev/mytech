@@ -782,6 +782,90 @@
       },
     },
 
+    // Latest News Carousel
+    newsCarousel: {
+      $carousel: null,
+      $prevBtnDesktop: null,
+      $nextBtnDesktop: null,
+      $prevBtnMobile: null,
+      $nextBtnMobile: null,
+
+      init: function () {
+        this.$carousel = $("#newsCarousel");
+
+        if (this.$carousel.length) {
+          this.$prevBtnDesktop = $("#newsCarouselPrev");
+          this.$nextBtnDesktop = $("#newsCarouselNext");
+          this.$prevBtnMobile = $("#newsCarouselPrevMobile");
+          this.$nextBtnMobile = $("#newsCarouselNextMobile");
+
+          this.setupControls();
+        }
+      },
+
+      scrollCarousel: function (direction) {
+        if (!this.$carousel) return;
+
+        var scrollAmount = 0;
+        var cardWidth = this.$carousel.find(".latest-news-card").outerWidth();
+        var viewportWidth = StormApp.utils.getViewportWidth();
+        var gap = viewportWidth >= 1200 ? 50 : 20;
+
+        if (viewportWidth < 768) {
+          scrollAmount = this.$carousel.outerWidth() * 0.75;
+        } else if (viewportWidth < 992) {
+          scrollAmount = this.$carousel.outerWidth() * 0.5;
+        } else if (viewportWidth < 1200) {
+          scrollAmount = this.$carousel.outerWidth() * 0.33333;
+        } else {
+          scrollAmount = cardWidth + gap;
+        }
+
+        if (direction === "next") {
+          this.$carousel.scrollLeft(this.$carousel.scrollLeft() + scrollAmount);
+        } else {
+          this.$carousel.scrollLeft(this.$carousel.scrollLeft() - scrollAmount);
+        }
+      },
+
+      setupControls: function () {
+        var self = this;
+
+        // Desktop controls
+        if (this.$prevBtnDesktop.length) {
+          this.$prevBtnDesktop.on("click", function () {
+            self.scrollCarousel("prev");
+          });
+        }
+
+        if (this.$nextBtnDesktop.length) {
+          this.$nextBtnDesktop.on("click", function () {
+            self.scrollCarousel("next");
+          });
+        }
+
+        // Mobile controls
+        if (this.$prevBtnMobile.length) {
+          this.$prevBtnMobile.on("click", function () {
+            self.scrollCarousel("prev");
+          });
+        }
+
+        if (this.$nextBtnMobile.length) {
+          this.$nextBtnMobile.on("click", function () {
+            self.scrollCarousel("next");
+          });
+        }
+      },
+
+      destroy: function () {
+        if (this.$prevBtnDesktop) this.$prevBtnDesktop.off("click");
+        if (this.$nextBtnDesktop) this.$nextBtnDesktop.off("click");
+        if (this.$prevBtnMobile) this.$prevBtnMobile.off("click");
+        if (this.$nextBtnMobile) this.$nextBtnMobile.off("click");
+      },
+    },
+
     // Scroll animations
     scrollAnimations: {
       elements: [],
@@ -877,6 +961,7 @@
         this.services.init();
         this.partners.init();
         this.blogFilters.init();
+        this.newsCarousel.init();
         this.parallax.init();
         this.scrollAnimations.init();
 
