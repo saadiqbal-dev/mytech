@@ -1,10 +1,12 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en" class="no-js">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Storm Inc - Next Level Digital Marketing</title>
-    <script>document.documentElement.classList.remove('no-js');</script>
+    <script>
+      document.documentElement.classList.remove("no-js");
+    </script>
     <meta
       name="description"
       content="Storm Inc is an Auckland-based full-service digital marketing agency specializing in lead generation and sales performance."
@@ -45,7 +47,10 @@
       rel="preload"
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
       as="style"
-      onload="this.onload=null;this.rel='stylesheet'"
+      onload="
+        this.onload = null;
+        this.rel = 'stylesheet';
+      "
     />
     <noscript>
       <link
@@ -168,7 +173,11 @@
         <div class="mobile-menu__nav-container">
           <nav>
             <ul class="mobile-menu__nav">
-              <div class="mobile-menu__divider"></div>
+              <li
+                class="mobile-menu__divider"
+                role="separator"
+                aria-hidden="true"
+              ></li>
               <li class="mobile-menu__nav-item">
                 <button
                   class="mobile-menu__nav-link mobile-menu__nav-link--dropdown"
@@ -206,7 +215,9 @@
                         <a href="#" class="mobile-menu__dropdown-link"
                           >Google Ads (SEM)</a
                         >
-                        <a href="search-engine-optimization.html" class="mobile-menu__dropdown-link"
+                        <a
+                          href="search-engine-optimization.html"
+                          class="mobile-menu__dropdown-link"
                           >Search Engine Optimisation (SEO)</a
                         >
                         <a href="#" class="mobile-menu__dropdown-link"
@@ -308,7 +319,11 @@
                   </div>
                 </div>
               </li>
-              <div class="mobile-menu__divider"></div>
+              <li
+                class="mobile-menu__divider"
+                role="separator"
+                aria-hidden="true"
+              ></li>
               <li class="mobile-menu__nav-item">
                 <button
                   class="mobile-menu__nav-link mobile-menu__nav-link--dropdown"
@@ -338,7 +353,9 @@
                     <div class="mobile-menu__dropdown-category">
                       <p class="mobile-menu__dropdown-title">WORK</p>
                       <div class="mobile-menu__dropdown-links">
-                        <a href="case-studies.html" class="mobile-menu__dropdown-link"
+                        <a
+                          href="case-studies.html"
+                          class="mobile-menu__dropdown-link"
                           >Case Studies</a
                         >
                         <a href="work.html" class="mobile-menu__dropdown-link"
@@ -414,7 +431,11 @@
                   </div>
                 </div>
               </li>
-              <div class="mobile-menu__divider"></div>
+              <li
+                class="mobile-menu__divider"
+                role="separator"
+                aria-hidden="true"
+              ></li>
               <li class="mobile-menu__nav-item">
                 <button
                   class="mobile-menu__nav-link mobile-menu__nav-link--dropdown"
@@ -444,10 +465,16 @@
                     <div class="mobile-menu__dropdown-category">
                       <p class="mobile-menu__dropdown-title">ABOUT</p>
                       <div class="mobile-menu__dropdown-links">
-                        <a href="about.html" class="mobile-menu__dropdown-link">About</a>
-                        <a href="blogs.html" class="mobile-menu__dropdown-link">News</a>
+                        <a href="about.html" class="mobile-menu__dropdown-link"
+                          >About</a
+                        >
+                        <a href="blogs.html" class="mobile-menu__dropdown-link"
+                          >News</a
+                        >
                         <a href="#" class="mobile-menu__dropdown-link">Team</a>
-                        <a href="capabilities.html" class="mobile-menu__dropdown-link"
+                        <a
+                          href="capabilities.html"
+                          class="mobile-menu__dropdown-link"
                           >Capabilities</a
                         >
                       </div>
@@ -506,7 +533,11 @@
                   </div>
                 </div>
               </li>
-              <div class="mobile-menu__divider"></div>
+              <li
+                class="mobile-menu__divider"
+                role="separator"
+                aria-hidden="true"
+              ></li>
               <li class="mobile-menu__nav-item">
                 <a href="contact.html" class="mobile-menu__nav-link">Contact</a>
               </li>
@@ -670,7 +701,7 @@
       </div>
 
       <!-- Dropdown Menus -->
-            <div class="header__dropdown" id="compatibilities-dropdown">
+      <div class="header__dropdown" id="compatibilities-dropdown">
         <div class="dropdown__header-styles">
           <!-- Links Section (top) -->
           <div class="header__dropdown-links-section">
@@ -744,7 +775,9 @@
           <div class="header__dropdown-cta-section">
             <div class="row gx-4">
               <div class="col">
-                <div class="dropdown-capabilities__cta dropdown-capabilities__cta--pink">
+                <div
+                  class="dropdown-capabilities__cta dropdown-capabilities__cta--pink"
+                >
                   <div class="dropdown-capabilities__cta-text">
                     <p class="dropdown-capabilities__cta-title">
                       Digital Marketing Strategy
@@ -770,7 +803,9 @@
                 </div>
               </div>
               <div class="col">
-                <div class="dropdown-capabilities__cta dropdown-capabilities__cta--dark">
+                <div
+                  class="dropdown-capabilities__cta dropdown-capabilities__cta--dark"
+                >
                   <div class="dropdown-capabilities__cta-text">
                     <p class="dropdown-capabilities__cta-title">
                       Design Studio
@@ -800,9 +835,7 @@
         </div>
       </div>
 
-      </div>
-
-            <div class="header__dropdown" id="work-dropdown">
+      <div class="header__dropdown" id="work-dropdown">
         <div class="dropdown__header-styles">
           <!-- Links Section (top) -->
           <div class="header__dropdown-links-section">
@@ -813,12 +846,12 @@
                   <p class="dropdown-capabilities__title">WORK</p>
                   <div class="dropdown-capabilities__links-list">
                     <!-- Backend can loop through links here -->
-                    <a href="case-studies.html" class="dropdown-capabilities__link"
+                    <a
+                      href="case-studies.html"
+                      class="dropdown-capabilities__link"
                       >Case Studies</a
                     >
-                    <a
-                      href="work.html"
-                      class="dropdown-capabilities__link"
+                    <a href="work.html" class="dropdown-capabilities__link"
                       >Portfolio</a
                     >
                   </div>
@@ -847,7 +880,9 @@
           <div class="header__dropdown-cta-section">
             <div class="row gx-4">
               <div class="col">
-                <div class="dropdown-capabilities__cta dropdown-capabilities__cta--pink">
+                <div
+                  class="dropdown-capabilities__cta dropdown-capabilities__cta--pink"
+                >
                   <div class="dropdown-capabilities__cta-text">
                     <p class="dropdown-capabilities__cta-title">
                       Digital Marketing Strategy
@@ -873,7 +908,9 @@
                 </div>
               </div>
               <div class="col">
-                <div class="dropdown-capabilities__cta dropdown-capabilities__cta--dark">
+                <div
+                  class="dropdown-capabilities__cta dropdown-capabilities__cta--dark"
+                >
                   <div class="dropdown-capabilities__cta-text">
                     <p class="dropdown-capabilities__cta-title">
                       Design Studio
@@ -903,9 +940,7 @@
         </div>
       </div>
 
-      </div>
-
-            <div class="header__dropdown" id="about-dropdown">
+      <div class="header__dropdown" id="about-dropdown">
         <div class="dropdown__header-styles__about">
           <!-- Links Section (top) -->
           <div class="header__dropdown-links-section">
@@ -938,7 +973,9 @@
           <div class="header__dropdown-cta-section">
             <div class="row gx-4">
               <div class="col">
-                <div class="dropdown-capabilities__cta dropdown-capabilities__cta--pink">
+                <div
+                  class="dropdown-capabilities__cta dropdown-capabilities__cta--pink"
+                >
                   <div class="dropdown-capabilities__cta-text">
                     <p class="dropdown-capabilities__cta-title">
                       Digital Marketing Strategy
@@ -964,7 +1001,9 @@
                 </div>
               </div>
               <div class="col">
-                <div class="dropdown-capabilities__cta dropdown-capabilities__cta--dark">
+                <div
+                  class="dropdown-capabilities__cta dropdown-capabilities__cta--dark"
+                >
                   <div class="dropdown-capabilities__cta-text">
                     <p class="dropdown-capabilities__cta-title">
                       Design Studio
@@ -993,245 +1032,124 @@
           </div>
         </div>
       </div>
-    </div>
     </header>
 
     <!-- Hero Section -->
     <section class="hero-template">
-      <img src="./assets/img/heroImages/seo.png" />
-      <h1 class="hero__heading-template">Search Engine Optimization</h1>
+      <img src="./assets/img/cloud-made-simple.png" />
+      <h1 class="hero__heading-template">Cloud Made Simple</h1>
     </section>
     <section class="content__template__left p-b-50">
       <div class="content__template-content">
         <div class="content__template-content__text" data-animate="fadeInUp">
-          <h2 class="content__template-content__text__title">
-            Boost Your Website Visibility
-          </h2>
           <p class="content__template-content__text__desc">
-            With over 90% of online experiences beginning with a search engine,
-            it's hard to overstate the importance of maximising your website's
-            visibility to drive sales-ready prospects to your website in the
-            moments that matter the most.
+            The goal with the cloud is to simplify while improving your
+            solution. There are times where it has been better for us to stay
+            with physical servers and we will do whatever will suit your
+            business needs the best. 
           </p>
-          <!-- <p class="content__template-content__text__desc">
-            We never aimed to be the biggest—just the best where it counts: in
-            the quality of our service, the depth of our expertise, and the
-            impact of our results.
-          </p> -->
         </div>
-        <div class="content__template-content__image" data-animate="fadeInUp" data-animate-delay="200">
-          <img src="./assets/img/about/seo/intro.png" alt="About Image" />
+        <div
+          class="content__template-content__image"
+          data-animate="fadeInUp"
+          data-animate-delay="200"
+        >
+          <img src="./assets/img/cms-1.png" alt="About Image" />
         </div>
       </div>
     </section>
     <section class="content__template__right p-t-50">
       <div class="content__template-content__reverse">
         <div class="content__template-content__text" data-animate="fadeInUp">
+          <p class="content__template-content__text__desc">Email and Data</p>
           <p class="content__template-content__text__desc">
-            Boosting website visibility in search engines and driving the
-            highest achievable volumes of organic traffic to your website should
-            be a top-of-the agenda item for all businesses and marketing
-            professional trying to increase sales.
+            Having your data and email cloud based means you get to utilise
+            someone else’s hardware and security infrastructure for a fraction
+            of the price of doing it yourself. Microsoft Office 365 is the
+            leader in this space which is why we choose to use this product.
+            Office 365 comprises mainly of;
           </p>
-          <p class="content__template-content__text__desc">
-            We have a highly experienced SEO team with significant expertise in
-            all the core disciplines required to run sophisticated and
-            successful SEO campaigns; search engine expertise, website
-            development, link building, data and analytics and content
-            development services.
-          </p>
+          <ul>
+            <li>Exchange for email, contacts and calendar</li>
+            <li>SharePoint for company data</li>
+            <li>OneDrive for individual’s data</li>
+          </ul>
         </div>
-        <div class="content__template-content__image" data-animate="fadeInUp" data-animate-delay="200">
-          <img src="./assets/img/about/seo/get-found.png" alt="About Image" />
+        <div
+          class="content__template-content__image"
+          data-animate="fadeInUp"
+          data-animate-delay="200"
+        >
+          <img src="./assets/img/cms-2.png" alt="About Image" />
         </div>
       </div>
     </section>
     <section class="text-section">
       <div class="text-section__main p-t-100">
         <div class="content__template-content__text" data-animate="fadeInUp">
-          <h2 class="content__template-content__text__title">
-            SEO Audit & Strategy Development
-          </h2>
           <p class="content__template-content__text__desc">
-            Our process begins with an audit of your website performance
-            including a review of your website traffic, landing pages,
-            structure, content, and technical profile. We also analyse your
-            off-site presence including your Google Business Profile, social
-            presence and backlink profile.
-          </p>
-          <p class="content__template-content__text__desc w-775">
-            An in-depth audit will also probe the capabilities of key
-            competitors, to uncover relative strengths and weaknesses and carry
-            out keyword research to gauge the level of commercial opportunity
-            within the market and define your place within it.
+            We work with you to design your system to best suit your needs.
+            Utilizing Microsoft’s Office 365 increases your data flexibility and
+            availability, while adding in more security as well as lowering
+            operating costs. They are also improving it as well which you don’t
+            have to pay extra for but get the benefits of.
           </p>
         </div>
         <div class="content__template-content__text" data-animate="fadeInUp">
           <p class="content__template-content__text__desc w-775">
-            We then use the SEO audit along with the marketplace insights and
-            competitive intelligence insights to formulate a tailored SEO
-            strategy and action plan. The SEO strategy is a clearly documented
-            and timetabled 'plan of attack' designed to start driving your
-            website rankings and visibility. This includes technical fixes,
-            on-page optimisation, content improvements, and off-site
-            recommendations to build authority. All actions are prioritised to
-            generate measurable results as efficiently as possible.
+            Above is only mentioned the core components, there is also many
+            other communication and productivity tools that they provide (a lot
+            even for free) as part of their suite which makes it the most
+            diverse option and when you get to use tools from the same provider
+            across the board the integration is much more seamless.
           </p>
         </div>
       </div>
     </section>
 
-    <section class="content__template__left p-b-50">
+    <section class="content__template__left p-b-50 pt-0">
       <div class="content__template-content">
-        <div class="content__template-content__text-full" data-animate="fadeInUp">
-          <h2 class="content__template-content__text__title">
-            Onsite Optimisation & Web Enhancements
-          </h2>
+        <div
+          class="content__template-content__text-full gap-2"
+          data-animate="fadeInUp"
+        >
+          <h2 class="content__template-content__text__title">Servers</h2>
           <p class="content__template-content__text__desc short__width">
-            Once the SEO strategy has been translated into a timetabled action
-            plan and the website's performance has been benchmarked, we begin to
-            roll out the implementation stage, which is supported by project
-            updates and ongoing performance reporting.
+            Microsoft Azure now makes it possible for us to move even our
+            application servers to the cloud. This enables us to where practical
+            move all physical or virtual servers to the cloud. This creates
+            greater flexibility around how we utilise our servers and server
+            resource.
           </p>
         </div>
-        <div class="content__template-content__image" data-animate="fadeInUp" data-animate-delay="200">
-          <img
-            src="./assets/img/about/seo/optimization.png"
-            alt="About Image"
-          />
+        <div
+          class="content__template-content__image"
+          data-animate="fadeInUp"
+          data-animate-delay="200"
+        >
+          <img src="./assets/img/cms-3.png" class="mt-60" alt="About Image" />
         </div>
       </div>
     </section>
-    <section class="content__template__right p-t-50">
+    <section class="content__template__right p-t-50 pt-5 mt-5">
       <div class="content__template-content__reverse">
         <div class="content__template-content__text-full">
           <p class="content__template-content__text__desc shorter__width">
-            All SEO projects are unique and tailored to the client's individual
+            All SEO projects are unique and tailored to the client’s individual
             circumstances and preferences but will normally include key elements
-            such as website access, SEO software integration, website technical
+            such as website access, SEO software integration, website technical
             upgrades and fixes, content development and optimisation including
             meta data, internal linking optimisation, development of technical
             files e.g. XML sitemaps, robots.txt, image optimisation, load speed
-            enhancements and image optimisation.
+            enhancements and image optimisation.
           </p>
         </div>
         <div class="content__template-content__image">
-          <img src="./assets/img/about/seo/people.png" alt="About Image" />
+          <img src="./assets/img/cms-4.png" alt="About Image" />
         </div>
       </div>
     </section>
 
-    <section class="bg__content" data-parallax>
-      <!-- <div class="bg__content-parallax" data-parallax-bg></div> -->
-      <div class="bg__content-text" data-animate="fadeInUp">
-        <h2 class="bg__content-text__title">
-          Organic web listings receive 73% of all clicks — highlighting just how
-          crucial it is to rank well in search results.
-        </h2>
-        <p class="bg__content-text__desc">BrightEdge 2022</p>
-      </div>
-    </section>
-    <section class="content__template__left p-b-50">
-      <div class="content__template-content">
-        <div class="content__template-content__text-full" data-animate="fadeInUp">
-          <h2 class="content__template-content__text__title">
-            Backlinks & Listing Management
-          </h2>
-          <p class="content__template-content__text__desc shorter__width">
-            In additional to the on-site search engine optimisation work, we can
-            carry out off-site optimisation work to improve your website
-            backlink profile and build your website’s authority and improve your
-            search engine rankings and traffic.
-          </p>
-        </div>
-        <div class="content__template-content__image" data-animate="fadeInUp" data-animate-delay="200">
-          <img src="./assets/img/about/seo/backlink.png" alt="About Image" />
-        </div>
-      </div>
-    </section>
-    <section class="content__template__right p-t-50">
-      <div class="content__template-content__reverse">
-        <div class="content__template-content__text-full">
-          <p class="content__template-content__text__desc shorter__width">
-            The off-site optimisation process often involves a combination of
-            removing and disavowing potentially harmful toxic backlinks (to
-            avoid algorithmic penalties), improving the quality of your
-            website's existing backlinks and developing new high-quality
-            backlinks using search engine-approved, 'white hat' link building
-            processes.
-          </p>
-          <p class="content__template-content__text__desc shorter__width">
-            We can also list and maintain your website's listing across a large
-            range of directories and voice assistants including Apple,
-            Instagram, Facebook, Alexa, Siri and Google Assistant.
-          </p>
-        </div>
-        <div class="content__template-content__image">
-          <img src="./assets/img/about/seo/laptop.png" alt="About Image" />
-        </div>
-      </div>
-    </section>
-
-    <!--
-    <section class="go-found">
-      <div class="go-found__grid">
-        <div class="content__template-content__text-left go-found__padding">
-          <div class="content__template-content__text-full" data-animate="fadeInUp">
-            <h2 class="content__template-content__text__title">
-              Local Search Optimization
-            </h2>
-            <p class="content__template-content__text__desc shorter__width">
-              Dominate your local rankings with powerful and proven local SEO
-              techniques that will significantly boost your business's local
-              search visibility, ranking and traffic from locally based searches
-              and map products. We provide powerful local search optimisation
-              services for both standalone businesses and franchise and other
-              multi-outlet businesses.
-            </p>
-            <p class="content__template-content__text__desc shorter__width">
-              If you want to take charge of your business's NAP (name, address,
-              and phone) data and maximise the visibility, traffic, leads and
-              sales from your Google My Business and other key online business
-              listings, improve your online review score and reputation, talk to
-              us about our local search optimisation services.
-            </p>
-          </div>
-        </div>
-        <div class="go-found__bg"></div>
-      </div>
-    </section>
-    -->
-    <section class="google__partner">
-      <div class="google__partner-content">
-        <div class="google__partner-content__text" data-animate="fadeInUp">
-          <h2 class="content__template-content__text__title">
-            Local Search Optimization
-          </h2>
-          <p class="content__template-content__text__desc">
-            Dominate your local rankings with powerful and proven local SEO
-              techniques that will significantly boost your business's local
-              search visibility, ranking and traffic from locally based searches
-              and map products. We provide powerful local search optimisation
-              services for both standalone businesses and franchise and other
-              multi-outlet businesses.
-          </p>
-          <p class="content__template-content__text__desc">
-             If you want to take charge of your business's NAP (name, address,
-              and phone) data and maximise the visibility, traffic, leads and
-              sales from your Google My Business and other key online business
-              listings, improve your online review score and reputation, talk to
-              us about our local search optimisation services.
-          </p>
-        </div>
-      </div>
-      <div
-        class="google-partner__image"
-        data-animate="fadeInUp"
-        data-animate-delay="200"
-      >
-        <img src="./assets/img/about/seo/get-found.png" />
-      </div>
-    </section>
     <section class="services__template p-t-100">
       <h2 class="services__title" data-animate="fadeInUp">Discover More</h2>
       <div class="services__grid-tempalte-1">
@@ -1405,9 +1323,6 @@
             </p>
           </div>
         </div>
-
-        
-        </div>
       </div>
     </section>
 
@@ -1443,8 +1358,13 @@
                 >Where to find us</span
               >
               <br />
-              <a href="https://maps.app.goo.gl/cbzWH6k6ANqYBYrM8" target="_blank" class="footer__address-link">3 Argus Place <br />
-              Auckland</a>
+              <a
+                href="https://maps.app.goo.gl/cbzWH6k6ANqYBYrM8"
+                target="_blank"
+                class="footer__address-link"
+                >3 Argus Place <br />
+                Auckland</a
+              >
             </p>
           </div>
           <div class="footer__content-navigation__socials">
@@ -1474,8 +1394,13 @@
 
           <div class="footer__mobile-address">
             Storm IMC Ltd.<br />
-            <a href="https://maps.app.goo.gl/cbzWH6k6ANqYBYrM8" target="_blank" class="footer__address-link">3 Argus Place<br />
-            Auckland</a>
+            <a
+              href="https://maps.app.goo.gl/cbzWH6k6ANqYBYrM8"
+              target="_blank"
+              class="footer__address-link"
+              >3 Argus Place<br />
+              Auckland</a
+            >
           </div>
 
           <div class="footer__mobile-socials">
