@@ -18,6 +18,7 @@
   /* max-width: 1920px; */
   margin-left: auto;
   margin-right: auto;
+  overflow: hidden;
 }
 
 .join__left {
@@ -32,6 +33,25 @@
   flex-direction: column;
   align-items: start;
   justify-content: center;
+}
+
+/* Dark Blue Background Variant */
+.join--dark-blue {
+  max-height: 693px;
+}
+
+.join--dark-blue .join__left {
+  background: #003a50;
+}
+
+/* Contact Page Heading Variant */
+.join__left-heading--contact {
+  color: #f5f5f2;
+  font-family: var(--font-mona-sans);
+  font-size: 32px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 42px; /* 131.25% */
 }
 
 .join__content {
@@ -224,6 +244,11 @@
 
   .join__right img {
     display: none;
+  }
+
+  /* Contact page mobile background */
+  .join--dark-blue .join__right {
+    background-image: url("../img/contact-2.jpg");
   }
 
   .join__content {

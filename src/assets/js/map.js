@@ -1,70 +1,37 @@
 // Google Maps with Shades of Grey styling for Storm Inc Contact Page
 
-// Custom map styling - Shades of Grey
+// Custom map styling - Clean and modern
 const mapStyles = [
+  {
+    featureType: "all",
+    elementType: "geometry.fill",
+    stylers: [
+      {
+        weight: "2.00",
+      },
+    ],
+  },
   {
     featureType: "all",
     elementType: "geometry.stroke",
     stylers: [
       {
-        visibility: "off",
+        color: "#9c9c9c",
       },
     ],
   },
   {
     featureType: "all",
-    elementType: "labels.text.fill",
-    stylers: [
-      {
-        saturation: 36,
-      },
-      {
-        color: "#000000",
-      },
-      {
-        lightness: 40,
-      },
-    ],
-  },
-  {
-    featureType: "all",
-    elementType: "labels.text.stroke",
+    elementType: "labels.text",
     stylers: [
       {
         visibility: "on",
       },
-      {
-        color: "#000000",
-      },
-      {
-        lightness: 16,
-      },
     ],
   },
   {
-    featureType: "all",
-    elementType: "labels.icon",
-    stylers: [
-      {
-        visibility: "off",
-      },
-    ],
-  },
-  {
-    featureType: "administrative",
-    elementType: "geometry.fill",
-    stylers: [
-      {
-        color: "#000000",
-      },
-      {
-        lightness: 20,
-      },
-    ],
-  },
-  {
-    featureType: "administrative",
-    elementType: "geometry.stroke",
+    featureType: "administrative.land_parcel",
+    elementType: "all",
     stylers: [
       {
         visibility: "off",
@@ -73,43 +40,37 @@ const mapStyles = [
   },
   {
     featureType: "landscape",
-    elementType: "geometry",
+    elementType: "all",
     stylers: [
       {
-        color: "#000000",
+        color: "#f2f2f2",
       },
       {
-        lightness: 20,
+        visibility: "simplified",
+      },
+    ],
+  },
+  {
+    featureType: "landscape",
+    elementType: "geometry.fill",
+    stylers: [
+      {
+        color: "#ffffff",
+      },
+    ],
+  },
+  {
+    featureType: "landscape.man_made",
+    elementType: "geometry.fill",
+    stylers: [
+      {
+        color: "#ffffff",
       },
     ],
   },
   {
     featureType: "poi",
-    elementType: "geometry",
-    stylers: [
-      {
-        color: "#000000",
-      },
-      {
-        lightness: 21,
-      },
-    ],
-  },
-  {
-    featureType: "road.highway",
-    elementType: "geometry.fill",
-    stylers: [
-      {
-        color: "#000000",
-      },
-      {
-        lightness: 17,
-      },
-    ],
-  },
-  {
-    featureType: "road.highway",
-    elementType: "geometry.stroke",
+    elementType: "all",
     stylers: [
       {
         visibility: "off",
@@ -117,50 +78,155 @@ const mapStyles = [
     ],
   },
   {
-    featureType: "road.arterial",
-    elementType: "geometry",
+    featureType: "road",
+    elementType: "all",
     stylers: [
       {
-        color: "#000000",
+        saturation: -100,
       },
       {
-        lightness: 18,
+        lightness: 45,
+      },
+      {
+        visibility: "on",
+      },
+    ],
+  },
+  {
+    featureType: "road",
+    elementType: "geometry.fill",
+    stylers: [
+      {
+        color: "#eeeeee",
+      },
+    ],
+  },
+  {
+    featureType: "road",
+    elementType: "labels.text.fill",
+    stylers: [
+      {
+        color: "#7b7b7b",
+      },
+    ],
+  },
+  {
+    featureType: "road",
+    elementType: "labels.text.stroke",
+    stylers: [
+      {
+        color: "#ffffff",
+      },
+    ],
+  },
+  {
+    featureType: "road.highway",
+    elementType: "all",
+    stylers: [
+      {
+        visibility: "on",
+      },
+    ],
+  },
+  {
+    featureType: "road.arterial",
+    elementType: "labels.icon",
+    stylers: [
+      {
+        visibility: "off",
       },
     ],
   },
   {
     featureType: "road.local",
-    elementType: "geometry",
+    elementType: "all",
     stylers: [
       {
-        color: "#000000",
-      },
-      {
-        lightness: 16,
+        visibility: "simplified",
       },
     ],
   },
   {
     featureType: "transit",
-    elementType: "geometry",
+    elementType: "all",
     stylers: [
       {
-        color: "#000000",
+        visibility: "off",
+      },
+    ],
+  },
+  {
+    featureType: "transit.line",
+    elementType: "all",
+    stylers: [
+      {
+        visibility: "on",
+      },
+    ],
+  },
+  {
+    featureType: "transit.station",
+    elementType: "all",
+    stylers: [
+      {
+        visibility: "on",
       },
       {
-        lightness: 19,
+        hue: "#ff8700",
+      },
+      {
+        saturation: "1",
+      },
+    ],
+  },
+  {
+    featureType: "transit.station",
+    elementType: "labels.text",
+    stylers: [
+      {
+        visibility: "on",
+      },
+      {
+        hue: "#ff9500",
       },
     ],
   },
   {
     featureType: "water",
-    elementType: "geometry",
+    elementType: "all",
     stylers: [
       {
-        color: "#000000",
+        color: "#46bcec",
       },
       {
-        lightness: 17,
+        visibility: "on",
+      },
+    ],
+  },
+  {
+    featureType: "water",
+    elementType: "geometry.fill",
+    stylers: [
+      {
+        color: "#c8d7d4",
+      },
+    ],
+  },
+  {
+    featureType: "water",
+    elementType: "labels.text.fill",
+    stylers: [
+      {
+        color: "#070707",
+      },
+    ],
+  },
+  {
+    featureType: "water",
+    elementType: "labels.text.stroke",
+    stylers: [
+      {
+        color: "#ffffff",
       },
     ],
   },
