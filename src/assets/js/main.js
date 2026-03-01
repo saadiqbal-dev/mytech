@@ -59,7 +59,7 @@
       getViewportWidth: function () {
         return Math.max(
           document.documentElement.clientWidth || 0,
-          window.innerWidth || 0
+          window.innerWidth || 0,
         );
       },
 
@@ -123,10 +123,10 @@
         const mobileMenuClose = document.getElementById("mobile-menu-close");
         const mobileMenu = document.getElementById("mobile-menu");
         const mobileMenuLinks = document.querySelectorAll(
-          ".mobile-menu__nav-link:not(.mobile-menu__nav-link--dropdown)"
+          ".mobile-menu__nav-link:not(.mobile-menu__nav-link--dropdown)",
         );
         const mobileDropdownButtons = document.querySelectorAll(
-          ".mobile-menu__nav-link--dropdown"
+          ".mobile-menu__nav-link--dropdown",
         );
 
         if (mobileMenuToggle && mobileMenu) {
@@ -159,7 +159,7 @@
               // Get the dropdown ID
               const dropdownId = button.getAttribute("data-dropdown");
               const dropdown = document.getElementById(
-                dropdownId + "-dropdown"
+                dropdownId + "-dropdown",
               );
 
               if (dropdown) {
@@ -174,7 +174,7 @@
                     const otherDropdownId =
                       otherButton.getAttribute("data-dropdown");
                     const otherDropdown = document.getElementById(
-                      otherDropdownId + "-dropdown"
+                      otherDropdownId + "-dropdown",
                     );
                     if (otherDropdown) {
                       otherDropdown.classList.remove("active");
@@ -242,7 +242,7 @@
             ) {
               $(".navbar-nav .nav-link").removeClass("active");
               $(`.navbar-nav .nav-link[href="#${sectionId}"]`).addClass(
-                "active"
+                "active",
               );
             }
           });
@@ -391,7 +391,7 @@
         $(document).on("shown.bs.modal", ".modal", function () {
           const modal = $(this);
           const focusableElements = modal.find(
-            'button, [href], input, select, textarea, [tabindex]:not([tabindex="-1"])'
+            'button, [href], input, select, textarea, [tabindex]:not([tabindex="-1"])',
           );
           const firstElement = focusableElements.first();
           const lastElement = focusableElements.last();
@@ -430,7 +430,7 @@
         $(document).on("shown.bs.collapse", function (e) {
           const firstFocusable = $(e.target)
             .find(
-              'button, [href], input, select, textarea, [tabindex]:not([tabindex="-1"])'
+              'button, [href], input, select, textarea, [tabindex]:not([tabindex="-1"])',
             )
             .first();
           if (firstFocusable.length) {
@@ -454,7 +454,7 @@
         // ARIA live region for dynamic content updates
         if (!$("#live-region").length) {
           $("body").append(
-            '<div id="live-region" class="sr-only" aria-live="polite" aria-atomic="true"></div>'
+            '<div id="live-region" class="sr-only" aria-live="polite" aria-atomic="true"></div>',
           );
         }
       },
@@ -587,7 +587,10 @@
           clearTimeout(resizeTimer);
           resizeTimer = setTimeout(function () {
             var $marqueeTrack = $(".marquee-track");
-            if ($marqueeTrack.length && !$marqueeTrack.data("marquee-initialized")) {
+            if (
+              $marqueeTrack.length &&
+              !$marqueeTrack.data("marquee-initialized")
+            ) {
               StormApp.partners.initializeMarquee();
             }
           }, 250);
@@ -683,7 +686,7 @@
         this.observer = new IntersectionObserver((entries) => {
           entries.forEach((entry) => {
             const element = this.elements.find(
-              (el) => el.section === entry.target
+              (el) => el.section === entry.target,
             );
             if (element) {
               element.isVisible = entry.isIntersecting;
@@ -758,8 +761,8 @@
             Math.min(
               1,
               (scrollTop + windowHeight - elementTop) /
-                (windowHeight + elementHeight)
-            )
+                (windowHeight + elementHeight),
+            ),
           );
 
           // Transform range: move background up by 50px as the element scrolls through viewport
@@ -779,6 +782,92 @@
         }
         window.removeEventListener("scroll", this.updatePositions);
         window.removeEventListener("resize", this.updatePositions);
+      },
+    },
+
+    // About Page Parallax Image Effect
+    aboutParallax: {
+      $parallaxImg: null,
+      isAnimating: false,
+
+      init: function () {
+        // Check for reduced motion preference
+        if (window.matchMedia("(prefers-reduced-motion: reduce)").matches) {
+          return;
+        }
+
+        // Find the parallax image using jQuery
+        this.$parallaxImg = $(".parallax-img");
+        if (!this.$parallaxImg.length) return;
+
+        // Setup scroll listener with requestAnimationFrame
+        this.setupScrollListener();
+      },
+
+      setupScrollListener: function () {
+        const self = this;
+        const handleScroll = () => {
+          if (!self.isAnimating) {
+            window.requestAnimationFrame(() => {
+              self.updatePosition();
+              self.isAnimating = false;
+            });
+            self.isAnimating = true;
+          }
+        };
+
+        $(window).on("scroll", handleScroll);
+      },
+
+      updatePosition: function () {
+        if (!this.$parallaxImg || !this.$parallaxImg.length) return;
+
+        const scrollTop = $(window).scrollTop();
+        const windowHeight = $(window).height();
+
+        // Get the position of the parallax image
+        const elementTop = this.$parallaxImg.offset().top;
+        const elementHeight = this.$parallaxImg.outerHeight();
+
+        // Check if element is in viewport
+        const isInViewport =
+          scrollTop + windowHeight > elementTop &&
+          scrollTop < elementTop + elementHeight;
+
+        if (isInViewport) {
+          // Calculate how far the element has entered the viewport
+          const scrollOffset = 300; // Start effect after 300px into viewport
+          const elementScrolled = scrollTop + windowHeight - elementTop;
+
+          // Only apply parallax after scrolling 300px into the element
+          if (elementScrolled > scrollOffset) {
+            // Calculate progress starting from offset point (0 to 1)
+            const adjustedProgress = Math.max(
+              0,
+              Math.min(
+                1,
+                (elementScrolled - scrollOffset) /
+                  (windowHeight + elementHeight - scrollOffset)
+              )
+            );
+
+            // Enhanced parallax: move image down by 150px as user scrolls down
+            // Using positive values to move down (opposite of typical parallax for subtle effect)
+            const maxTransform = 150;
+            const translateY = adjustedProgress * maxTransform;
+
+            // Apply transform with hardware acceleration using jQuery
+            this.$parallaxImg.css({
+              transform: `translate3d(0, ${translateY}px, 0)`,
+              transition: "none",
+            });
+          } else {
+            // Keep image in original position until offset is reached
+            this.$parallaxImg.css({
+              transform: "translate3d(0, 0, 0)",
+            });
+          }
+        }
       },
     },
 
@@ -908,7 +997,7 @@
         this.observer = new IntersectionObserver((entries) => {
           entries.forEach((entry) => {
             const elementData = this.elements.find(
-              (el) => el.element === entry.target
+              (el) => el.element === entry.target,
             );
             if (elementData && entry.isIntersecting && !elementData.triggered) {
               this.triggerAnimation(elementData);
@@ -933,7 +1022,7 @@
           element.classList.remove("animate-hidden");
           element.classList.add(
             "animate-visible",
-            `animate-${elementData.animation}`
+            `animate-${elementData.animation}`,
           );
 
           // Set custom duration if provided
@@ -963,6 +1052,7 @@
         this.blogFilters.init();
         this.newsCarousel.init();
         this.parallax.init();
+        this.aboutParallax.init();
         this.scrollAnimations.init();
 
         // Trigger custom event for other scripts

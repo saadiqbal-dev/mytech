@@ -2282,7 +2282,9 @@ a.blog-article-link:hover {
 
 .parallax-img {
   max-height: 787px;
+  width: 100%;
   object-fit: cover;
+  display: block;
 }
 
 .max-height-720 {
