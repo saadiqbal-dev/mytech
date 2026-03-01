@@ -153,6 +153,12 @@
    Join Responsive Styles
    ============================================================================= */
 
+@media (max-width: 1680px) {
+  .join__content {
+    padding-left: 120px;
+  }
+}
+
 /* 1480px Breakpoint */
 @media (max-width: 1480px) {
   .join {
