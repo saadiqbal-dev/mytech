@@ -2718,6 +2718,12 @@ a.blog-article-link:hover {
   margin-top: -60px;
 }
 
+@media (max-width: 768px) {
+  .mt-60 {
+    margin-top: 0;
+  }
+}
+
 /* =================================================
    LATEST NEWS CAROUSEL SECTION
    ================================================== */
