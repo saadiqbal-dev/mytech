@@ -2248,17 +2248,20 @@ a.blog-article-link:hover {
   }
 
   .contact-grid__row {
-    padding: 60px 20px 0;
+    padding: 60px 0 0;
     flex-direction: column;
     gap: 40px;
   }
 
   .contact-grid__text {
     max-width: 100%;
+    padding: 0 20px;
   }
 
   .contact-grid__form {
     max-width: 100%;
+    width: 100%;
+    padding: 0 20px;
   }
 }
 
