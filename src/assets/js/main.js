@@ -807,7 +807,7 @@
         if (!this.$carousel) return;
 
         var scrollAmount = 0;
-        var cardWidth = this.$carousel.find(".latest-news-card").outerWidth();
+        var cardWidth = this.$carousel.find(".services__item").outerWidth();
         var viewportWidth = StormApp.utils.getViewportWidth();
         var gap = viewportWidth >= 1200 ? 50 : 20;
 
