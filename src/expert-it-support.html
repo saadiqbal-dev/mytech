@@ -1,9 +1,12 @@
 <!doctype html>
-<html lang="en">
+<html lang="en" class="no-js">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Storm Inc - Next Level Digital Marketing</title>
+    <script>
+      document.documentElement.classList.remove("no-js");
+    </script>
     <meta
       name="description"
       content="Storm Inc is an Auckland-based full-service digital marketing agency specializing in lead generation and sales performance."
@@ -61,92 +64,16 @@
     <link rel="stylesheet" href="assets/css/base.css?v=1756835970" />
     <link rel="stylesheet" href="assets/css/header.css?v=1756835970" />
     <link rel="stylesheet" href="assets/css/hero.css?v=1756835970" />
-    <link
-      rel="preload"
-      href="assets/css/company.css?v=1756835970"
-      as="style"
-      onload="
-        this.onload = null;
-        this.rel = 'stylesheet';
-      "
-    />
-    <noscript
-      ><link rel="stylesheet" href="assets/css/company.css?v=1756835970"
-    /></noscript>
-    <link
-      rel="preload"
-      href="assets/css/industry.css?v=1756835970"
-      as="style"
-      onload="
-        this.onload = null;
-        this.rel = 'stylesheet';
-      "
-    />
-    <noscript
-      ><link rel="stylesheet" href="assets/css/industry.css?v=1756835970"
-    /></noscript>
-    <link
-      rel="preload"
-      href="assets/css/services.css?v=1756835970"
-      as="style"
-      onload="
-        this.onload = null;
-        this.rel = 'stylesheet';
-      "
-    />
-    <noscript
-      ><link rel="stylesheet" href="assets/css/services.css?v=1756835970"
-    /></noscript>
-    <link
-      rel="preload"
-      href="assets/css/partners.css?v=1756835970"
-      as="style"
-      onload="
-        this.onload = null;
-        this.rel = 'stylesheet';
-      "
-    />
-    <noscript
-      ><link rel="stylesheet" href="assets/css/partners.css?v=1756835970"
-    /></noscript>
-    <link
-      rel="preload"
-      href="assets/css/join.css?v=1756835970"
-      as="style"
-      onload="
-        this.onload = null;
-        this.rel = 'stylesheet';
-      "
-    />
-    <noscript
-      ><link rel="stylesheet" href="assets/css/join.css?v=1756835970"
-    /></noscript>
-    <link
-      rel="preload"
-      href="assets/css/testimonials.css?v=1756835970"
-      as="style"
-      onload="
-        this.onload = null;
-        this.rel = 'stylesheet';
-      "
-    />
-    <noscript
-      ><link rel="stylesheet" href="assets/css/testimonials.css?v=1756835970"
-    /></noscript>
-    <link
-      rel="preload"
-      href="assets/css/footer.css?v=1756835970"
-      as="style"
-      onload="
-        this.onload = null;
-        this.rel = 'stylesheet';
-      "
-    />
-    <noscript
-      ><link rel="stylesheet" href="assets/css/footer.css?v=1756835970"
-    /></noscript>
+    <link rel="stylesheet" href="assets/css/company.css?v=1756835970" />
+    <link rel="stylesheet" href="assets/css/industry.css?v=1756835970" />
+    <link rel="stylesheet" href="assets/css/services.css?v=1756835970" />
+    <link rel="stylesheet" href="assets/css/partners.css?v=1756835970" />
+    <link rel="stylesheet" href="assets/css/join.css?v=1756835970" />
+    <link rel="stylesheet" href="assets/css/testimonials.css?v=1756835970" />
+    <link rel="stylesheet" href="assets/css/footer.css?v=1756835970" />
     <link rel="stylesheet" href="assets/css/utilities.css?v=1756835970" />
-    <!-- <link rel="stylesheet" href="assets/css/responsive-768.css?v=1756835970" /> -->
+    <link rel="stylesheet" href="assets/css/responsive-768.css?v=1756835970" />
+    <link rel="stylesheet" href="assets/css/template.css?v=1756835970" />
 
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -210,7 +137,7 @@
     <div class="mobile-menu" id="mobile-menu">
       <div class="mobile-menu__header">
         <div class="mobile-menu__logo">
-          <img src="assets/img/logo.svg" alt="Storm Inc" />
+          <img src="assets/img/logo-white.svg" alt="Storm Inc" />
         </div>
         <button
           class="mobile-menu__close"
@@ -821,407 +748,308 @@
     </header>
 
     <!-- Hero Section -->
-    <section class="hero" id="hero">
-      <!-- Video Background -->
-      <div class="hero__video-wrapper">
-        <iframe
-          src="https://player.vimeo.com/video/1167523672?background=1&autoplay=1&loop=1&byline=0&title=0&muted=1"
-          frameborder="0"
-          allow="autoplay; fullscreen; picture-in-picture"
-          allowfullscreen
-          class="hero__video"
-        ></iframe>
-      </div>
-
-      <!-- Hero Content -->
-      <div class="hero__content">
-        <div class="hero__text">
-          <h1 class="hero__heading">
-            Smart, Secure IT Solutions that<br class="d-none-mobile" />
-            keep your Business Moving
-          </h1>
-        </div>
-      </div>
+    <section class="hero-template">
+      <img src="./assets/img/expert-it-support.png" />
+      <h1 class="hero__heading-template">Expert IT Support</h1>
     </section>
-    <section
-      class="dark-bg z-50 d-flex text-white py-5 flex-column align-items-center justify-content-center"
-    >
-      <div class="max-w-909 d-flex flex-column align-items-center text-center">
-        <p>
-          We design, sell, implement, and maintain IT infrastructure, providing
-          end-to-end solutions that empower your business. Our strength lies in
-          our ability to align technology with your business goals, ensuring
-          seamless support every step of the way.
-        </p>
-        <a class="join__cta-button underline-none" href="#">Find Out More</a>
-      </div>
-    </section>
-    <section class="services">
-      <h2 class="services__title" data-animate="fadeInUp">Services</h2>
-      <div class="services__grid">
-        <div class="services__item services__item--expandable">
-          <div class="services__item-content">
-            <svg
-              class="services__icon"
-              xmlns="http://www.w3.org/2000/svg"
-              width="154"
-              height="148"
-              viewBox="0 0 154 148"
-              fill="none"
-            >
-              <path
-                d="M116.145 99.009H128.164C141.813 99.009 152.876 87.9558 152.876 74.3176C152.876 60.6793 141.813 49.6261 128.164 49.6261C126.812 49.6261 125.482 49.7423 124.181 49.953C124.406 48.1735 124.53 46.3729 124.53 44.5426C124.53 20.4758 105.007 0.969604 80.9198 0.969604C59.3763 0.969604 41.4964 16.5761 37.9569 37.0913C36.096 36.7427 34.1848 36.5538 32.2221 36.5538C14.9602 36.5538 0.96875 50.5334 0.96875 67.7808C0.96875 85.0282 14.9602 99.0078 32.2221 99.0078H37.6989"
-                stroke="white"
-                stroke-width="1.93924"
-                stroke-linecap="round"
-                stroke-linejoin="round"
-              />
-              <path
-                d="M51.7101 115.516V76.0366H38.6758L64.8547 45.1411L91.0336 76.0366H77.9993V115.516L64.9649 115.517L91.1438 146.413L117.323 115.517H104.288V76.0372"
-                stroke="white"
-                stroke-width="1.93924"
-                stroke-linecap="round"
-                stroke-linejoin="round"
-              />
-            </svg>
-            <h3 class="services__item-title">Cloud Make Simple</h3>
-            <svg
-              class="services__plus"
-              xmlns="http://www.w3.org/2000/svg"
-              width="29"
-              height="28"
-              viewBox="0 0 29 28"
-              fill="none"
-            >
-              <line
-                x1="13.9193"
-                y1="-0.000976562"
-                x2="13.9193"
-                y2="27.999"
-                stroke="white"
-                stroke-width="2.66667"
-              />
-              <line
-                x1="0.335937"
-                y1="14.4152"
-                x2="28.3359"
-                y2="14.4152"
-                stroke="white"
-                stroke-width="2.66667"
-              />
-            </svg>
-          </div>
-          <div class="services__item-description">
-            <p class="services__item-description-text">
-              Lay the foundations of long-term success with a winning digital
-              marketing strategy. Find out how we can help you develop a winning
-              competitive advantage and drive optimal marketing and sales
-              performance.
-            </p>
-            <a class="capabilities-button" href="#">Find Out More</a>
-          </div>
+    <section class="content__template__left p-b-50">
+      <div class="content__template-content">
+        <div class="content__template-content__text" data-animate="fadeInUp">
+          <p class="content__template-content__text__desc">
+            At mytech, managed IT services go far beyond the basics. While many
+            providers claim to be proactive, we see proactivity as the starting
+            point. What really counts is how that proactive approach allows us
+            to make your systems more stable, secure, and efficient—without you
+            needing to constantly worry about what’s working behind the scenes.
+          </p>
         </div>
-
-        <div class="services__item services__item--expandable">
-          <div class="services__item-content">
-            <svg
-              class="services__icon"
-              xmlns="http://www.w3.org/2000/svg"
-              width="134"
-              height="140"
-              viewBox="0 0 134 140"
-              fill="none"
-            >
-              <path
-                d="M36.1977 110.477L29.8046 116.792C29.0962 117.503 27.8496 117.498 27.1291 116.782L14.0427 103.695C13.3007 102.953 13.2975 101.748 14.0363 101.007L23.4749 91.4631C23.7422 91.1927 23.8202 90.7916 23.6736 90.4418L18.2212 77.3274C18.0758 76.9758 17.7331 76.7485 17.349 76.7485L3.86585 76.8146C3.36567 76.8146 2.89723 76.6229 2.54559 76.2744C2.18442 75.9183 1.98575 75.4391 1.98575 74.9218L1.87911 56.0902C1.87213 55.5843 2.06509 55.1064 2.42118 54.7446C2.78108 54.379 3.26094 54.1759 3.77127 54.174L17.165 54.1155C17.5458 54.1136 17.8854 53.8858 18.0295 53.5348L23.4629 40.3918C23.6101 40.0357 23.5289 39.6326 23.2559 39.3642L13.7056 29.9192C13.34 29.5549 13.1375 29.0712 13.1369 28.5589C13.1369 28.0486 13.3349 27.5675 13.6967 27.2057L27.2193 13.6939C27.9067 12.997 29.2155 13.0021 29.9087 13.7009L39.3657 23.2455C39.6285 23.5108 40.0423 23.5953 40.3908 23.4524L53.535 18.0292C53.8867 17.8851 54.1146 17.5462 54.1165 17.166L54.1749 3.77164C54.1774 3.25686 54.3786 2.777 54.7436 2.419C55.1029 2.06355 55.5446 1.87693 56.0188 1.87693C56.1045 1.87693 74.9233 1.97405 74.9227 1.97405C75.9789 1.98103 76.8332 2.84301 76.8269 3.89605L76.759 17.338C76.7577 17.7214 76.9837 18.0648 77.3372 18.2114L90.4497 23.6727C90.7969 23.8181 91.2095 23.7374 91.4736 23.474L101.02 14.0348C101.73 13.3232 102.978 13.3264 103.697 14.0424L116.784 27.1289C117.524 27.8683 117.527 29.0699 116.79 29.8081L112.466 34.1802C112.29 34.3573 112.193 34.5934 112.193 34.8461C112.195 35.0968 112.295 35.3329 112.473 35.5094C112.827 35.8616 113.451 35.8591 113.801 35.5017L118.121 31.1334C118.831 30.4244 119.221 29.4787 119.22 28.4694C119.217 27.4602 118.825 26.5119 118.112 25.8004L105.027 12.7132C104.312 11.9998 103.361 11.6069 102.349 11.6069C101.343 11.6069 100.401 11.996 99.6954 12.7018L90.597 21.6999L78.6403 16.7204L78.7057 3.90811C78.7184 1.82044 77.0262 0.110446 74.9335 0.0958466L56.0651 0C55.0718 0 54.1349 0.383387 53.4271 1.07906C52.7029 1.78934 52.3017 2.74209 52.2954 3.76275L52.2389 16.5325L40.2569 21.4759L31.2442 12.3794C30.525 11.6558 29.5697 11.2571 28.5548 11.2571C27.5398 11.2571 26.596 11.6513 25.8876 12.366L12.3682 25.8772C11.6484 26.5963 11.2542 27.551 11.2574 28.5659C11.2612 29.579 11.6598 30.533 12.3809 31.2522L21.4857 40.2572L16.5328 52.2386L3.76239 52.2945C2.74426 52.3008 1.79215 52.7039 1.0806 53.4294C0.372232 54.1498 -0.0117844 55.1013 0.000275666 56.1061L0.106912 74.9281C0.106912 75.9475 0.504256 76.9002 1.22532 77.6118C1.94258 78.3202 2.86994 78.6953 3.90838 78.6953L16.7289 78.6312L21.6996 90.5865L12.7046 99.6818C11.2346 101.154 11.239 103.551 12.7148 105.026L25.8013 118.112C26.516 118.827 27.4668 119.22 28.4786 119.22C29.4834 119.22 30.4254 118.831 31.1306 118.125L37.5192 111.814C37.6976 111.638 37.7973 111.403 37.7985 111.152C37.7998 110.901 37.7039 110.665 37.5275 110.486C37.1733 110.128 36.5557 110.125 36.1977 110.477Z"
-                fill="white"
-              />
-              <path
-                d="M57.0575 94.9661C57.1451 94.9908 57.2327 95.0035 57.319 95.0035C57.736 95.0035 58.1073 94.7236 58.2229 94.3218C58.3638 93.8229 58.0737 93.3018 57.5754 93.1596C56.7991 92.9394 55.9752 92.6632 55.1291 92.3389C51.3581 90.8758 47.9794 88.6542 45.0862 85.7344C39.5983 80.3042 36.5553 73.0618 36.516 65.3401C36.4772 57.6172 39.4466 50.3463 44.8742 44.8684C50.3 39.4896 57.5348 36.5279 65.2469 36.5279C70.9285 36.5279 76.4171 38.1706 81.1199 41.2783C81.5376 41.5564 82.1444 41.43 82.4218 41.0137C82.5601 40.8042 82.6084 40.5528 82.5582 40.3072C82.5081 40.0615 82.3653 39.8495 82.1558 39.7118C77.1483 36.401 71.3036 34.651 65.2533 34.651C57.0353 34.651 49.3263 37.8076 43.5464 43.5399C37.7594 49.3789 34.5952 57.124 34.6371 65.3484C34.6784 73.5734 37.9187 81.2855 43.7584 87.0629C46.8343 90.1681 50.4327 92.5325 54.4544 94.0914C55.3589 94.438 56.2348 94.7325 57.0575 94.9661Z"
-                fill="white"
-              />
-              <path
-                d="M120.48 137.879H103.917L84.7925 104.982C84.2186 103.994 83.1516 103.381 82.0078 103.381H47.8886C46.7225 103.381 45.6797 103.984 45.0982 104.995C44.5168 106.006 44.5193 107.211 45.1058 108.218L63.17 139.291C63.3382 139.58 63.6492 139.759 63.9824 139.759H120.48C120.997 139.759 121.418 139.337 121.418 138.819C121.418 138.301 120.997 137.88 120.48 137.88V137.879ZM46.727 105.933C46.9695 105.511 47.4036 105.26 47.8886 105.26H82.0078C82.4839 105.26 82.9276 105.514 83.1662 105.926L101.743 137.879H64.5232L46.7308 107.274C46.4858 106.854 46.4845 106.352 46.727 105.933Z"
-                fill="white"
-              />
-              <path
-                d="M117.252 79.99H83.9475C79.5957 79.99 75.5003 81.6943 72.4174 84.788C69.8169 87.3892 68.1532 90.8092 67.733 94.4183C67.6727 94.9337 68.0421 95.4009 68.5537 95.4612C69.0926 95.5228 69.5395 95.1572 69.5998 94.6373C69.9717 91.4445 71.4443 88.4181 73.7472 86.1159C76.4759 83.3776 80.0984 81.8701 83.9469 81.8701H117.251C125.218 81.8701 131.7 88.3521 131.7 96.32V114.841C131.7 119.921 127.568 124.053 122.488 124.053H107.215C106.697 124.053 106.275 124.475 106.275 124.993C106.275 125.511 106.697 125.933 107.215 125.933H122.488C128.604 125.933 133.58 120.957 133.58 114.84V96.3194C133.58 87.3155 126.255 79.99 117.251 79.99H117.252Z"
-                fill="white"
-              />
-              <path
-                d="M100.596 40.0522C92.022 40.0522 85.0469 47.0281 85.0469 55.6022C85.0469 64.1763 92.022 71.1514 100.596 71.1514C109.17 71.1514 116.145 64.1763 116.145 55.6022C116.145 47.0281 109.17 40.0522 100.596 40.0522ZM100.596 69.272C93.0586 69.272 86.9263 63.1397 86.9263 55.6022C86.9263 48.0646 93.0586 41.9323 100.596 41.9323C108.134 41.9323 114.266 48.0646 114.266 55.6022C114.266 63.1397 108.134 69.272 100.596 69.272Z"
-                fill="white"
-              />
-            </svg>
-            <h3 class="services__item-title">Expert IT Support</h3>
-            <svg
-              class="services__plus"
-              xmlns="http://www.w3.org/2000/svg"
-              width="29"
-              height="28"
-              viewBox="0 0 29 28"
-              fill="none"
-            >
-              <line
-                x1="13.9193"
-                y1="-0.000976562"
-                x2="13.9193"
-                y2="27.999"
-                stroke="white"
-                stroke-width="2.66667"
-              />
-              <line
-                x1="0.335937"
-                y1="14.4152"
-                x2="28.3359"
-                y2="14.4152"
-                stroke="white"
-                stroke-width="2.66667"
-              />
-            </svg>
-          </div>
-          <div class="services__item-description">
-            <p class="services__item-description-text">
-              Supercharge your sales & marketing with Google Ads. We develop
-              high-performance search, display, video & shopping campaigns that
-              will set your business apart. Speak to one of our qualified Google
-              Ads experts today.
-            </p>
-            <a class="capabilities-button" href="#">Find Out More</a>
-          </div>
-        </div>
-
-        <div class="services__item services__item--expandable">
-          <div class="services__item-content">
-            <svg
-              class="services__icon"
-              xmlns="http://www.w3.org/2000/svg"
-              width="103"
-              height="128"
-              viewBox="0 0 103 128"
-              fill="none"
-            >
-              <path
-                d="M51.0767 32.7285C78.7376 32.7285 101.161 25.624 101.161 16.8602C101.161 8.09633 78.7376 0.991821 51.0767 0.991821C23.4158 0.991821 0.992188 8.09633 0.992188 16.8602C0.992188 25.624 23.4158 32.7285 51.0767 32.7285Z"
-                stroke="white"
-                stroke-width="1.98354"
-                stroke-linecap="round"
-                stroke-linejoin="round"
-              />
-              <path
-                d="M101.161 47.6051C101.161 56.3687 78.7373 63.4735 51.0767 63.4735C23.4161 63.4735 0.992188 56.3687 0.992188 47.6051"
-                stroke="white"
-                stroke-width="1.98354"
-                stroke-linecap="round"
-                stroke-linejoin="round"
-              />
-              <path
-                d="M101.161 80.3336C101.161 89.0972 78.7373 96.202 51.0767 96.202C23.4161 96.202 0.992188 89.0972 0.992188 80.3336"
-                stroke="white"
-                stroke-width="1.98354"
-                stroke-linecap="round"
-                stroke-linejoin="round"
-              />
-              <path
-                d="M101.161 16.8601V111.292C101.161 119.937 78.7373 126.947 51.0767 126.947C23.4161 126.947 0.992188 119.937 0.992188 111.292V16.8601"
-                stroke="white"
-                stroke-width="1.98354"
-                stroke-linecap="round"
-                stroke-linejoin="round"
-              />
-            </svg>
-            <h3 class="services__item-title">Managed Backups</h3>
-            <svg
-              class="services__plus"
-              xmlns="http://www.w3.org/2000/svg"
-              width="29"
-              height="28"
-              viewBox="0 0 29 28"
-              fill="none"
-            >
-              <line
-                x1="13.9193"
-                y1="-0.000976562"
-                x2="13.9193"
-                y2="27.999"
-                stroke="white"
-                stroke-width="2.66667"
-              />
-              <line
-                x1="0.335937"
-                y1="14.4152"
-                x2="28.3359"
-                y2="14.4152"
-                stroke="white"
-                stroke-width="2.66667"
-              />
-            </svg>
-          </div>
-          <div class="services__item-description">
-            <p class="services__item-description-text">
-              Make sure your business dominates in Google search results when it
-              really matters. Our SEO services allow your business to boost
-              visibility and drive new business sales & website enquires – Ask
-              about our comprehensive SEO Audit.
-            </p>
-            <a class="capabilities-button" href="#">Find Out More</a>
-          </div>
-        </div>
-      </div>
-    </section>
-    <!-- Partners Marquee Section -->
-    <section class="partners-section">
-      <div class="container-fluid">
-        <h2 class="partners__title">Brands We Support</h2>
-      </div>
-      <div class="marquee-container">
-        <div class="marquee-track">
-          <div class="marquee-item">
-            <img src="./assets/img/tri.png" alt="TRI NZ" class="partner-logo" />
-          </div>
-          <div class="marquee-item">
-            <img
-              src="./assets/img/Onboard.jpg"
-              alt="Onboard"
-              class="partner-logo"
-            />
-          </div>
-          <div class="marquee-item">
-            <img
-              src="./assets/img/beauty-lab.jpg"
-              alt="The Beauty Lab Collective"
-              class="partner-logo"
-            />
-          </div>
-          <div class="marquee-item">
-            <img
-              src="./assets/img/colliers.webp"
-              alt="Colliers"
-              class="partner-logo"
-            />
-          </div>
-          <div class="marquee-item">
-            <img
-              src="./assets/img/Treasures.png"
-              alt="Treasures"
-              class="partner-logo"
-            />
-          </div>
-        </div>
-      </div>
-    </section>
-    <section class="join">
-      <div class="join__left">
-        <div class="join__content">
-          <h2 class="join__left-heading">
-            mytech helps New Zealand businesses simplify technology, cut costs,
-            and grow through smart IT solutions and lasting partnerships.
-          </h2>
-          <button class="cta-pink">Services</button>
-        </div>
-      </div>
-      <div class="join__right">
-        <img
-          class="joing__right-img"
-          src="./assets/img/studio-time-lapse.png"
-        />
-      </div>
-    </section>
-    <section class="testimonials">
-      <div class="testimonials__carousel-wrapper">
-        <div class="testimonials__carousel-track">
-          <!-- Slide 1 -->
-          <div class="testimonials__slide">
-            <div class="testimonials__content">
-              <div class="testimonials__content-text">
-                <h2 class="testimonials__content-quote">“</h2>
-                <h2 class="testimonials__content-review">
-                  We value mytech’s proactive approach and wouldn’t hesitate to
-                  recommend them to organisations looking for a trusted IT
-                  partner.
-                </h2>
-                <div class="testimonials__content-ref">
-                  <p class="testimonials__content-ref__title">Bevan Ritchie</p>
-                  <p class="testimonials__content-ref__desc">Apparelmaster</p>
-                </div>
-              </div>
-              <div class="testimonials__content-image">
-                <img
-                  src="./assets/img/testimonial-1.webp"
-                  alt="Testimonial Image"
-                />
-              </div>
-            </div>
-          </div>
-          <!-- Slide 2 -->
-          <div class="testimonials__slide">
-            <div class="testimonials__content">
-              <div class="testimonials__content-text">
-                <h2 class="testimonials__content-quote">“</h2>
-                <h2 class="testimonials__content-review">
-                  We value mytech’s proactive approach and wouldn’t hesitate to
-                  recommend them to organisations looking for a trusted IT
-                  partner.
-                </h2>
-                <div class="testimonials__content-ref">
-                  <p class="testimonials__content-ref__title">Bevan Ritchie</p>
-                  <p class="testimonials__content-ref__desc">Apparelmaster</p>
-                </div>
-              </div>
-              <div class="testimonials__content-image">
-                <img
-                  src="./assets/img/testimonial-1.webp"
-                  alt="Testimonial Image"
-                />
-              </div>
-            </div>
-          </div>
-          <div class="testimonials__slide">
-            <div class="testimonials__content">
-              <div class="testimonials__content-text">
-                <h2 class="testimonials__content-quote">“</h2>
-                <h2 class="testimonials__content-review">
-                  We value mytech’s proactive approach and wouldn’t hesitate to
-                  recommend them to organisations looking for a trusted IT
-                  partner.
-                </h2>
-                <div class="testimonials__content-ref">
-                  <p class="testimonials__content-ref__title">
-                    Bevan 3 Ritchie
-                  </p>
-                  <p class="testimonials__content-ref__desc">Apparelmaster</p>
-                </div>
-              </div>
-              <div class="testimonials__content-image">
-                <img
-                  src="./assets/img/testimonial-1.webp"
-                  alt="Testimonial Image"
-                />
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-      <!-- Carousel Indicators -->
-      <div class="testimonials__indicators">
-        <svg
-          xmlns="http://www.w3.org/2000/svg"
-          width="50"
-          height="10"
-          viewBox="0 0 50 10"
-          fill="none"
+        <div
+          class="content__template-content__image"
+          data-animate="fadeInUp"
+          data-animate-delay="200"
         >
-          <circle
-            cx="5"
-            cy="5"
-            r="5"
-            fill="#292929"
-            class="testimonials__indicator--active"
-          />
-          <circle cx="25" cy="5" r="5" fill="#292929" fill-opacity="0.35" />
-        </svg>
+          <img src="./assets/img/eis-1.png" alt="About Image" />
+        </div>
       </div>
     </section>
+    <section class="content__template__right p-t-50">
+      <div
+        class="content__template-content__reverse align-items-center justify-content-between"
+      >
+        <div class="content__template-content__text" data-animate="fadeInUp">
+          <p class="content__template-content__text__desc">
+            With well-managed systems, our engineers aren’t tied up putting out
+            fires. Instead, they focus on optimisation: making improvements,
+            speeding up fixes, and guiding smarter technology decisions. This
+            approach ensures your IT environment runs at its best, freeing you
+            to focus on your business rather than IT headaches.
+          </p>
+        </div>
+        <div
+          class="content__template-content__image"
+          data-animate="fadeInUp"
+          data-animate-delay="200"
+        >
+          <img src="./assets/img/eis-2.png" alt="About Image" />
+        </div>
+      </div>
+    </section>
+    <section class="text-section bg-expert">
+      <div class="text-section__main p-t-100">
+        <div class="content__template-content__text" data-animate="fadeInUp">
+          <p class="content__template-content__text__desc">
+            Our managed service isn’t just about monitoring devices; it’s a
+            continuous cycle of stability, improvement, and shared learning. We
+            handle monitoring, patching, backups, and updates in the background
+            so that the basics are always covered. Once stability is assured,
+            our engineers can streamline performance, close gaps, and implement
+            solutions that benefit all our clients.
+          </p>
+        </div>
+        <div class="content__template-content__text" data-animate="fadeInUp">
+          <p class="content__template-content__text__desc w-775">
+            We also believe in sharing knowledge across our managed
+            environments. When a challenge is solved for one client, that
+            solution is deployed across others, keeping every system stronger
+            and more resilient. Regular reviews, reporting, and technology
+            roadmaps ensure your IT is future-ready and aligned with your
+            business growth.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <section class="content__template__left p-b-50 pt-5 pt-lg-0">
+      <div class="content__template-content">
+        <div
+          class="content__template-content__text-full gap-2"
+          data-animate="fadeInUp"
+        >
+          <p class="content__template-content__text__desc short__width">
+            The benefits are clear: faster progress because the fundamentals are
+            handled, smarter spending because issues are fixed proactively, and
+            stronger protection because lessons learned from one client are
+            applied to all. Your environment operates at its optimum, not just
+            at a “good enough” level.
+          </p>
+        </div>
+        <div
+          class="content__template-content__image"
+          data-animate="fadeInUp"
+          data-animate-delay="200"
+        >
+          <img src="./assets/img/eis-3.png" class="mt-60" alt="About Image" />
+        </div>
+      </div>
+    </section>
+    <section class="content__template__right p-t-50 pt-5">
+      <div class="content__template-content__reverse">
+        <div class="content__template-content__text-full">
+          <p class="content__template-content__text__desc shorter__width">
+            mytech has built a reputation for calm, clear IT that goes beyond
+            break-fix. We’re not just technicians who fix computers; we are
+            technology consultants who use IT to improve your business. With a
+            structured plan, ongoing support, and continuous optimisation, your
+            systems will always be moving closer to their ideal performance,
+            giving you confidence and clarity in every step forward.
+          </p>
+        </div>
+        <div class="content__template-content__image">
+          <img src="./assets/img/eis-4.png" alt="About Image" />
+        </div>
+      </div>
+    </section>
+
+    <!-- Latest News Carousel Section -->
+    <section class="latest-news-section">
+      <h2>See our Other Services</h2>
+      <div class="latest-news-container">
+        <!-- Desktop Brand Box -->
+        <div class="latest-news-brand-box">
+          <h2>See our Other Services</h2>
+          <div class="latest-news-controls">
+            <button
+              class="news-carousel-btn news-carousel-btn-prev"
+              id="newsCarouselPrev"
+            >
+              <img src="./assets/img/back-arrow.svg" alt="Previous" />
+            </button>
+            <button
+              class="news-carousel-btn news-carousel-btn-next"
+              id="newsCarouselNext"
+            >
+              <img src="./assets/img/forward-arrow.svg" alt="Next" />
+            </button>
+          </div>
+        </div>
+
+        <!-- Carousel Wrapper -->
+        <div class="latest-news-carousel-wrapper">
+          <div class="latest-news-carousel" id="newsCarousel">
+            <!-- Service Item 1: Cloud Made Simple -->
+            <div class="services__item services__item--expandable">
+              <div class="services__item-content">
+                <svg
+                  class="services__icon"
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="154"
+                  height="148"
+                  viewBox="0 0 154 148"
+                  fill="none"
+                >
+                  <path
+                    d="M116.145 99.009H128.164C141.813 99.009 152.876 87.9558 152.876 74.3176C152.876 60.6793 141.813 49.6261 128.164 49.6261C126.812 49.6261 125.482 49.7423 124.181 49.953C124.406 48.1735 124.53 46.3729 124.53 44.5426C124.53 20.4758 105.007 0.969604 80.9198 0.969604C59.3763 0.969604 41.4964 16.5761 37.9569 37.0913C36.096 36.7427 34.1848 36.5538 32.2221 36.5538C14.9602 36.5538 0.96875 50.5334 0.96875 67.7808C0.96875 85.0282 14.9602 99.0078 32.2221 99.0078H37.6989"
+                    stroke="white"
+                    stroke-width="1.93924"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  />
+                  <path
+                    d="M51.7101 115.516V76.0366H38.6758L64.8547 45.1411L91.0336 76.0366H77.9993V115.516L64.9649 115.517L91.1438 146.413L117.323 115.517H104.288V76.0372"
+                    stroke="white"
+                    stroke-width="1.93924"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  />
+                </svg>
+                <h3 class="services__item-title">Cloud Made Simple</h3>
+                <svg
+                  class="services__plus"
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="29"
+                  height="28"
+                  viewBox="0 0 29 28"
+                  fill="none"
+                >
+                  <line
+                    x1="13.9193"
+                    y1="-0.000976562"
+                    x2="13.9193"
+                    y2="27.999"
+                    stroke="white"
+                    stroke-width="2.66667"
+                  />
+                  <line
+                    x1="0.335937"
+                    y1="14.4152"
+                    x2="28.3359"
+                    y2="14.4152"
+                    stroke="white"
+                    stroke-width="2.66667"
+                  />
+                </svg>
+              </div>
+              <div class="services__item-description">
+                <p class="services__item-description-text">
+                  Simplify and enhance your IT infrastructure with our cloud
+                  solutions. From email and data management to server hosting,
+                  we design systems that increase flexibility, security, and
+                  cost efficiency.
+                </p>
+                <a class="capabilities-button" href="cloud-made-simple.html"
+                  >Find Out More</a
+                >
+              </div>
+            </div>
+
+            <div class="services__item services__item--expandable">
+              <div class="services__item-content">
+                <svg
+                  class="services__icon"
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="103"
+                  height="128"
+                  viewBox="0 0 103 128"
+                  fill="none"
+                >
+                  <path
+                    d="M51.0767 32.7285C78.7376 32.7285 101.161 25.624 101.161 16.8602C101.161 8.09633 78.7376 0.991821 51.0767 0.991821C23.4158 0.991821 0.992188 8.09633 0.992188 16.8602C0.992188 25.624 23.4158 32.7285 51.0767 32.7285Z"
+                    stroke="white"
+                    stroke-width="1.98354"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  />
+                  <path
+                    d="M101.161 47.6051C101.161 56.3687 78.7373 63.4735 51.0767 63.4735C23.4161 63.4735 0.992188 56.3687 0.992188 47.6051"
+                    stroke="white"
+                    stroke-width="1.98354"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  />
+                  <path
+                    d="M101.161 80.3336C101.161 89.0972 78.7373 96.202 51.0767 96.202C23.4161 96.202 0.992188 89.0972 0.992188 80.3336"
+                    stroke="white"
+                    stroke-width="1.98354"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  />
+                  <path
+                    d="M101.161 16.8601V111.292C101.161 119.937 78.7373 126.947 51.0767 126.947C23.4161 126.947 0.992188 119.937 0.992188 111.292V16.8601"
+                    stroke="white"
+                    stroke-width="1.98354"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  />
+                </svg>
+                <h3 class="services__item-title">Managed Backups</h3>
+                <svg
+                  class="services__plus"
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="29"
+                  height="28"
+                  viewBox="0 0 29 28"
+                  fill="none"
+                >
+                  <line
+                    x1="13.9193"
+                    y1="-0.000976562"
+                    x2="13.9193"
+                    y2="27.999"
+                    stroke="white"
+                    stroke-width="2.66667"
+                  />
+                  <line
+                    x1="0.335937"
+                    y1="14.4152"
+                    x2="28.3359"
+                    y2="14.4152"
+                    stroke="white"
+                    stroke-width="2.66667"
+                  />
+                </svg>
+              </div>
+              <div class="services__item-description">
+                <p class="services__item-description-text">
+                  Protect your business with comprehensive backup solutions. We
+                  ensure your critical data is securely backed up, easily
+                  recoverable, and always available when you need it most.
+                </p>
+                <a class="capabilities-button" href="managed-backups.html"
+                  >Find Out More</a
+                >
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Mobile Controls -->
+        <div class="latest-news-mobile-controls">
+          <button
+            class="news-carousel-btn news-carousel-btn-prev"
+            id="newsCarouselPrevMobile"
+          >
+            <img src="./assets/img/back-arrow.svg" alt="Previous" />
+          </button>
+          <button
+            class="news-carousel-btn news-carousel-btn-next"
+            id="newsCarouselNextMobile"
+          >
+            <img src="./assets/img/forward-arrow.svg" alt="Next" />
+          </button>
+        </div>
+      </div>
+    </section>
+
     <!-- Footer Spacer - Creates scroll space for curtain reveal effect -->
     <div class="footer-spacer" id="footer-spacer"></div>
 
@@ -1243,7 +1071,7 @@
                 >(09) 950 4326</a
               >
               <br />
-              <a href="mailto:support@mytech.co.nz" class="footer__contact-link"
+              <a href="mailto:hello@stormimc.co.nz" class="footer__contact-link"
                 >support@mytech.co.nz</a
               >
             </p>
@@ -1308,7 +1136,7 @@
       </div>
 
       <div class="footer__foot">
-        <p>© 2026 MyTech Ltd. All rights reserved. Privacy Policy.</p>
+        <p>© 2026 MyTech Ltd. All rights reserved. Privacy Policy.</p>
       </div>
 
       <!-- Mobile footer bottom -->

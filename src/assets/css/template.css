@@ -435,6 +435,19 @@ li {
   z-index: 500;
 }
 
+/* Text Section Background Color Variants */
+.bg-cloud {
+  background: #b2f6ea;
+}
+
+.bg-expert {
+  background: #efe8f2;
+}
+
+.bg-backup {
+  background: #e8f5ff;
+}
+
 .text-section__main {
   display: flex;
   flex-direction: row;
@@ -3037,14 +3050,19 @@ a.blog-article-link:hover {
   padding: 0;
 }
 
-/* Second service item - Expert IT Support (purple) */
+/* First service item - Cloud Made Simple (dark blue/gray) */
 .latest-news-carousel .services__item:nth-child(1) {
-  background-color: #a678b4;
+  background-color: #364156;
 }
 
-/* Third service item - Managed Backups (pink) */
+/* Second service item - default is Managed Backups (pink) */
 .latest-news-carousel .services__item:nth-child(2) {
   background-color: #f1687c;
+}
+
+/* Expert IT Support variant (purple) - for managed-backups.html */
+.latest-news-carousel .services__item--expert {
+  background-color: #a678b4;
 }
 
 .latest-news-carousel .services__item-content {
