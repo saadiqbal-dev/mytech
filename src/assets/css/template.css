@@ -427,7 +427,7 @@ li {
 .text-section {
   display: flex;
   width: 100vw;
-  background: #7df2dd;
+  background: #b2f6ea;
   align-items: center;
   justify-content: center;
 
@@ -2798,7 +2798,7 @@ a.blog-article-link:hover {
   .latest-news-carousel {
     gap: 3.125rem;
     padding-left: 0;
-    padding-right: 0;
+    padding-right: 100px;
     justify-content: start;
   }
 }
