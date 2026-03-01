@@ -38,7 +38,7 @@
   color: #fff;
   text-align: center;
   font-family: var(--font-mona-sans);
-  font-size: 18px;
+  font-size: 16px;
   font-style: normal;
   font-weight: 500;
   line-height: 42.667px; /* 200% */
@@ -85,7 +85,7 @@
   color: #fff;
   text-align: center;
   font-family: var(--font-mona-sans);
-  font-size: 18px;
+  font-size: 16px;
   font-style: normal;
   font-weight: 500;
   line-height: 42.667px;
@@ -192,7 +192,7 @@
   color: #555353;
   text-align: center;
   font-family: var(--font-mona-sans);
-  font-size: 18px;
+  font-size: 16px;
   font-style: normal;
   font-weight: 500;
   line-height: 42.667px;
@@ -310,7 +310,7 @@ a.case-studies__cta-button {
   color: #555353;
   text-align: center;
   font-family: var(--font-mona-sans);
-  font-size: 18px;
+  font-size: 16px;
   font-style: normal;
   font-weight: 500;
   line-height: 42.667px;
@@ -450,7 +450,7 @@ a.case-studies__cta-button:hover {
   }
 
   .hero__text .buttons a {
-    font-size: 18px;
+    font-size: 16px;
     padding: 0px 18px;
     height: auto;
     width: auto;
@@ -492,7 +492,7 @@ a.case-studies__cta-button:hover {
 
   a.btn {
     margin-top: 10px;
-    font-size: 18px;
+    font-size: 16px;
     padding: 0px 18px;
     height: auto;
   }

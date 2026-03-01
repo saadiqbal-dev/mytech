@@ -663,7 +663,7 @@ li {
   color: #555353;
   text-align: center;
   font-family: var(--font-mona-sans);
-  font-size: 18px;
+  font-size: 16px;
   font-style: normal;
   font-weight: 500;
   line-height: 42.667px;
@@ -1516,7 +1516,7 @@ a.blog-article-link:hover {
 
   .case-studies__cta-button {
     margin-top: 10px;
-    font-size: 18px;
+    font-size: 16px;
     padding: 0px 18px;
     height: auto;
   }
