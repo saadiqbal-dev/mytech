@@ -217,6 +217,11 @@
   color: rgba(255, 255, 255, 0.7);
 }
 
+.header--scrolled .header__dropdown--simple {
+  background: rgba(255, 255, 255, 0.95);
+  padding: 20px;
+}
+
 .header--scrolled .header__dropdown-link {
   color: #333333;
 }
