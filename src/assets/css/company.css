@@ -50,7 +50,7 @@
 
 .company__content-description {
   color: #555353;
-  font-family: var(--font-mona-sans);
+  font-family: var(--font-poppins);
   font-size: 22px;
   font-style: normal;
   font-weight: 400;
@@ -70,7 +70,7 @@
   background: transparent;
   color: #555353;
   text-align: center;
-  font-family: var(--font-mona-sans);
+  font-family: var(--font-poppins);
   font-size: 16px;
   font-style: normal;
   font-weight: 500;

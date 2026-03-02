@@ -74,7 +74,7 @@
 .capabilities__description {
   color: #555353;
   text-align: center;
-  font-family: var(--font-mona-sans);
+  font-family: var(--font-poppins);
   font-size: 22px;
   font-style: normal;
   font-weight: 400;
@@ -175,7 +175,7 @@
 .content__template-content__text ul,
 li {
   color: #555353;
-  font-family: var(--font-mona-sans);
+  font-family: var(--font-poppins);
   font-size: 26px;
   font-style: normal;
   font-weight: 400;
@@ -258,7 +258,7 @@ li {
 
 .content__template-content__text__desc {
   color: #555353;
-  font-family: var(--font-mona-sans);
+  font-family: var(--font-poppins);
   font-size: 26px;
   font-style: normal;
   font-weight: 400;
@@ -272,7 +272,7 @@ li {
 
 .content__template-content__text__desc-full {
   color: #555353;
-  font-family: var(--font-mona-sans);
+  font-family: var(--font-poppins);
   font-size: 22px;
   font-style: normal;
   font-weight: 400;
@@ -545,7 +545,7 @@ li {
 .bg__content-text__desc {
   color: #fff;
   text-align: center;
-  font-family: var(--font-mona-sans);
+  font-family: var(--font-poppins);
   font-size: 20px;
   font-style: normal;
   font-weight: 500;
@@ -597,7 +597,7 @@ li {
 
 .privacy-text {
   color: #555353;
-  font-family: var(--font-mona-sans);
+  font-family: var(--font-poppins);
   font-size: 16px;
   font-style: normal;
   font-weight: 400;
@@ -642,7 +642,7 @@ li {
 
 .case-studies__container-desc {
   color: #555353;
-  font-family: var(--font-mona-sans);
+  font-family: var(--font-poppins);
   font-size: 22px;
   font-style: normal;
   font-weight: 400;
@@ -662,7 +662,7 @@ li {
   background: transparent;
   color: #555353;
   text-align: center;
-  font-family: var(--font-mona-sans);
+  font-family: var(--font-poppins);
   font-size: 16px;
   font-style: normal;
   font-weight: 500;
@@ -852,7 +852,7 @@ li {
   border: 1.5px solid #8e8b8b;
   color: #8e8b8b;
   text-align: center;
-  font-family: var(--font-mona-sans);
+  font-family: var(--font-poppins);
   font-size: 20px;
   font-style: normal;
   font-weight: 500;
@@ -1025,7 +1025,7 @@ a.blog-article-link:hover {
 
 .contact-title {
   color: #555353;
-  font-family: var(--font-mona-sans);
+  font-family: var(--font-poppins);
   font-size: 20px;
   font-style: normal;
   font-weight: 400;
@@ -1034,12 +1034,12 @@ a.blog-article-link:hover {
 
 .contact-description {
   color: #555353;
-  font-family: var(--font-mona-sans);
+  font-family: var(--font-poppins);
   font-size: 26px;
   font-style: normal;
   font-weight: 400;
   line-height: 26px;
-  font-family: var(--font-mona-sans);
+  font-family: var(--font-poppins);
   font-size: 22px;
   font-style: normal;
   font-weight: 400;
@@ -1069,7 +1069,7 @@ a.blog-article-link:hover {
   padding: 15px 30px;
   background: transparent;
   outline: none;
-  font-family: var(--font-mona-sans);
+  font-family: var(--font-poppins);
   font-size: 22px;
   font-weight: 400;
   line-height: 34px;
@@ -1080,7 +1080,7 @@ a.blog-article-link:hover {
 
 .contact-input::placeholder {
   color: #555353;
-  font-family: var(--font-mona-sans);
+  font-family: var(--font-poppins);
   font-size: 22px;
   font-style: normal;
   font-weight: 400;
@@ -1099,7 +1099,7 @@ a.blog-article-link:hover {
   padding: 30px;
   background: transparent;
   outline: none;
-  font-family: var(--font-mona-sans);
+  font-family: var(--font-poppins);
   font-size: 22px;
   font-weight: 400;
   line-height: 34px;
@@ -1110,7 +1110,7 @@ a.blog-article-link:hover {
 
 .contact-textarea::placeholder {
   color: #555353;
-  font-family: var(--font-mona-sans);
+  font-family: var(--font-poppins);
   font-size: 22px;
   font-style: normal;
   font-weight: 400;
@@ -1128,7 +1128,7 @@ a.blog-article-link:hover {
   cursor: pointer;
   color: white;
   text-align: center;
-  font-family: var(--font-mona-sans);
+  font-family: var(--font-poppins);
   font-size: 20px;
   font-style: normal;
   font-weight: 500;
@@ -1295,7 +1295,7 @@ a.blog-article-link:hover {
 
 .blog-content__container p {
   color: #555353;
-  font-family: var(--font-mona-sans);
+  font-family: var(--font-poppins);
   font-size: 20px;
   font-style: normal;
   font-weight: 400;
@@ -2018,7 +2018,7 @@ a.blog-article-link:hover {
 
   .case-studies__container-desc {
     color: #555353;
-    font-family: var(--font-mona-sans);
+    font-family: var(--font-poppins);
     font-size: 20px;
     font-style: normal;
     font-weight: 400;
@@ -2117,7 +2117,7 @@ a.blog-article-link:hover {
 
   .contact-input {
     color: #555353;
-    font-family: var(--font-mona-sans);
+    font-family: var(--font-poppins);
     font-size: 18px;
     font-style: normal;
     font-weight: 400;
@@ -2127,7 +2127,7 @@ a.blog-article-link:hover {
 
   .contact-input::placeholder {
     color: #555353;
-    font-family: var(--font-mona-sans);
+    font-family: var(--font-poppins);
     font-size: 18px;
     font-style: normal;
     font-weight: 400;
@@ -2140,7 +2140,7 @@ a.blog-article-link:hover {
     max-height: 300px;
     height: auto;
     color: #555353;
-    font-family: var(--font-mona-sans);
+    font-family: var(--font-poppins);
     font-size: 18px;
     font-style: normal;
     font-weight: 400;
@@ -2150,7 +2150,7 @@ a.blog-article-link:hover {
 
   .contact-textarea::placeholder {
     color: #555353;
-    font-family: var(--font-mona-sans);
+    font-family: var(--font-poppins);
     font-size: 18px;
     font-style: normal;
     font-weight: 400;
@@ -2232,7 +2232,7 @@ a.blog-article-link:hover {
 
   .contact-title {
     color: #555353;
-    font-family: var(--font-mona-sans);
+    font-family: var(--font-poppins);
     font-size: 20px;
     font-style: normal;
     font-weight: 400;
@@ -2240,7 +2240,7 @@ a.blog-article-link:hover {
   }
   .contact-description {
     color: #555353;
-    font-family: var(--font-mona-sans);
+    font-family: var(--font-poppins);
     font-size: 26px;
     font-style: normal;
     font-weight: 400;
@@ -2439,7 +2439,7 @@ a.blog-article-link:hover {
 }
 .new-section p {
   color: #555353;
-  font-family: var(--font-mona-sans);
+  font-family: var(--font-poppins);
   font-size: 26px;
   font-style: normal;
   font-weight: 400;
@@ -2460,7 +2460,7 @@ a.blog-article-link:hover {
   }
   .new-section p {
     color: #555353;
-    font-family: var(--font-mona-sans);
+    font-family: var(--font-poppins);
     font-size: 22px;
     font-style: normal;
     font-weight: 400;
@@ -2487,7 +2487,7 @@ a.blog-article-link:hover {
   }
   .new-section p {
     color: #555353;
-    font-family: var(--font-mona-sans);
+    font-family: var(--font-poppins);
     font-size: 20px;
     font-style: normal;
     font-weight: 400;
@@ -2615,7 +2615,7 @@ a.blog-article-link:hover {
 .fw-gray__content p {
   max-width: 685px;
   color: #fff;
-  font-family: var(--font-mona-sans);
+  font-family: var(--font-poppins);
   font-size: 26px;
   font-weight: 400;
   line-height: 37px;
@@ -3231,7 +3231,7 @@ a.blog-article-link:hover {
 
 .latest-news-carousel .services__item-description-text {
   color: #fff;
-  font-family: var(--font-mona-sans);
+  font-family: var(--font-poppins);
   font-size: 22px;
   font-style: normal;
   font-weight: 400;
@@ -3253,7 +3253,7 @@ a.blog-article-link:hover {
   border: 1px solid #fff;
   color: #ffffff;
   text-align: center;
-  font-family: var(--font-mona-sans);
+  font-family: var(--font-poppins);
   font-size: 16px;
   font-style: normal;
   font-weight: 500;

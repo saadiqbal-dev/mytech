@@ -93,7 +93,7 @@
 .header__menu-text-hover {
   display: block;
   color: #fff;
-  font-family: var(--font-mona-sans);
+  font-family: var(--font-poppins);
   font-size: 20px;
   font-style: normal;
   font-weight: 400;
@@ -177,7 +177,7 @@
   justify-content: center;
   align-items: center;
   color: #333333;
-  font-family: var(--font-mona-sans);
+  font-family: var(--font-poppins);
   font-size: 18px;
   flex: 1;
 }
@@ -254,7 +254,7 @@
 
 .dropdown-capabilities__title {
   color: #000;
-  font-family: var(--font-mona-sans);
+  font-family: var(--font-poppins);
   font-size: 18px;
   font-style: normal;
   font-weight: 600;
@@ -276,7 +276,7 @@
 .dropdown-capabilities__link {
   display: block;
   color: #000;
-  font-family: var(--font-mona-sans);
+  font-family: var(--font-poppins);
   font-size: 16px;
   font-style: normal;
   font-weight: 400;
@@ -320,7 +320,7 @@
 
 .dropdown-capabilities__cta-title {
   color: #fff;
-  font-family: var(--font-mona-sans);
+  font-family: var(--font-poppins);
   font-size: 16px;
   font-style: normal;
   font-weight: 600;
@@ -330,7 +330,7 @@
 
 .dropdown-capabilities__cta-subtitle {
   color: #fff;
-  font-family: var(--font-mona-sans);
+  font-family: var(--font-poppins);
   font-size: 16px;
   font-style: normal;
   font-weight: 500;
@@ -584,7 +584,7 @@
 
   .mobile-menu__nav-link {
     color: #fff;
-    font-family: var(--font-mona-sans);
+    font-family: var(--font-poppins);
     font-size: 24px;
     font-style: normal;
     font-weight: 400;
@@ -622,7 +622,7 @@
 
   .mobile-menu__dropdown-title {
     color: #fff;
-    font-family: var(--font-mona-sans);
+    font-family: var(--font-poppins);
     font-size: 16px;
     line-height: 34px;
     font-weight: 600;
@@ -639,7 +639,7 @@
 
   .mobile-menu__dropdown-link {
     color: #fff;
-    font-family: var(--font-mona-sans);
+    font-family: var(--font-poppins);
     font-size: 16px;
     font-weight: 400;
     text-decoration: none;
@@ -680,7 +680,7 @@
 
   .mobile-menu__dropdown-cta-title {
     color: #fff;
-    font-family: var(--font-mona-sans);
+    font-family: var(--font-poppins);
     font-size: 16px;
     font-weight: 600;
     margin: 0;
@@ -688,7 +688,7 @@
 
   .mobile-menu__dropdown-cta-subtitle {
     color: #fff;
-    font-family: var(--font-mona-sans);
+    font-family: var(--font-poppins);
     font-size: 16px;
     font-weight: 400;
     margin: 0;
@@ -723,7 +723,7 @@
 
   .mobile-menu__contact-text {
     color: #fff;
-    font-family: var(--font-mona-sans);
+    font-family: var(--font-poppins);
     font-size: 18px;
     font-style: normal;
     font-weight: 400;

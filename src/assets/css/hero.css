@@ -132,7 +132,7 @@
 
 .hero__subheading {
   color: #fff;
-  font-family: var(--font-mona-sans);
+  font-family: var(--font-poppins);
   font-size: 26px;
   font-style: normal;
   font-weight: 400;
@@ -148,7 +148,7 @@
   background: transparent;
   color: #fff;
   text-align: center;
-  font-family: var(--font-mona-sans);
+  font-family: var(--font-poppins);
   font-size: 16px;
   font-style: normal;
   font-weight: 500;
