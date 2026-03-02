@@ -230,6 +230,22 @@
   color: #000000;
 }
 
+/* Dropdown white background for screens 1480px and below */
+@media (max-width: 1480px) {
+  .header__dropdown--simple {
+    background: #ffffff;
+    padding: 20px;
+  }
+
+  .header__dropdown-link {
+    color: #333333;
+  }
+
+  .header__dropdown-link:hover {
+    color: #000000;
+  }
+}
+
 .dropdown__header-styles {
   display: flex;
   flex-direction: column;
@@ -406,11 +422,6 @@
   .header__menu-text-main,
   .header__menu-text-hover {
     font-size: 16px; /* Reduced from 24px */
-  }
-
-  .header__dropdown {
-    max-width: calc(100vw - 200px); /* Page width minus 100px from each side */
-    width: calc(100vw - 200px);
   }
 }
 
