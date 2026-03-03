@@ -63,7 +63,7 @@
 .capabilities__title {
   color: #555353;
   text-align: center;
-  font-family: var(--font-peachi);
+  font-family: var(--font-poppins);
   font-size: 40px;
   font-style: normal;
   font-weight: 400;
@@ -243,7 +243,7 @@ li {
 
 .content__template-content__text__title-full {
   color: #555353;
-  font-family: var(--font-peachi);
+  font-family: var(--font-poppins);
   font-size: 40px;
   font-style: normal;
   flex-wrap: nowrap;
@@ -355,7 +355,7 @@ li {
 
 .backed-by__content-text {
   color: #292929;
-  font-family: var(--font-peachi);
+  font-family: var(--font-poppins);
   font-size: 34px;
   font-style: normal;
   font-weight: 300;
@@ -540,7 +540,7 @@ li {
 .bg__content-text__title {
   color: #fff;
   text-align: center;
-  font-family: var(--font-peachi);
+  font-family: var(--font-poppins);
   font-size: 40px;
   font-style: normal;
   font-weight: 400;
@@ -638,7 +638,7 @@ li {
 }
 .case-studies__container-title {
   color: #555353;
-  font-family: var(--font-peachi);
+  font-family: var(--font-poppins);
   font-size: 40px;
   font-style: normal;
   font-weight: 400;
@@ -956,7 +956,7 @@ li {
 
 .blog-article__title {
   color: #292929;
-  font-family: var(--font-peachi);
+  font-family: var(--font-poppins);
   font-size: 32px;
   font-style: normal;
   font-weight: 400;
@@ -1193,7 +1193,7 @@ a.blog-article-link:hover {
 
 .contact-heading {
   color: #555353;
-  font-family: var(--font-peachi);
+  font-family: var(--font-poppins);
   font-size: 32px;
   font-style: normal;
   font-weight: 400;
@@ -1309,7 +1309,7 @@ a.blog-article-link:hover {
 
 .blog-content__container h2 {
   color: #292929;
-  font-family: var(--font-peachi);
+  font-family: var(--font-poppins);
   font-size: 32px;
   font-style: normal;
   font-weight: 400;
@@ -1318,7 +1318,7 @@ a.blog-article-link:hover {
 
 .blog-content__container h3 {
   color: #292929;
-  font-family: var(--font-peachi);
+  font-family: var(--font-poppins);
   font-size: 32px;
   font-style: normal;
   font-weight: 400;
@@ -1327,7 +1327,7 @@ a.blog-article-link:hover {
 
 .blog-content__container h3 strong {
   color: #292929;
-  font-family: var(--font-peachi);
+  font-family: var(--font-poppins);
   font-size: 32px;
   font-style: normal;
   font-weight: 400;
@@ -1336,7 +1336,7 @@ a.blog-article-link:hover {
 
 .blog-content__heading {
   color: #292929;
-  font-family: var(--font-peachi);
+  font-family: var(--font-poppins);
   font-size: 32px;
   font-style: normal;
   font-weight: 400;
@@ -1934,7 +1934,7 @@ a.blog-article-link:hover {
 
   .backed-by__content-text {
     color: #292929;
-    font-family: var(--font-peachi);
+    font-family: var(--font-poppins);
     font-size: 26px;
     font-style: normal;
     font-weight: 300;
@@ -2014,7 +2014,7 @@ a.blog-article-link:hover {
 
   .case-studies__container-title {
     color: #555353;
-    font-family: var(--font-peachi);
+    font-family: var(--font-poppins);
     font-size: 30px;
     font-style: normal;
     font-weight: 400;
@@ -2307,7 +2307,7 @@ a.blog-article-link:hover {
 .related-posts__title {
   color: #555353;
   text-align: center;
-  font-family: var(--font-peachi);
+  font-family: var(--font-poppins);
   font-size: 40px;
   font-style: normal;
   font-weight: 400;

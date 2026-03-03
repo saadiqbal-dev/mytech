@@ -97,7 +97,7 @@
 
 .content-container h2 {
   color: #555353;
-  font-family: var(--font-peachi);
+  font-family: var(--font-poppins);
   font-size: 24px;
   font-style: normal;
   font-weight: 400;
@@ -267,7 +267,7 @@
   background: #4cd4bc;
   color: #fff;
   text-align: center;
-  font-family: var(--font-peachi);
+  font-family: var(--font-poppins);
   font-size: 24px;
   font-style: normal;
   font-weight: 400;
@@ -294,7 +294,7 @@
 
 .text-container h3 {
   color: #555353;
-  font-family: var(--font-peachi);
+  font-family: var(--font-poppins);
   font-size: 24px;
   font-style: normal;
   font-weight: 400;

@@ -61,7 +61,7 @@
 .testimonials__content-text {
   display: flex;
   flex-direction: column;
-  font-family: var(--font-peachi);
+  font-family: var(--font-poppins);
   position: relative;
   left: 25px;
   padding: 70px 90px;
@@ -75,7 +75,7 @@
 
 .testimonials__content-quote {
   color: #292929;
-  font-family: var(--font-peachi);
+  font-family: var(--font-poppins);
   font-size: 85.333px;
   font-style: normal;
   font-weight: 300;
@@ -345,7 +345,7 @@
     font-size: 64px;
     line-height: 0px;
     color: #292929;
-    font-family: var(--font-peachi);
+    font-family: var(--font-poppins);
     margin-bottom: 0px;
   }
 
@@ -358,7 +358,7 @@
     line-height: 33px;
     max-width: 100%;
     color: #292929;
-    font-family: var(--font-peachi);
+    font-family: var(--font-poppins);
   }
 
   .testimonials__content-ref__title {

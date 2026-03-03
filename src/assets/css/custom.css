@@ -12,7 +12,7 @@
 .hero__text h1 {
   color: #fff;
   text-align: center;
-  font-family: var(--font-peachi);
+  font-family: var(--font-poppins);
   font-size: 56px;
   font-style: normal;
   font-weight: 300;
@@ -123,7 +123,7 @@
 
 .hero-template .heading h1 {
   text-align: center;
-  font-family: var(--font-peachi);
+  font-family: var(--font-poppins);
   font-size: 40px;
   font-style: normal;
   font-weight: 300;
@@ -144,7 +144,7 @@
 .content__template-content__text h2,
 .google__partner-content__text h2 {
   color: #555353;
-  font-family: var(--font-peachi);
+  font-family: var(--font-poppins);
   font-size: 40px;
   font-style: normal;
   font-weight: 400;
@@ -164,7 +164,7 @@
 
 .backed-by__content p {
   color: #292929;
-  font-family: var(--font-peachi);
+  font-family: var(--font-poppins);
   font-size: 34px;
   font-style: normal;
   font-weight: 300;
@@ -289,7 +289,7 @@
 }
 .contact-heading {
   color: #555353 !important;
-  font-family: var(--font-peachi) !important;
+  font-family: var(--font-poppins) !important;
   font-size: 32px !important;
   font-style: normal !important;
   font-weight: 400 !important;
@@ -361,7 +361,7 @@ a.case-studies__cta-button:hover {
 .bg__content-text h2 {
   color: #fff;
   text-align: center;
-  font-family: var(--font-peachi);
+  font-family: var(--font-poppins);
   font-size: 40px;
   font-style: normal;
   font-weight: 400;
@@ -407,7 +407,7 @@ a.case-studies__cta-button:hover {
 .pagination a {
   color: #bbb5b5;
   text-align: center;
-  font-family: var(--font-peachi);
+  font-family: var(--font-poppins);
   font-size: 26px;
   font-style: normal;
   font-weight: 400;
@@ -632,7 +632,7 @@ a.case-studies__cta-button:hover {
 
   .backed-by__content p {
     color: #292929;
-    font-family: var(--font-peachi);
+    font-family: var(--font-poppins);
     font-size: 26px;
     font-style: normal;
     font-weight: 300;
