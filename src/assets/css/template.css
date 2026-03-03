@@ -2800,6 +2800,19 @@ a.blog-article-link:hover {
   flex-shrink: 0;
 }
 
+/* Specific background colors for each service type */
+.services__item--cloud {
+  background-color: #364156 !important;
+}
+
+.services__item--expert {
+  background-color: #a678b4 !important;
+}
+
+.services__item--backup {
+  background-color: #f1687c !important;
+}
+
 /* Responsive styles for service-cards to match services.css breakpoints */
 @media (max-width: 1680px) {
   .other-services > div:first-child {
