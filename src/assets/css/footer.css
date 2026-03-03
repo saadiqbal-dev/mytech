@@ -34,6 +34,7 @@
   width: 100%;
   height: 100%;
   object-fit: contain;
+  margin-top: -15px;
 }
 
 .footer__content {
@@ -158,6 +159,7 @@
   .footer__content-logo img {
     transform: scale(0.8);
     transform-origin: left center;
+    margin-top: -20px;
   }
 
   .footer__content-navigation {
@@ -190,6 +192,7 @@
   .footer__content-logo img {
     transform: scale(0.7);
     transform-origin: left center;
+    margin-top: -20px;
   }
 
   .footer__content-navigation {
@@ -222,6 +225,7 @@
   .footer__content-logo img {
     transform: scale(0.6);
     transform-origin: left center;
+    margin-top: -25px;
   }
 
   .footer__content-navigation {

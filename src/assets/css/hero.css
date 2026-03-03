@@ -227,6 +227,7 @@
 
   .hero__heading {
     font-size: 48px;
+    line-height: 61px;
     padding: 0;
     margin: 0;
   }
@@ -260,6 +261,7 @@
 
   .hero__heading {
     font-size: 40px;
+    line-height: 52px;
   }
 
   .hero__subheading {
