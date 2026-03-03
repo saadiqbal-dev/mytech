@@ -313,10 +313,19 @@
                 </svg>
               </a>
               <!-- Simple Dropdown Menu -->
-              <div class="header__dropdown header__dropdown--simple" id="compatibilities-dropdown">
-                <a href="cloud-made-simple.html" class="header__dropdown-link">Cloud Made Simple</a>
-                <a href="expert-it-support.html" class="header__dropdown-link">Expert IT Support</a>
-                <a href="managed-backups.html" class="header__dropdown-link">Managed Backups</a>
+              <div
+                class="header__dropdown header__dropdown--simple"
+                id="compatibilities-dropdown"
+              >
+                <a href="cloud-made-simple.html" class="header__dropdown-link"
+                  >Cloud Made Simple</a
+                >
+                <a href="expert-it-support.html" class="header__dropdown-link"
+                  >Expert IT Support</a
+                >
+                <a href="managed-backups.html" class="header__dropdown-link"
+                  >Managed Backups</a
+                >
               </div>
             </li>
 
@@ -779,192 +788,161 @@
       </div>
     </section>
 
-    <!-- Latest News Carousel Section -->
-    <section class="latest-news-section">
-      <h2>See our Other Services</h2>
-      <div class="latest-news-container">
-        <!-- Desktop Brand Box -->
-        <div class="latest-news-brand-box">
-          <h2>See our Other Services</h2>
-          <div class="latest-news-controls">
-            <button
-              class="news-carousel-btn news-carousel-btn-prev"
-              id="newsCarouselPrev"
-            >
-              <img src="./assets/img/back-arrow.svg" alt="Previous" />
-            </button>
-            <button
-              class="news-carousel-btn news-carousel-btn-next"
-              id="newsCarouselNext"
-            >
-              <img src="./assets/img/forward-arrow.svg" alt="Next" />
-            </button>
-          </div>
+    <!-- other services section -->
+    <section class="newservices">
+      <div
+        class="other-services d-flex position-relative z-3 align-items-center justify-content-between"
+      >
+        <div
+          class="d-flex flex-column align-items-center align-items-lg-start justify-content-center"
+        >
+          <h4>
+            See our <br />
+            Other Services
+          </h4>
         </div>
-
-        <!-- Carousel Wrapper -->
-        <div class="latest-news-carousel-wrapper">
-          <div class="latest-news-carousel" id="newsCarousel">
-            <!-- Service Item 1: Cloud Made Simple -->
-            <div class="services__item services__item--expandable">
-              <div class="services__item-content">
-                <svg
-                  class="services__icon"
-                  xmlns="http://www.w3.org/2000/svg"
-                  width="154"
-                  height="148"
-                  viewBox="0 0 154 148"
-                  fill="none"
-                >
-                  <path
-                    d="M116.145 99.009H128.164C141.813 99.009 152.876 87.9558 152.876 74.3176C152.876 60.6793 141.813 49.6261 128.164 49.6261C126.812 49.6261 125.482 49.7423 124.181 49.953C124.406 48.1735 124.53 46.3729 124.53 44.5426C124.53 20.4758 105.007 0.969604 80.9198 0.969604C59.3763 0.969604 41.4964 16.5761 37.9569 37.0913C36.096 36.7427 34.1848 36.5538 32.2221 36.5538C14.9602 36.5538 0.96875 50.5334 0.96875 67.7808C0.96875 85.0282 14.9602 99.0078 32.2221 99.0078H37.6989"
-                    stroke="white"
-                    stroke-width="1.93924"
-                    stroke-linecap="round"
-                    stroke-linejoin="round"
-                  />
-                  <path
-                    d="M51.7101 115.516V76.0366H38.6758L64.8547 45.1411L91.0336 76.0366H77.9993V115.516L64.9649 115.517L91.1438 146.413L117.323 115.517H104.288V76.0372"
-                    stroke="white"
-                    stroke-width="1.93924"
-                    stroke-linecap="round"
-                    stroke-linejoin="round"
-                  />
-                </svg>
-                <h3 class="services__item-title">Cloud Made Simple</h3>
-                <svg
-                  class="services__plus"
-                  xmlns="http://www.w3.org/2000/svg"
-                  width="29"
-                  height="28"
-                  viewBox="0 0 29 28"
-                  fill="none"
-                >
-                  <line
-                    x1="13.9193"
-                    y1="-0.000976562"
-                    x2="13.9193"
-                    y2="27.999"
-                    stroke="white"
-                    stroke-width="2.66667"
-                  />
-                  <line
-                    x1="0.335937"
-                    y1="14.4152"
-                    x2="28.3359"
-                    y2="14.4152"
-                    stroke="white"
-                    stroke-width="2.66667"
-                  />
-                </svg>
-              </div>
-              <div class="services__item-description">
-                <p class="services__item-description-text">
-                  Simplify and enhance your IT infrastructure with our cloud
-                  solutions. From email and data management to server hosting,
-                  we design systems that increase flexibility, security, and
-                  cost efficiency.
-                </p>
-                <a class="capabilities-button" href="cloud-made-simple.html"
-                  >Find Out More</a
-                >
-              </div>
+        <div
+          class="service-cards d-flex g-5 align-items-center justify-content-start w-100"
+        >
+          <div class="services__item services__item--expandable">
+            <div class="services__item-content">
+              <svg
+                class="services__icon"
+                xmlns="http://www.w3.org/2000/svg"
+                width="154"
+                height="148"
+                viewBox="0 0 154 148"
+                fill="none"
+              >
+                <path
+                  d="M116.145 99.009H128.164C141.813 99.009 152.876 87.9558 152.876 74.3176C152.876 60.6793 141.813 49.6261 128.164 49.6261C126.812 49.6261 125.482 49.7423 124.181 49.953C124.406 48.1735 124.53 46.3729 124.53 44.5426C124.53 20.4758 105.007 0.969604 80.9198 0.969604C59.3763 0.969604 41.4964 16.5761 37.9569 37.0913C36.096 36.7427 34.1848 36.5538 32.2221 36.5538C14.9602 36.5538 0.96875 50.5334 0.96875 67.7808C0.96875 85.0282 14.9602 99.0078 32.2221 99.0078H37.6989"
+                  stroke="white"
+                  stroke-width="1.93924"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                />
+                <path
+                  d="M51.7101 115.516V76.0366H38.6758L64.8547 45.1411L91.0336 76.0366H77.9993V115.516L64.9649 115.517L91.1438 146.413L117.323 115.517H104.288V76.0372"
+                  stroke="white"
+                  stroke-width="1.93924"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                />
+              </svg>
+              <h3 class="services__item-title">Cloud Make Simple</h3>
+              <svg
+                class="services__plus"
+                xmlns="http://www.w3.org/2000/svg"
+                width="29"
+                height="28"
+                viewBox="0 0 29 28"
+                fill="none"
+              >
+                <line
+                  x1="13.9193"
+                  y1="-0.000976562"
+                  x2="13.9193"
+                  y2="27.999"
+                  stroke="white"
+                  stroke-width="2.66667"
+                />
+                <line
+                  x1="0.335937"
+                  y1="14.4152"
+                  x2="28.3359"
+                  y2="14.4152"
+                  stroke="white"
+                  stroke-width="2.66667"
+                />
+              </svg>
             </div>
-
-            <div class="services__item services__item--expandable">
-              <div class="services__item-content">
-                <svg
-                  class="services__icon"
-                  xmlns="http://www.w3.org/2000/svg"
-                  width="103"
-                  height="128"
-                  viewBox="0 0 103 128"
-                  fill="none"
-                >
-                  <path
-                    d="M51.0767 32.7285C78.7376 32.7285 101.161 25.624 101.161 16.8602C101.161 8.09633 78.7376 0.991821 51.0767 0.991821C23.4158 0.991821 0.992188 8.09633 0.992188 16.8602C0.992188 25.624 23.4158 32.7285 51.0767 32.7285Z"
-                    stroke="white"
-                    stroke-width="1.98354"
-                    stroke-linecap="round"
-                    stroke-linejoin="round"
-                  />
-                  <path
-                    d="M101.161 47.6051C101.161 56.3687 78.7373 63.4735 51.0767 63.4735C23.4161 63.4735 0.992188 56.3687 0.992188 47.6051"
-                    stroke="white"
-                    stroke-width="1.98354"
-                    stroke-linecap="round"
-                    stroke-linejoin="round"
-                  />
-                  <path
-                    d="M101.161 80.3336C101.161 89.0972 78.7373 96.202 51.0767 96.202C23.4161 96.202 0.992188 89.0972 0.992188 80.3336"
-                    stroke="white"
-                    stroke-width="1.98354"
-                    stroke-linecap="round"
-                    stroke-linejoin="round"
-                  />
-                  <path
-                    d="M101.161 16.8601V111.292C101.161 119.937 78.7373 126.947 51.0767 126.947C23.4161 126.947 0.992188 119.937 0.992188 111.292V16.8601"
-                    stroke="white"
-                    stroke-width="1.98354"
-                    stroke-linecap="round"
-                    stroke-linejoin="round"
-                  />
-                </svg>
-                <h3 class="services__item-title">Managed Backups</h3>
-                <svg
-                  class="services__plus"
-                  xmlns="http://www.w3.org/2000/svg"
-                  width="29"
-                  height="28"
-                  viewBox="0 0 29 28"
-                  fill="none"
-                >
-                  <line
-                    x1="13.9193"
-                    y1="-0.000976562"
-                    x2="13.9193"
-                    y2="27.999"
-                    stroke="white"
-                    stroke-width="2.66667"
-                  />
-                  <line
-                    x1="0.335937"
-                    y1="14.4152"
-                    x2="28.3359"
-                    y2="14.4152"
-                    stroke="white"
-                    stroke-width="2.66667"
-                  />
-                </svg>
-              </div>
-              <div class="services__item-description">
-                <p class="services__item-description-text">
-                  Protect your business with comprehensive backup solutions. We
-                  ensure your critical data is securely backed up, easily
-                  recoverable, and always available when you need it most.
-                </p>
-                <a class="capabilities-button" href="managed-backups.html"
-                  >Find Out More</a
-                >
-              </div>
+            <div class="services__item-description">
+              <p class="services__item-description-text">
+                Lay the foundations of long-term success with a winning digital
+                marketing strategy. Find out how we can help you develop a
+                winning competitive advantage and drive optimal marketing and
+                sales performance.
+              </p>
+              <a class="capabilities-button" href="#">Find Out More</a>
             </div>
           </div>
-        </div>
 
-        <!-- Mobile Controls -->
-        <div class="latest-news-mobile-controls">
-          <button
-            class="news-carousel-btn news-carousel-btn-prev"
-            id="newsCarouselPrevMobile"
-          >
-            <img src="./assets/img/back-arrow.svg" alt="Previous" />
-          </button>
-          <button
-            class="news-carousel-btn news-carousel-btn-next"
-            id="newsCarouselNextMobile"
-          >
-            <img src="./assets/img/forward-arrow.svg" alt="Next" />
-          </button>
+          <div class="services__item services__item--expandable">
+            <div class="services__item-content">
+              <svg
+                class="services__icon"
+                xmlns="http://www.w3.org/2000/svg"
+                width="103"
+                height="128"
+                viewBox="0 0 103 128"
+                fill="none"
+              >
+                <path
+                  d="M51.0767 32.7285C78.7376 32.7285 101.161 25.624 101.161 16.8602C101.161 8.09633 78.7376 0.991821 51.0767 0.991821C23.4158 0.991821 0.992188 8.09633 0.992188 16.8602C0.992188 25.624 23.4158 32.7285 51.0767 32.7285Z"
+                  stroke="white"
+                  stroke-width="1.98354"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                />
+                <path
+                  d="M101.161 47.6051C101.161 56.3687 78.7373 63.4735 51.0767 63.4735C23.4161 63.4735 0.992188 56.3687 0.992188 47.6051"
+                  stroke="white"
+                  stroke-width="1.98354"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                />
+                <path
+                  d="M101.161 80.3336C101.161 89.0972 78.7373 96.202 51.0767 96.202C23.4161 96.202 0.992188 89.0972 0.992188 80.3336"
+                  stroke="white"
+                  stroke-width="1.98354"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                />
+                <path
+                  d="M101.161 16.8601V111.292C101.161 119.937 78.7373 126.947 51.0767 126.947C23.4161 126.947 0.992188 119.937 0.992188 111.292V16.8601"
+                  stroke="white"
+                  stroke-width="1.98354"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                />
+              </svg>
+              <h3 class="services__item-title">Managed Backups</h3>
+              <svg
+                class="services__plus"
+                xmlns="http://www.w3.org/2000/svg"
+                width="29"
+                height="28"
+                viewBox="0 0 29 28"
+                fill="none"
+              >
+                <line
+                  x1="13.9193"
+                  y1="-0.000976562"
+                  x2="13.9193"
+                  y2="27.999"
+                  stroke="white"
+                  stroke-width="2.66667"
+                />
+                <line
+                  x1="0.335937"
+                  y1="14.4152"
+                  x2="28.3359"
+                  y2="14.4152"
+                  stroke="white"
+                  stroke-width="2.66667"
+                />
+              </svg>
+            </div>
+            <div class="services__item-description">
+              <p class="services__item-description-text">
+                Make sure your business dominates in Google search results when
+                it really matters. Our SEO services allow your business to boost
+                visibility and drive new business sales & website enquires – Ask
+                about our comprehensive SEO Audit.
+              </p>
+              <a class="capabilities-button" href="#">Find Out More</a>
+            </div>
+          </div>
         </div>
       </div>
     </section>
@@ -1011,11 +989,15 @@
             </p>
           </div>
           <div class="footer__content-navigation__socials">
-            <a href="https://nz.linkedin.com/company/mytechnz" class="footer__content-navigation__social-link"
+            <a
+              href="https://nz.linkedin.com/company/mytechnz"
+              class="footer__content-navigation__social-link"
               >LinkedIn</a
             >
 
-            <a href="https://www.facebook.com/mytechnz/?ref=hl" class="footer__content-navigation__social-link"
+            <a
+              href="https://www.facebook.com/mytechnz/?ref=hl"
+              class="footer__content-navigation__social-link"
               >Facebook</a
             >
           </div>
