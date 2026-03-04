@@ -238,14 +238,24 @@ const stormIncLocation = {
   lng: 174.741898, // Exact longitude for Storm Inc
 };
 
-// Map center adjusted to show more ocean (east of the marker)
-const mapCenter = {
+// Map center adjusted to show more ocean (east of the marker) on desktop
+const mapCenterDesktop = {
   lat: -36.785857, // Same latitude
   lng: 174.755, // Shifted east to show more ocean
 };
 
+// Map center for mobile - centered on the pin
+const mapCenterMobile = {
+  lat: -36.785857, // Same latitude as pin
+  lng: 174.741898, // Same longitude as pin - centered
+};
+
 // Initialize map
 function initMap() {
+  // Detect if mobile
+  const isMobile = window.innerWidth <= 768;
+  const mapCenter = isMobile ? mapCenterMobile : mapCenterDesktop;
+
   // Create map
   const map = new google.maps.Map(document.getElementById("google-map"), {
     zoom: 13, // Zoomed out to show wider area
@@ -282,11 +292,12 @@ function initMap() {
     animation: google.maps.Animation.DROP,
   });
 
-  // Make map responsive
+  // Make map responsive - recenter based on screen size
   google.maps.event.addDomListener(window, "resize", function () {
-    const center = map.getCenter();
+    const isMobile = window.innerWidth <= 768;
+    const newCenter = isMobile ? mapCenterMobile : mapCenterDesktop;
     google.maps.event.trigger(map, "resize");
-    map.setCenter(center);
+    map.setCenter(newCenter);
   });
 }
 
