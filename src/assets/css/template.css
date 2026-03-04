@@ -1682,7 +1682,8 @@ a.blog-article-link:hover {
     max-width: 420px;
   }
   .content__template-content__text__title {
-    font-size: 24px;
+    font-size: 16px;
+    line-height: 20px;
   }
   .content__template-content__text__desc {
     font-size: 16px;
@@ -1880,9 +1881,9 @@ a.blog-article-link:hover {
     justify-content: center;
   }
   .content__template-content__text__title {
-    font-size: 30px;
+    font-size: 20px;
     text-align: start;
-    line-height: 38px;
+    line-height: 28px;
   }
 
   .content__template-content__text__desc {
