@@ -12,6 +12,8 @@
       this.config = {
         scrollThreshold: 50, // Pixels before triggering scroll effect
         debounceDelay: 10, // Milliseconds for scroll debounce
+        defaultLogo: 'assets/img/logo.svg',
+        scrolledLogo: 'assets/img/log-footer.svg'
       };
 
       // State
@@ -21,9 +23,10 @@
 
       // Cache DOM elements
       this.header = document.querySelector('.header');
+      this.logo = document.querySelector('.header__logo img');
       this.dropdownLinks = document.querySelectorAll('[data-dropdown]');
       this.dropdowns = document.querySelectorAll('.header__dropdown');
-      
+
       // Initialize if header exists
       if (this.header) {
         this.init();
@@ -101,14 +104,22 @@
      */
     updateHeaderOnScroll() {
       const scrollY = window.scrollY || window.pageYOffset;
-      
+
       if (scrollY > this.config.scrollThreshold && !this.isScrolled) {
         // Add scrolled class when scrolling down
         this.header.classList.add('header--scrolled');
+        // Swap logo to footer logo
+        if (this.logo) {
+          this.logo.src = this.config.scrolledLogo;
+        }
         this.isScrolled = true;
       } else if (scrollY <= this.config.scrollThreshold && this.isScrolled) {
         // Remove scrolled class when back at top
         this.header.classList.remove('header--scrolled');
+        // Swap back to default logo
+        if (this.logo) {
+          this.logo.src = this.config.defaultLogo;
+        }
         this.isScrolled = false;
       }
     }
@@ -118,9 +129,13 @@
      */
     checkInitialScroll() {
       const scrollY = window.scrollY || window.pageYOffset;
-      
+
       if (scrollY > this.config.scrollThreshold) {
         this.header.classList.add('header--scrolled');
+        // Set scrolled logo on page load if already scrolled
+        if (this.logo) {
+          this.logo.src = this.config.scrolledLogo;
+        }
         this.isScrolled = true;
       }
     }
