@@ -1039,6 +1039,29 @@
       },
     },
 
+    // Hero video handling
+    heroVideo: {
+      init: function () {
+        const $videoWrapper = $('.hero__video-wrapper');
+        const $videoIframe = $('.hero__video');
+
+        if (!$videoWrapper.length || !$videoIframe.length) return;
+
+        // Add loaded class after a delay to fade out poster
+        // Vimeo typically starts playing within 2-3 seconds
+        setTimeout(() => {
+          $videoWrapper.addClass('video-loaded');
+        }, 3000);
+
+        // Also try to detect when iframe is loaded
+        $videoIframe.on('load', () => {
+          setTimeout(() => {
+            $videoWrapper.addClass('video-loaded');
+          }, 1500);
+        });
+      }
+    },
+
     // Initialize all modules
     init: function () {
       // Wait for DOM to be ready
@@ -1054,6 +1077,7 @@
         this.parallax.init();
         this.aboutParallax.init();
         this.scrollAnimations.init();
+        this.heroVideo.init();
 
         // Trigger custom event for other scripts
         $(document).trigger("stormapp:initialized");
